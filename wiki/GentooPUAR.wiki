@@ -1,4 +1,5 @@
 #summary The small and dirty Gentoo portage uploader and remover
+#labels Featured
 
 = Introduction =
 
