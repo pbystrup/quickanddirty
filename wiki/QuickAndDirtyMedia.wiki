@@ -21,5 +21,8 @@ Next version v0.2 will include:
   * Playlist
   * More detailed status information in textoverlay
 
+In planning:
+  * overlay menu
+
 = Downloads =
 [http://quickanddirty.googlecode.com/files/quickanddirtymedia_v0.1.bz2 version 0.1]
