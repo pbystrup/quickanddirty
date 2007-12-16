@@ -7,6 +7,9 @@ The first version includes support for basic gstreamer stuff. You can control th
 
 
 = Details =
-Next version will include:
+Next version v0.2 will include:
   * Playlist
   * More detailed status information in textoverlay
+
+= Downloads =
+[http://quickanddirty.googlecode.com/files/quickanddirtymedia_v0.1.bz2 version 0.1]
