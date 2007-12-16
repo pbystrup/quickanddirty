@@ -1,0 +1,12 @@
+#summary The small and dirty multimedia player for the geeks
+#labels Featured,Phase-Design
+
+= Introduction =
+
+The first version includes support for basic gstreamer stuff. You can control the stream using arrow-keys, toggle fullscreen with f, toggle textoverlay with t, press pause with space and stop stream with enter. To start playing the stream you will have to drag-and-drop a file into it.
+
+
+= Details =
+Next version will include:
+  * Playlist
+  * More detailed status information in textoverlay
