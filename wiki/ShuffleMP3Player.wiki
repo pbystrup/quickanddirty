@@ -1,0 +1,13 @@
+#summary The small and dirty mp3 player for OpenMoko
+#labels Featured
+
+= Introduction =
+This is a small and simple MP3 software which is intended to OpenMoko -mobile.
+
+
+= Details =
+Next version v0.2 will include:
+  * Support for OpenMoko
+
+= Downloads =
+[http://quickanddirty.googlecode.com/files/shufflemoko.bz2 version 0.1]
