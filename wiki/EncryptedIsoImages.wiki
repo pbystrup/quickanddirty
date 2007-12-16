@@ -9,4 +9,4 @@ This script is a wrapper to few console commands, which you can use the create e
 This is not maintained.
 
 = Downloads =
-[http://quickanddirty.googlecode.com/files/uploadPortage_v0.1.py version 0.1]
+[http://quickanddirty.googlecode.com/files/secureDVD.py version 0.1]
