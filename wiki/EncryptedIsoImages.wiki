@@ -1,0 +1,12 @@
+#summary The small and dirty encrypted iso image mounter script
+#labels Featured
+
+= Introduction =
+
+This script is a wrapper to few console commands, which you can use the create encrypted iso image and mount the image.
+
+= Details =
+This is not maintained.
+
+= Downloads =
+[http://quickanddirty.googlecode.com/files/uploadPortage_v0.1.py version 0.1]
