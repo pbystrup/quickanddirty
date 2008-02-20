@@ -1,0 +1,12 @@
+#summary The small and dirty Portable Executable description reader
+#labels Featured
+
+= Introduction =
+
+This is a wrapper to the pefile library, this wrapper will get the string description information out of the windows binary file (exe,dll,ocx,scr)
+
+= Details =
+not maintained
+
+= Downloads =
+[http://quickanddirty.googlecode.com/files/PeReader.py version 0.1]
