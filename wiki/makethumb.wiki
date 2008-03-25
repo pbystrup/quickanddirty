@@ -1,0 +1,10 @@
+#summary Imaging
+#labels Featured
+
+= Introduction =
+
+Creates thumbnail image from a picture
+
+
+= Downloads =
+[http://quickanddirty.googlecode.com/files/makethumb.py makethumb.py]
