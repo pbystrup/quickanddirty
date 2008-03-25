@@ -1,0 +1,9 @@
+#summary Internet utility
+#labels Featured
+
+= Introduction =
+
+A very small real wget replacement, for the situations where the real one is disabled.
+
+
+= Downloads =
