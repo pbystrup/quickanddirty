@@ -1,0 +1,13 @@
+#summary Imaging
+#labels Featured
+
+= Introduction =
+
+Adjust image properties
+ * Brightness
+ * Sharpness
+ * Color
+ * Contrast
+
+
+= Downloads =
