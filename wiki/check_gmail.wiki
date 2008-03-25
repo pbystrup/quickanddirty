@@ -1,0 +1,8 @@
+#summary email checking utility
+#labels Featured
+
+= Introduction =
+Check your gmail account for new messages, using IMAP / SSL connection from console
+
+
+= Download =
