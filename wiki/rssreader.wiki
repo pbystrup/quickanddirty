@@ -6,3 +6,4 @@ Reads RSS feeds
 
 
 = Downloads =
+[http://quickanddirty.googlecode.com/files/rssreader.py rssreader.py]
