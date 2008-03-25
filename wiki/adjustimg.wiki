@@ -11,3 +11,4 @@ Adjust image properties
 
 
 = Downloads =
+[http://quickanddirty.googlecode.com/files/adjustimg.py adjustimg.py]
