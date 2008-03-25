@@ -7,3 +7,4 @@ A very small real wget replacement, for the situations where the real one is dis
 
 
 = Downloads =
+[http://quickanddirty.googlecode.com/files/wget.py wget.py]
