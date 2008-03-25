@@ -6,3 +6,4 @@ Check your gmail account for new messages, using IMAP / SSL connection from cons
 
 
 = Download =
+[http://quickanddirty.googlecode.com/files/check_gmail.py check_gmail.py]
