@@ -1,0 +1,10 @@
+#summary show list what packages should be updated
+#labels Featured
+
+= Introduction =
+
+Python Server Pages script, which will generate html page containing information which packages should be updated.
+
+
+= Downloads =
+[http://quickanddirty.googlecode.com/files/package_update.psp package_update.psp]
