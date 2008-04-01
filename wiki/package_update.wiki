@@ -5,6 +5,10 @@
 
 Python Server Pages script, which will generate html page containing information which packages should be updated.
 
+= Status =
+I am currently working in this system. The current implementation is working with cronjob. You will need the mod_python to use this one, btw.
+
+I will use the svn for this project for more updated version prefer the downloads section.
 
 = Downloads =
 [http://quickanddirty.googlecode.com/files/package_update.psp package_update.psp]
