@@ -6,9 +6,8 @@
 Python Server Pages script, which will generate html page containing information which packages should be updated.
 
 = Status =
-I am currently working in this system. The current implementation is working with cronjob. You will need the mod_python to use this one, btw.
-
-I will use the svn for this project for more updated version prefer the downloads section.
+I will fix the script, but you can start using it as it is.
+This package will provide an easier way to handle needed package updates.
 
 = Installation =
  # Download the files
