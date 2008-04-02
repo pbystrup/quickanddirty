@@ -10,5 +10,15 @@ I am currently working in this system. The current implementation is working wit
 
 I will use the svn for this project for more updated version prefer the downloads section.
 
+= Installation =
+ # Download the files
+ # configure apache for mod_python and for *.psp files
+ # add updateportage.py to cronjob, ex: * 5 * * * /install_path/updateportage.py
+ # add emerge --sync to cronjob, ex: * 2 * * * emerge --sync
+ # install eix
+ # password protect the www folder for the script
+ # configure scripts manually for correct path names
+ # start using
+  
 = Downloads =
 [http://quickanddirty.googlecode.com/files/package_update.psp package_update.psp]
