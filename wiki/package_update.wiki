@@ -21,4 +21,4 @@ I will use the svn for this project for more updated version prefer the download
  # start using
   
 = Downloads =
-[http://quickanddirty.googlecode.com/files/package_update.psp package_update.psp]
+[http://quickanddirty.googlecode.com/files/package_update.bz2 package_update.bz2]
