@@ -13,8 +13,8 @@ I will use the svn for this project for more updated version prefer the download
 = Installation =
  # Download the files
  # configure apache for mod_python and for *.psp files
- # add updateportage.py to cronjob, ex: * 5 * * * /install_path/updateportage.py
- # add emerge --sync to cronjob, ex: * 2 * * * emerge --sync
+ # add updateportage.py to cronjob, ex: _* 5 * * * /install_path/updateportage.py_
+ # add emerge --sync to cronjob, ex: _* 2 * * * emerge --sync_
  # install eix
  # password protect the www folder for the script
  # configure scripts manually for correct path names
