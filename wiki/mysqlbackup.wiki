@@ -1,5 +1,8 @@
 #summary How to automate mysql backup
-#labels Gentoo,Featured
+#labels Gentoo,Featured,Mysql
+
+= Introduction =
+This script presumes that you have sendmail installed and configured for example for gmail. I suggest that you define the cronjob for example for once per week and use gmail account for the storage, the 6,5Gb are enough for a while. ;)
 
 = Steps = 
  # Create script for backuping mysql
