@@ -1,0 +1,10 @@
+#summary chroot file copier
+#labels Featured
+
+= Introduction =
+
+Small wrapper to ldd and file copy.
+
+
+= Downloads =
+[http://quickanddirty.googlecode.com/files/chroot_cp.py chroot_cp.py]
