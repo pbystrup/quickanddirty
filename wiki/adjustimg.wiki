@@ -1,5 +1,4 @@
 #summary Imaging
-#labels Featured
 
 = Introduction =
 
