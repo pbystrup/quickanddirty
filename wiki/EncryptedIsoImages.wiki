@@ -1,5 +1,4 @@
 #summary The small and dirty encrypted iso image mounter script
-#labels Featured
 
 = Introduction =
 
