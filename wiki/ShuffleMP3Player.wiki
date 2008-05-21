@@ -1,5 +1,4 @@
 #summary The small and dirty mp3 player for OpenMoko
-#labels Featured
 
 = Introduction =
 This is a small and simple MP3 software which is intended to OpenMoko -mobile.
