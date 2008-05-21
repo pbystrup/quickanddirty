@@ -1,5 +1,4 @@
 #summary gmail inbox archiver
-#labels Featured
 
 = Introduction =
 
