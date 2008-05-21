@@ -1,5 +1,4 @@
 #summary filesystem utility
-#labels Featured
 
 = Introduction =
 convert files and directories to lowercase
