@@ -1,5 +1,4 @@
 #summary The small and dirty Portable Executable description reader
-#labels Featured
 
 = Introduction =
 
