@@ -1,5 +1,4 @@
 #summary www server with cgi support
-#labels Featured
 
 = Introduction =
 
