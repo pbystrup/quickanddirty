@@ -11,8 +11,11 @@ Backend:
  * work as a daemon process
  * read rss feeds
  * add,list,delete rss feeds to/from database
- * php fronend redirection and click counting
  * ftp uploading
+Fronend:
+ * Stylesheet
+ * php redirection
+ * news topic click counter
 
 = Downloads =
 take checkout from svn
