@@ -7,12 +7,12 @@ Small Python script which will read rss feeds, stores topics into database, gene
 
 = Current Features =
 Backend:
- - generate document using template
- - work as a daemon process
- - read rss feeds
- - add,list,delete rss feeds to/from database
- - php fronend redirection and click counting
- - ftp uploading
+ * generate document using template
+ * work as a daemon process
+ * read rss feeds
+ * add,list,delete rss feeds to/from database
+ * php fronend redirection and click counting
+ * ftp uploading
 
 = Downloads =
 take checkout from svn
