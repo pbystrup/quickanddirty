@@ -12,10 +12,13 @@ Backend:
  * read rss feeds
  * add,list,delete rss feeds to/from database
  * ftp uploading
-Fronend:
+Frontend:
  * Stylesheet
  * php redirection
  * news topic click counter
+
+= Working demo site=
+[http://www.feed.fi feed.fi]
 
 = Downloads =
 take checkout from svn
