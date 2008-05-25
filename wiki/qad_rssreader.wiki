@@ -22,5 +22,9 @@ Frontend:
 = Working demo site=
 [http://www.feed.fi feed.fi]
 
+= Upcoming features = 
+ * dbus service interface
+ * irssi bindings
+
 = Downloads =
 take checkout from svn
