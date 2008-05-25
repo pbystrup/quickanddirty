@@ -12,6 +12,8 @@ Backend:
  * read rss feeds
  * add,list,delete rss feeds to/from database
  * ftp uploading
+ * desktop notifications
+
 Frontend:
  * Stylesheet
  * php redirection
