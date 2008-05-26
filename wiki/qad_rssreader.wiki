@@ -12,9 +12,9 @@ Backend:
  * read rss feeds
  * add,list,delete rss feeds to/from database
  * ftp uploading
- * desktop notifications
 
 Frontend:
+ * desktop notifications
  * Stylesheet
  * php redirection
  * news topic click counter
