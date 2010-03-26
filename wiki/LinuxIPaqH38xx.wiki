@@ -1,0 +1,15 @@
+#summary Replacing Windows CE with Linux
+
+= Introduction =
+
+small quick-and-dirty wiki page, which should contain at least links how to do it.
+
+
+= Links =
+
+{{{
+http://handhelds.org/download/distributions/familiar/releases/v0.8.4/install/install-serial.html
+http://www.handhelds.org/download/distributions/compaq/ipaq/v0.30/install.html
+}}}
+
+[TBD]
