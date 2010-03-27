@@ -214,7 +214,8 @@ I guess I will enable that USB Networking and connect the device to a NSLU2 whic
   * Flow control: None
 Note that you will have to select the boot serial console from the bootloader with the calendar button :)
 == Boot messages ==
-{{{boot> boot
+{{{
+boot> boot
 booting jffs2...
 booting boot/zImage from partition >root<
 loaded file of size = 0x0009C1C0 at location 0xC0008000
@@ -264,5 +265,5 @@ ng the kernel.
 
 Familiar Linux v0.8.4 h3600 ttySA0
 
-h3600 login:}}}
-
+h3600 login:
+}}}
