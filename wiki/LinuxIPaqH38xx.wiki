@@ -5,11 +5,12 @@
 small quick-and-dirty wiki page, which should contain at least links how to do it.
 Opie is Qt-based embedded Linux distribution which has been endorsed by handhelds.org, but nowadays it is more or less obsolete. :)
 
-= screenshots =
+= Screenshots =
 [http://quickanddirty.googlecode.com/files/iPaqOpie_desktop.jpg]
 [http://quickanddirty.googlecode.com/files/iPaqOpie_cpuinfo.jpg]
 
-= /etc/cpuinfo =
+= Details =
+== /etc/cpuinfo ==
 {{{
 root@h3600:~# cat /proc/cpuinfo
 Processor       : StrongARM-1110 rev 9 (v4l)
@@ -26,11 +27,7 @@ Revision        : 0000
 Serial          : 0000000000000000
 }}}
 
-= misc memo =
-
-root@h3600:~# hciattach -p /dev/ttySB0 any 115200
-
-= dmesg =
+== dmesg ==
 {{{
 Linux version 2.4.19-rmk6-pxa1-hh37 (rw@sugarcube.dyndns.org) () #1 Tue Aug 15 0
 4:50:01 CEST 2006
@@ -159,14 +156,7 @@ BlueZ HCI UART driver ver 2.1 Copyright (C) 2000,2001 Qualcomm Inc
 Written 2000,2001 by Maxim Krasnyansky <maxk@qualcomm.com>
 }}}
 
-= Links =
-
-{{{
-http://handhelds.org/download/distributions/familiar/releases/v0.8.4/install/install-serial.html
-http://www.handhelds.org/download/distributions/compaq/ipaq/v0.30/install.html
-http://www.handhelds.org/download/distributions/compaq/ipaq/stable/
-}}}
-= df =
+== df ==
 {{{
 root@h3600:/home# df
 Filesystem           1k-blocks      Used Available Use% Mounted on
@@ -175,7 +165,7 @@ tmpfs                    15484        40     15444   0% /var
 tmpfs                    15484         0     15484   0% /media/ram
 }}}
 
-= /etc/meminfo =
+== /etc/meminfo ==
 {{{
 root@h3600:~# cat /proc/meminfo
         total:    used:    free:  shared: buffers:  cached:
@@ -195,6 +185,19 @@ LowTotal:        30968 kB
 LowFree:          2592 kB
 SwapTotal:           0 kB
 SwapFree:            0 kB
+}}}
+
+
+== misc memo ==
+
+root@h3600:~# hciattach -p /dev/ttySB0 any 115200
+
+= Links =
+
+{{{
+http://handhelds.org/download/distributions/familiar/releases/v0.8.4/install/install-serial.html
+http://www.handhelds.org/download/distributions/compaq/ipaq/v0.30/install.html
+http://www.handhelds.org/download/distributions/compaq/ipaq/stable/
 }}}
 = What can you do with this? =
 One good reason why you might want to replace the old Pocket PC operating system with Linux, if you are interested to have small Linux server with touch screen for your projects.
