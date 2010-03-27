@@ -3,9 +3,12 @@
 = Introduction =
 
 small quick-and-dirty wiki page, which should contain at least links how to do it.
+Opie is Qt-based embedded Linux distribution which has been endorsed by handhelds.org, but nowadays it is more or less obsolete. :)
 
 = screenshots =
-||[http://quickanddirty.googlecode.com/files/iPaqOpie_desktop.jpg]||[http://quickanddirty.googlecode.com/files/iPaqOpie_cpuinfo.jpg]||
+[http://quickanddirty.googlecode.com/files/iPaqOpie_desktop.jpg]
+[http://quickanddirty.googlecode.com/files/iPaqOpie_cpuinfo.jpg]
+
 = /etc/cpuinfo =
 {{{
 root@h3600:~# cat /proc/cpuinfo
