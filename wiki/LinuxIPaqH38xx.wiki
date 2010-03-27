@@ -34,4 +34,8 @@ http://www.handhelds.org/download/distributions/compaq/ipaq/v0.30/install.html
 http://www.handhelds.org/download/distributions/compaq/ipaq/stable/
 }}}
 
-[TBD]
+= What can you do with this? =
+One good reason why you might want to replace the old Pocket PC operating system with Linux, if you are interested to have small Linux server with touch screen for your projects.
+
+= What next? =
+I guess I will enable that USB Networking and connect the device to a NSLU2 which runs already Linux as well and then I will share that Internet connection from there using that one and enable Console access to iPaq using Serial-2-USB adapter.
