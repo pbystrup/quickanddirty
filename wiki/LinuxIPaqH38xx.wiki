@@ -206,6 +206,8 @@ One good reason why you might want to replace the old Pocket PC operating system
 I guess I will enable that USB Networking and connect the device to a NSLU2 which runs already Linux as well and then I will share that Internet connection from there using that one and enable Console access to iPaq using Serial-2-USB adapter.
 
 = How did I do it? =
+[http://handhelds.org/download/familiar/releases/v0.8.4/install/install-serial.html == Read this] or continue this list. I have copied the major information into this wiki as it seems that the target url does not seem to be up2date and the information might disappear as well soon.
+
 == Install new boot loader to the Pocket PC ==
   # Upload [http://quickanddirty.googlecode.com/files/bootldr-2.18.01.bin bootldr-2.18.01.bin] and [http://quickanddirty.googlecode.com/files/BootBlaster_1.18.exe BootBlaster_1.18.exe] to Pocket PC.
   # Run BootBlaster
