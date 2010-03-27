@@ -286,6 +286,10 @@ boot> load root
   # Upload the [http://quickanddirty.googlecode.com/files/bootopie-v0.8.4-h3600.tar bootopie-v0.8.4-h3600.jffs2] using XModem.
   # *Wait for 1h* or more.
   # *bling* - and the new meal of Linux is ready.
+  # Write 'boot' and press enter.
+{{{
+boot> boot
+}}}
 
 = Screenshots =
 [http://quickanddirty.googlecode.com/files/iPaqOpie_desktop.jpg]
