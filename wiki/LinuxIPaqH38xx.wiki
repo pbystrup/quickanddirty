@@ -1,4 +1,4 @@
-#summary Replacing Windows CE with Linux
+#summary Replacing almost 10 year old Windows CE with same age Linux.
 
 = Introduction =
 
