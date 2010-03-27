@@ -5,6 +5,12 @@
 small quick-and-dirty wiki page, which should contain at least links how to do it.
 Opie is Qt-based embedded Linux distribution which has been endorsed by handhelds.org, but nowadays it is more or less obsolete. :)
 
+== HP Compaq iPaq H38xx ==
+  * Processor: 206 MHz Intel StrongARM SA-1110 32-bit RISC Processor
+  * Memory: 64/32Mb RAM - 32Mb Flash
+  * Display: 64K color (65,536 colors) 16-bit touch-sensitive reflective thin film transistor (TFT) liquid crystal display (LCD)
+
+
 = Details =
 == /etc/cpuinfo ==
 {{{
