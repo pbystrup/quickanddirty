@@ -4,6 +4,15 @@
 
 small quick-and-dirty wiki page, which should contain at least links how to do it.
 Opie is Qt-based embedded Linux distribution which has been endorsed by handhelds.org, but nowadays it is more or less obsolete. :)
+== Time estimate ==
+Without the jffi2 file transfer all of this will take less than one hour, around 20mins. The jffi2 transfer took over 1 hour for me. So more or less around 2 hour of work to be done.
+
+== Requirements ==
+  * Really old Pocket PC (HP/Compaq iPaq H38xx)
+  * Bootloader and misc (available as download from this document)
+  * USB/Serial cradle for Pocket PC
+  * Serial-2-USB adapter for the laptop or laptop with Serial connector, required for flash upgrade.
+  * A geek. Required for coffee drinking.
 
 == HP Compaq iPaq H38xx ==
 [http://quickanddirty.googlecode.com/files/h3800.jpg]
