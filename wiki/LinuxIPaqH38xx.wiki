@@ -50,3 +50,34 @@ I guess I will enable that USB Networking and connect the device to a NSLU2 whic
   * Parity: None
   * Stop bits: 1
   * Flow control: None
+
+= df =
+{{{
+root@h3600:/home# df
+Filesystem           1k-blocks      Used Available Use% Mounted on
+/dev/root                32256     15564     16692  48% /
+tmpfs                    15484        40     15444   0% /var
+tmpfs                    15484         0     15484   0% /media/ram
+}}}
+
+= /etc/meminfo =
+{{{
+root@h3600:~# cat /proc/meminfo
+        total:    used:    free:  shared: buffers:  cached:
+Mem:  31711232 29057024  2654208        0        0 19144704
+Swap:        0        0        0
+MemTotal:        30968 kB
+MemFree:          2592 kB
+MemShared:           0 kB
+Buffers:             0 kB
+Cached:          18696 kB
+SwapCached:          0 kB
+Active:          13328 kB
+Inactive:         9848 kB
+HighTotal:           0 kB
+HighFree:            0 kB
+LowTotal:        30968 kB
+LowFree:          2592 kB
+SwapTotal:           0 kB
+SwapFree:            0 kB
+}}}
