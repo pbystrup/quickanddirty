@@ -279,11 +279,11 @@ I guess I will enable that USB Networking and connect the device to a NSLU2 whic
 [http://quickanddirty.googlecode.com/files/iPaqOpie_bootloader.jpg]
 
 == Flash the Linux ==
-  # Write 'load root' and press <enter>
+  # Write 'load root' and press enter
 {{{
 boot> load root
 }}}
-  # Upload the bootopie-v0.8.4-h3600.jffs2 using XModem.
+  # Upload the [http://quickanddirty.googlecode.com/files/bootopie-v0.8.4-h3600.tar bootopie-v0.8.4-h3600.jffs2] using XModem.
   # *Wait for 1h* or more.
   # *bling* - and the new meal of Linux is ready.
 
