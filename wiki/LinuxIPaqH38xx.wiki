@@ -207,7 +207,7 @@ I guess I will enable that USB Networking and connect the device to a NSLU2 whic
 
 = How did I do it? =
 == Install new boot loader to the Pocket PC ==
-  # Upload BootBlaster_1.18.exe and bootldr-2.18.01.bin to Pocket PC.
+  # Upload [http://quickanddirty.googlecode.com/files/bootldr-2.18.01.bin bootldr-2.18.01.bin] and [http://quickanddirty.googlecode.com/files/BootBlaster_1.18.exe BootBlaster_1.18.exe] to Pocket PC.
   # Run BootBlaster
   # Install and *VERIFY* the new bootloader (If you FAIL this you leave this step with a brick in your hands)
 
