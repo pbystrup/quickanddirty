@@ -4,6 +4,8 @@
 
 small quick-and-dirty wiki page, which should contain at least links how to do it.
 
+= screenshots =
+||[http://quickanddirty.googlecode.com/files/iPaqOpie_desktop.jpg]||[http://quickanddirty.googlecode.com/files/iPaqOpie_cpuinfo.jpg]||
 = /etc/cpuinfo =
 {{{
 root@h3600:~# cat /proc/cpuinfo
