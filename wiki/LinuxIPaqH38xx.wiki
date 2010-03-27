@@ -187,49 +187,6 @@ SwapTotal:           0 kB
 SwapFree:            0 kB
 }}}
 
-
-== misc memo ==
-
-root@h3600:~# hciattach -p /dev/ttySB0 any 115200
-
-= Links =
-
-{{{
-http://handhelds.org/download/distributions/familiar/releases/v0.8.4/install/install-serial.html
-http://www.handhelds.org/download/distributions/compaq/ipaq/v0.30/install.html
-http://www.handhelds.org/download/distributions/compaq/ipaq/stable/
-}}}
-= What can you do with this? =
-One good reason why you might want to replace the old Pocket PC operating system with Linux, if you are interested to have small Linux server with touch screen for your projects.
-
-= What next? =
-I guess I will enable that USB Networking and connect the device to a NSLU2 which runs already Linux as well and then I will share that Internet connection from there using that one and enable Console access to iPaq using Serial-2-USB adapter.
-
-= How did I do it? =
-[http://handhelds.org/download/familiar/releases/v0.8.4/install/install-serial.html == Read this] or continue this list. I have copied the major information into this wiki as it seems that the target url does not seem to be up2date and the information might disappear as well soon.
-
-== Install new boot loader to the Pocket PC ==
-  # Upload [http://quickanddirty.googlecode.com/files/bootldr-2.18.01.bin bootldr-2.18.01.bin] and [http://quickanddirty.googlecode.com/files/BootBlaster_1.18.exe BootBlaster_1.18.exe] to Pocket PC.
-  # Run BootBlaster
-  # Install and *VERIFY* the new bootloader (If you FAIL this you leave this step with a brick in your hands)
-
-== Connect Serial-to-USB ==
-  * The *only way to install the new Linux* into Flash is to use the Serial interface and XYZModem transfer!
-
-== Flash the Linux ==
-[TBD]
-
-
-= Accessing boot loader and serial console =
-
-==  Settings for serial console ==
-  * Bits per second: 115200
-  * Data bits: 8
-  * Parity: None
-  * Stop bits: 1
-  * Flow control: None
-== Screenshot ==
-[http://quickanddirty.googlecode.com/files/iPaqOpie_bootloader.jpg]
 == Boot messages ==
 {{{
 boot> boot
@@ -284,3 +241,53 @@ Familiar Linux v0.8.4 h3600 ttySA0
 
 h3600 login:
 }}}
+== misc memo ==
+
+root@h3600:~# hciattach -p /dev/ttySB0 any 115200
+
+= Links =
+
+{{{
+http://handhelds.org/download/distributions/familiar/releases/v0.8.4/install/install-serial.html
+http://www.handhelds.org/download/distributions/compaq/ipaq/v0.30/install.html
+http://www.handhelds.org/download/distributions/compaq/ipaq/stable/
+}}}
+= What can you do with this? =
+One good reason why you might want to replace the old Pocket PC operating system with Linux, if you are interested to have small Linux server with touch screen for your projects.
+
+= What next? =
+I guess I will enable that USB Networking and connect the device to a NSLU2 which runs already Linux as well and then I will share that Internet connection from there using that one and enable Console access to iPaq using Serial-2-USB adapter.
+
+= How did I do it? =
+[http://handhelds.org/download/familiar/releases/v0.8.4/install/install-serial.html Read this] or continue this list. I have copied the major information into this wiki as it seems that the target url does not seem to be up2date and the information might disappear as well soon.
+
+== Install new boot loader to the Pocket PC ==
+  # Upload [http://quickanddirty.googlecode.com/files/bootldr-2.18.01.bin bootldr-2.18.01.bin] and [http://quickanddirty.googlecode.com/files/BootBlaster_1.18.exe BootBlaster_1.18.exe] to Pocket PC.
+  # Run BootBlaster
+  # Install and *VERIFY* the new bootloader (If you FAIL this you leave this step with a brick in your hands)
+
+== Connect Serial-to-USB ==
+  * The *only way to install the new Linux* into Flash is to use the Serial interface and XModem transfer!
+== Open HyperTerminal (XP/XP-mode) or minicom (Linux) ==
+  # Start terminal application
+  # Connect to the Pocket PC
+  # Reset Pocket PC
+  # See the boot loader info on the terminal
+===  Settings for serial console ===
+  * Bits per second: 115200
+  * Data bits: 8
+  * Parity: None
+  * Stop bits: 1
+  * Flow control: None
+== Screenshot ==
+[http://quickanddirty.googlecode.com/files/iPaqOpie_bootloader.jpg]
+
+== Flash the Linux ==
+  # Write 'load root' and press <enter>
+{{{
+boot> load root
+}}}
+  # Upload the bootopie-v0.8.4-h3600.jffs2 using XModem.
+  # Wait for 1h or more.
+  # *bling* - and the new meal of Linux is ready.
+
