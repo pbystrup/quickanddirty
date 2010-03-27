@@ -166,24 +166,6 @@ http://handhelds.org/download/distributions/familiar/releases/v0.8.4/install/ins
 http://www.handhelds.org/download/distributions/compaq/ipaq/v0.30/install.html
 http://www.handhelds.org/download/distributions/compaq/ipaq/stable/
 }}}
-
-= What can you do with this? =
-One good reason why you might want to replace the old Pocket PC operating system with Linux, if you are interested to have small Linux server with touch screen for your projects.
-
-= What next? =
-I guess I will enable that USB Networking and connect the device to a NSLU2 which runs already Linux as well and then I will share that Internet connection from there using that one and enable Console access to iPaq using Serial-2-USB adapter.
-
-= How did I do it? =
-  # Install new boot loader to the Pocket PC.
-  # Flash linux jffi2 partition
-
-= Serial settings for serial console =
-  * Bits per second: 115200
-  * Data bits: 8
-  * Parity: None
-  * Stop bits: 1
-  * Flow control: None
-
 = df =
 {{{
 root@h3600:/home# df
@@ -214,3 +196,73 @@ LowFree:          2592 kB
 SwapTotal:           0 kB
 SwapFree:            0 kB
 }}}
+= What can you do with this? =
+One good reason why you might want to replace the old Pocket PC operating system with Linux, if you are interested to have small Linux server with touch screen for your projects.
+
+= What next? =
+I guess I will enable that USB Networking and connect the device to a NSLU2 which runs already Linux as well and then I will share that Internet connection from there using that one and enable Console access to iPaq using Serial-2-USB adapter.
+
+= How did I do it? =
+  # Install new boot loader to the Pocket PC.
+  # Flash linux jffi2 partition
+
+= Serial settings for serial console =
+  * Bits per second: 115200
+  * Data bits: 8
+  * Parity: None
+  * Stop bits: 1
+  * Flow control: None
+Note that you will have to select the boot serial console from the bootloader with the calendar button :)
+== Boot messages ==
+{{{boot> boot
+booting jffs2...
+booting boot/zImage from partition >root<
+loaded file of size = 0x0009C1C0 at location 0xC0008000
+kernel partition base C0008000
+kernel_magic=E1A00000
+kernel_region_words[9]=016F2818
+Linux ELF flash_imgstart=50040000 size=01F80000 dest=C0000000 offset=00008000
+MMU Control=C19F4071
+MMU PIDVAM=00000000
+Skipping kernel copy by request.
+C0008000: E1A00000
+C0008004: E1A00000
+C0008008: E1A00000
+C000800C: E1A00000
+C0008010: E1A00000
+C0008014: E1A00000
+C0008018: E1A00000
+C000801C: E1A00000
+C0008020: EA000002
+C0008024: 016F2818
+root_filesystem_name=ramdisk
+Grabbed linuxargs, argc = 00000001
+Using mach_type 00000089
+setting boot parameters to
+root=/dev/mtdblock1 init=/linuxrc noinitrd console=none
+Makeing core tag at C0000100
+Makeing cmdline tag at C0000114
+Makeing mem32 tag at C00001B0
+Makeing ptable tag at C00001C0
+dram_size=02000000
+nr_pages=54410001
+command line is: mtdpart=bootldr@0x00000000:0x00040000,root@0x00040000:0x01F8000
+0,asset@0x01FC0000:0x00040000 root=/dev/mtdblock1 init=/linuxrc noinitrd console
+=none
+Disabling LCD controller
+linuxEntryPoint=C0008000
+Booting Linux image
+Uncompressing Linux........................................... done, booting the
+ kernel.
+boot> irda_con
+Don't understand command>irda_con< Try help for a command list.
+boot> get_param: could not find parameter placeholder_cmd
+ser_con
+Don't understand command>ser_con< Try help for a command list.
+boot> Uncompressing Linux........................................... done, booti
+ng the kernel.
+
+Familiar Linux v0.8.4 h3600 ttySA0
+
+h3600 login:}}}
+
