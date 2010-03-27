@@ -26,6 +26,139 @@ Revision        : 0000
 Serial          : 0000000000000000
 }}}
 
+= misc memo =
+
+root@h3600:~# hciattach -p /dev/ttySB0 any 115200
+
+= dmesg =
+{{{
+Linux version 2.4.19-rmk6-pxa1-hh37 (rw@sugarcube.dyndns.org) () #1 Tue Aug 15 0
+4:50:01 CEST 2006
+CPU: StrongARM-1110 revision 9
+Machine: HP iPAQ H3800
+Ignoring unrecognised tag 0x5441000a
+On node 0 totalpages: 8192
+zone(0): 8192 pages.
+zone(1): 0 pages.
+zone(2): 0 pages.
+Kernel command line: mtdpart=bootldr@0x00000000:0x00040000,root@0x00040000:0x01F
+80000,asset@0x01FC0000:0x00040000 root=/dev/mtdblock1 init=/linuxrc noinitrd con
+sole=none
+Relocating machine vectors to 0xffff0000
+Console: colour dummy device 80x30
+Calibrating delay loop... 137.21 BogoMIPS
+Memory: 32MB = 32MB total
+Memory: 30900KB available (1099K code, 304K data, 68K init)
+Dentry cache hash table entries: 4096 (order: 3, 32768 bytes)
+Inode cache hash table entries: 2048 (order: 2, 16384 bytes)
+Mount-cache hash table entries: 512 (order: 0, 4096 bytes)
+Buffer-cache hash table entries: 1024 (order: 0, 4096 bytes)
+Page-cache hash table entries: 8192 (order: 3, 32768 bytes)
+POSIX conformance testing by UNIFIX
+Linux NET4.0 for Linux 2.4
+Based upon Swansea University Computer Society NET3.039
+Initializing RT netlink socket
+CPU clock: 206.400 MHz (59.000-287.000 MHz)
+sa1110_clk_init: h3xxx_membank_size[0]=33554432
+sa1110_clk_init: 100 MHz Samsung 4Mx16bitx4banks SDRAM
+SDRAM: tck: 10 trcd: 20 trp: 30 twr: 30 refresh: 64000 cas_latency: 3
+MDCNFG: 33013355 MDREFR: 00302007 MDCAS0: aaaaaa9f MDCAS1: aaaaaaaa MDCAS2: aaaa
+aaaa
+new dri value = 12
+Starting kswapd
+devfs: v1.12a (20020514) Richard Gooch (rgooch@atnf.csiro.au)
+devfs: boot_options: 0x1
+JFFS2 version 2.2. (C) 2001-2003 Red Hat, Inc.
+ttySA%d0 at MEM 0x80050000 (irq = 17) is a SA1100
+dma period = 1398056 ps, clock = 206400 kHz
+dma period = 1398056 ps, clock = 206400 kHz
+Console: switching to colour frame buffer device 40x30
+iPAQ H3600 keyboard driver v1.0.1
+pty: 256 Unix98 ptys configured
+RAMDISK driver initialized: 16 RAM disks of 4096K size 1024 blocksize
+iPAQ flash: probing 32-bit flash bus, window=c28c0000 with CFI.
+IPAQ flash bank 1: Found an alias at 0x2000000 for the chip at 0x0
+cfi_cmdset_0001: Erase suspend on write enabled
+0: offset=0x0,size=0x40000,blocks=128
+Using buffer write method
+iPAQ flash: found 33554432 bytes
+iPAQ flash: probing 32-bit flash bus, window=c68d0000 with CFI.
+CFI: Found no IPAQ flash bank 2 device at location zero
+iPAQ flash: probing 32-bit flash bus, window=c68d0000 with JEDEC.
+kmod: failed to exec /sbin/modprobe -s -k jedec_probe, errno = 2
+iPAQ flash: failed to find flash.
+kmod: failed to exec /sbin/modprobe -s -k RedBoot, errno = 2
+RedBoot partition parsing not available
+Using static partition definition
+Creating 3 MTD partitions on "ipaq":
+0x00000000-0x00040000 : "H3XXX boot firmware"
+mtd: Giving out device 0 to H3XXX boot firmware
+0x00040000-0x01fc0000 : "H3XXX root jffs2"
+mtd: Giving out device 1 to H3XXX root jffs2
+0x01fc0000-0x02000000 : "asset"
+mtd: Giving out device 2 to asset
+NET4: Linux TCP/IP 1.0 for NET4.0
+IP Protocols: ICMP, UDP, TCP, IGMP
+IP: routing cache hash table of 512 buckets, 4Kbytes
+TCP: Hash tables configured (established 2048 bind 2048)
+NET4: Unix domain sockets 1.0/SMP for Linux NET4.0.
+NetWinder Floating Point Emulator V0.95 (c) 1998-1999 Rebel.com
+mtdblock_open
+ok
+mtdblock_release
+ok
+mtdblock_open
+ok
+VFS: Mounted root (jffs2 filesystem).
+Mounted devfs on /dev
+Freeing init memory: 68K
+Warning: unable to open an initial console.
+H3600 Registering HAL abstraction layer
+apm: BIOS version 1.2 Flags 0x02 (Driver version 1.13)
+h3600_ts_init_module: registering char device
+IPv6 v0.8 for NET4.0
+IPv6 over IPv4 tunneling driver
+irda_init()
+IrCOMM protocol (Dag Brattli)
+CSLIP: code copyright 1989 Regents of the University of California
+PPP generic driver version 2.4.2
+devfs_register(ppp): could not append to parent, err: -17
+BlueZ Core ver 2.3 Copyright (C) 2000,2001 Qualcomm Inc
+Written 2000,2001 by Maxim Krasnyansky <maxk@qualcomm.com>
+BlueZ L2CAP ver 2.3 Copyright (C) 2000,2001 Qualcomm Inc
+Written 2000,2001 by Maxim Krasnyansky <maxk@qualcomm.com>
+BlueZ RFCOMM ver 1.1
+Copyright (C) 2002 Maxim Krasnyansky <maxk@qualcomm.com>
+Copyright (C) 2002 Marcel Holtmann <marcel@holtmann.org>
+SA1100 Real Time Clock driver v1.03
+SA1100 USB Controller Core Initialized
+usbctl: Opened for usb-eth
+usbctl: Started for usb-eth
+[mmc_media.c:434] mmc_media_init
+h3600_asic_shared_init
+register_serial_h3800 0
+ membase=f0000a00 irq=53
+serial_h3800_config_port caad158c  flags=1
+serial_h3800_request_port caad158c  mapbase=49000a00
+ttySB%d0 at MEM 0x49000a00serial_h3800_type caad158c
+ (irq = 53) is a H3800_ASIC
+[h3600_asic_mmc.c:864] h3600_asic_mmc_init
+enable_irq(59) unbalanced from caae6c64
+one_wire_reset: OWM reset failed: no battery
+iPAQ audio support initialized
+Linux Kernel Card Services 3.1.22
+  options:  [pm]
+<6>SA-1100 PCMCIA (CS release 3.1.22)
+sa1100_pcmcia_driver_init: pcmcia_low_level=cab92988
+sa1100_pcmcia_driver_init: skt=0 skt->virt_io=caba0000
+sa1100_pcmcia_driver_init: skt=1 skt->virt_io=cabc0000
+sa1100_pcmcia_driver_init: done
+Serial driver version 5.05c (2001-07-08) with no serial options enabled
+dma period = 1398056 ps, clock = 206400 kHz
+BlueZ HCI UART driver ver 2.1 Copyright (C) 2000,2001 Qualcomm Inc
+Written 2000,2001 by Maxim Krasnyansky <maxk@qualcomm.com>
+}}}
+
 = Links =
 
 {{{
