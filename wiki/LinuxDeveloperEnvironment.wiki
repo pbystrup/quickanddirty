@@ -11,6 +11,7 @@ Usually you have all your developer utilities on your every day machine? Right. 
   * Install Debian base install without X (Only Standard System selected in Tasksel)
 {{{
 Disk size: 20Gb
+Network: NAT
 Press <enter> on nearly all questions, except <yes> on disk partition and unselect Desktop checkbox on tasksel.
 }}}
 [http://quickanddirty.googlecode.com/files/debian-504-i386-netinst.png]
@@ -45,6 +46,19 @@ apt-get install xterm
 }}}
   * Logout ROOT
   * Login in as USER.
+  * Determine your NAT server address.
+{{{
+cat /etc/resolv.conf | grep nameserver
+}}}
+  * Set DISPLAY to point your HOST machine IP:
+{{{
+export DISPLAY=192.168.x.x:0
+}}}
+  * Run xterm
+{{{
+xterm
+}}}
+[http://quickanddirty.googlecode.com/files/set-display-xterm.png]
   * At this point you should see xterm popping up on your host machine desktop.
 [http://quickanddirty.googlecode.com/files/xterm_win32.png]
   * Login into scratchbox
