@@ -44,6 +44,13 @@ where 192.168.x.x is the IP address of your host machine.
 {{{
 apt-get install xterm
 }}}
+  * Download toolchains for Scratchbox
+{{{
+cd /scratchbox/packages
+wget -c http://scratchbox.org/download/files/sbox-releases/branches/apophis/r4/tarball/scratchbox-toolchain-cs2009q1-eglibc2.8-armv7-1.0.15-8-i386.tar.gz
+wget -c http://scratchbox.org/download/files/sbox-releases/branches/apophis/r4/tarball/scratchbox-toolchain-cs2009q1-eglibc2.8-i486-1.0.15-5-i386.tar.gz
+wget -c http://scratchbox.org/download/files/sbox-releases/branches/apophis/r4/tarball/scratchbox-toolchain-host-gcc-1.0.17-i386.tar.gz
+}}}
   * Logout ROOT
   * Login in as USER.
   * Determine your NAT server address.
