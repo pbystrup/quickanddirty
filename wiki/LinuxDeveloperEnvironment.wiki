@@ -103,8 +103,9 @@ Xephyr :2 -host-cursor -screen 800x480x16 -dpi 96 -ac &
 = Launch sbox =
   * Execute in SB
 {{{
-
+export DISPLAY=:2
+af-sb-init.sh start
 }}}
-
+[http://quickanddirty.googlecode.com/files/xephyr-af-sb-init.png]
 == Done ==
 Now you can access sandbox developer environment from your host machine using xterm. This way you do not screw things up. :)
