@@ -22,6 +22,7 @@ Press <enter> on nearly all questions, except <yes> on disk partition and unsele
 [http://quickanddirty.googlecode.com/files/xcygwin.png]
 
 == Client machine ==
+  * Login as ROOT
 [http://quickanddirty.googlecode.com/files/debian-504-i386-netinst-freshboot.png]
   * Download and Run [http://repository.maemo.org/stable/5.0/maemo-scratchbox-install_5.0.sh maemo-scratchbox-install_5.0.sh] script
 {{{
@@ -37,16 +38,13 @@ sysctl -p
 {{{
 ./maemo-scratchbox-install_5.0.sh -u USER 
 }}}
-  * Set environment flag:
-{{{
-export DISPLAY=192.168.x.x:0  
-}}}
 where 192.168.x.x is the IP address of your host machine.
-  * Install xterm and run it.
+  * Install xterm.
 {{{
 apt-get install xterm
-xterm
 }}}
+  * Logout ROOT
+  * Login in as USER.
   * At this point you should see xterm popping up on your host machine desktop.
 [http://quickanddirty.googlecode.com/files/xterm_win32.png]
   * Login into scratchbox
