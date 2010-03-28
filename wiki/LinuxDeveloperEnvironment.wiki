@@ -39,7 +39,7 @@ sysctl -p
 {{{
 ./maemo-scratchbox-install_5.0.sh -u USER 
 }}}
-where 192.168.x.x is the IP address of your host machine.
+    * where 192.168.x.x is the IP address of your host machine.
   * Install xterm.
 {{{
 apt-get install xterm
