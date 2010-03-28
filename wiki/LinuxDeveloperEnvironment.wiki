@@ -75,6 +75,10 @@ sb-conf in -edFL
 apt-get update
 }}}
 [http://quickanddirty.googlecode.com/files/fremantle-x86.png]
+  * Prepare rootstrap for development
+{{{
+fakeroot apt-get install maemo-sdk-debug
+}}}
   * Set environment flags:
 {{{
 export DISPLAY=192.168.x.x:0
