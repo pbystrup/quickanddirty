@@ -33,7 +33,7 @@ where 192.168.x.x is the IP address of your host machine.
 apt-get install xterm
 xterm
 }}}
-[http://quickanddirty.googlecode.com/files/vmware_win32host_debianinst.png]
+[http://quickanddirty.googlecode.com/files/debian-504-i386-netinst.png]
   * At this point you should see xterm popping up on your host machine desktop.
 [http://quickanddirty.googlecode.com/files/xterm_win32.png]
   * Login into scratchbox
