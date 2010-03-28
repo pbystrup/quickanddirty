@@ -21,6 +21,9 @@ Usually you have all your developer utilities on your every day machine? Right. 
   * Download and Run [http://repository.maemo.org/stable/5.0/maemo-scratchbox-install_5.0.sh maemo-scratchbox-install_5.0.sh] script
 {{{
 wget -c http://repository.maemo.org/stable/5.0/maemo-scratchbox-install_5.0.sh
+chmod +x maemo-scratchbox-install_5.0.sh
+echo "vm.vdso_enabled = 0" >> /etc/sysctl.conf
+sysctl -p
 ./maemo-scratchbox-install_5.0.sh
 }}}
   * Add your default user to the scratchbox:
