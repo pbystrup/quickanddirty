@@ -13,6 +13,7 @@ Usually you have all your developer utilities on your every day machine? Right. 
 
   * Download [http://x.cygwin.com/ _Cygwin/X_] on host machine
   * Install cygwin and select _xinit_ package.
+[http://quickanddirty.googlecode.com/files/cygwin.png]
   * Run X Server on your host machine 
 
 == Client machine ==
