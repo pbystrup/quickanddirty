@@ -25,6 +25,21 @@ where 192.168.x.x is the IP address of your host machine.
 apt-get install xterm
 xterm
 }}}
+[http://quickanddirty.googlecode.com/files/vmware_win32host_debianinst.png]
+  * At this point you should see xterm popping up on your host machine desktop.
+[http://quickanddirty.googlecode.com/files/xterm_win32.png]
+  * Login into scratchbox
+{{{
+/scratchbox/login
+}}}
+  * Set environment flags:
+{{{
+export DISPLAY=192.168.x.x:0
+}}}
+  * Start Maemo xserver.
+{{{
+
+}}}
 
 == Done ==
 Now you can access sandbox developer environment from your host machine using xterm. This way you do not screw things up. :)
