@@ -72,6 +72,13 @@ xterm
 {{{
 /scratchbox/login
 }}}
+  * Run sb-menu
+{{{
+sb-menu
+}}}
+[http://quickanddirty.googlecode.com/files/sb-menu.png]
+  * Start installing TARGETs.
+
   * Set environment flags:
 {{{
 export DISPLAY=192.168.x.x:0
