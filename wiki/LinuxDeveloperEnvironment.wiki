@@ -1,0 +1,29 @@
+#summary Creating Linux developer environment
+
+= Introduction =
+
+Usually you have all your developer utilities on your every day machine? Right. Well I would say that you could do something a bit better. Why don't you install VMware Player and then Debian lenny on it? Then you could install for example Scratchbox and all other libraries for your development on the virtual machine.
+
+= Installing Scratchbox on Debian virtual machine =
+== Host machine ==
+  * Download and Install [www.vmware.com/products/player/ VMware Player]
+  * Download [http://cdimage.debian.org/debian-cd/5.0.4/i386/iso-cd/debian-504-i386-netinst.iso Debian netinst CD] iso-image
+  * Install Debian base install without X
+  * Download _Cygwin/X_ on host machine
+  * Install cygwin and select _xinit_ package.
+  * Run X Server
+== Client machine ==
+  * Download [http://repository.maemo.org/stable/5.0/maemo-scratchbox-install_5.0.sh Scratchbox install] script
+  * Set environment flag:
+{{{
+export DISPLAY=192.168.x.x:0  
+}}}
+where 192.168.x.x is the IP address of your host machine.
+  * Install xterm and run it.
+{{{
+apt-get install xterm
+xterm
+}}}
+
+== Done ==
+Now you can access sandbox developer environment from your host machine using xterm. This way you do not screw things up. :)
