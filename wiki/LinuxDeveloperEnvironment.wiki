@@ -78,7 +78,9 @@ sb-menu
 }}}
 [http://quickanddirty.googlecode.com/files/sb-menu.png]
   * Start installing TARGETs.
-
+    * armv7
+    * i386
+    * host
   * Set environment flags:
 {{{
 export DISPLAY=192.168.x.x:0
