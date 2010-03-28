@@ -81,6 +81,7 @@ sb-menu
     * armv7
     * i386
     * host
+[http://quickanddirty.googlecode.com/files/after-sb-menu.png]
   * Set environment flags:
 {{{
 export DISPLAY=192.168.x.x:0
