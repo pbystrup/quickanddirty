@@ -9,6 +9,8 @@ Usually you have all your developer utilities on your every day machine? Right. 
   * Download and Install [www.vmware.com/products/player/ VMware Player]
   * Download [http://cdimage.debian.org/debian-cd/5.0.4/i386/iso-cd/debian-504-i386-netinst.iso Debian netinst CD] iso-image
   * Install Debian base install without X
+[http://quickanddirty.googlecode.com/files/debian-504-i386-netinst.png]
+
   * Download [http://x.cygwin.com/ _Cygwin/X_] on host machine
   * Install cygwin and select _xinit_ package.
   * Run X Server on your host machine 
@@ -33,7 +35,6 @@ where 192.168.x.x is the IP address of your host machine.
 apt-get install xterm
 xterm
 }}}
-[http://quickanddirty.googlecode.com/files/debian-504-i386-netinst.png]
   * At this point you should see xterm popping up on your host machine desktop.
 [http://quickanddirty.googlecode.com/files/xterm_win32.png]
   * Login into scratchbox
