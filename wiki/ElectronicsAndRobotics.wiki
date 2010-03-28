@@ -1,0 +1,9 @@
+#summary Misc information about electronics and robotics
+
+= Introduction =
+
+Add your content here.
+
+= Videos and Tutorials =
+Difference between Gyroscope and Accelerometer aka IMU:<br />
+<wiki:video url=http://www.youtube.com/watch?v=s19W-MG-whE&feature=player_embedded" />
