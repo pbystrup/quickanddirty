@@ -19,6 +19,7 @@ Press <enter> on nearly all questions, except <yes> on disk partition and unsele
   * Install cygwin and select _xinit_ package.
 [http://quickanddirty.googlecode.com/files/cygwin.png]
   * Run X Server on your host machine 
+[http://quickanddirty.googlecode.com/files/xcygwin.png]
 
 == Client machine ==
 [http://quickanddirty.googlecode.com/files/debian-504-i386-netinst-freshboot.png]
