@@ -1,5 +1,6 @@
 #summary Misc information about electronics and robotics
 <wiki:toc max_depth="3" />
+#sidebar TableOfContents
 
 = Videos and Tutorials =
 == Difference between Gyroscope and Accelerometer aka IMU ==
