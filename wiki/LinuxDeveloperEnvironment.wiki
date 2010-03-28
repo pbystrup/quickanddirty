@@ -39,7 +39,6 @@ sysctl -p
 {{{
 ./maemo-scratchbox-install_5.0.sh -u USER 
 }}}
-    * where 192.168.x.x is the IP address of your host machine.
   * Install xterm.
 {{{
 apt-get install xterm
@@ -90,11 +89,19 @@ nano /etc/apt/sources.list
 apt-get update
 fakeroot apt-get install nokia-binaries
 }}}
+= Launch XServer for maemo =
+  * execute on the debian virtual host
   * Set environment flags:
 {{{
 export DISPLAY=192.168.x.x:0
 }}}
   * Start Maemo xserver.
+{{{
+Xephyr :2 -host-cursor -screen 800x480x16 -dpi 96 -ac &
+}}}
+[http://quickanddirty.googlecode.com/files/xephyr.png]
+= Launch sbox =
+  * Execute in SB
 {{{
 
 }}}
