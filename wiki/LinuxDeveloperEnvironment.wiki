@@ -31,6 +31,8 @@ echo "vm.vdso_enabled = 0" >> /etc/sysctl.conf
 sysctl -p
 ./maemo-scratchbox-install_5.0.sh
 }}}
+[http://quickanddirty.googlecode.com/files/scratchbox-installed.png]
+
   * Add your default user to the scratchbox:
 {{{
 ./maemo-scratchbox-install_5.0.sh -u USER 
