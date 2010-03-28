@@ -1,4 +1,5 @@
 #summary Creating Linux developer environment @ Win32
+#labels Featured
 
 = Introduction =
 
