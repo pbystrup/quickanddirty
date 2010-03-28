@@ -5,6 +5,12 @@
 == Difference between Gyroscope and Accelerometer aka IMU ==
 <wiki:video url=http://www.youtube.com/watch?v=s19W-MG-whE&feature=player_embedded" />
 
+= Shops and Webstores =
+  * [http://www.partco.biz Partco]
+  * [http://www.elfa.se Elfa]
+  * [http://www.farnell.fi Farnell]
+  * [http://www.sparkfun.com SparkFun]
+  * [http://www.spelektroniikka.fi/ SP-Elektroniikka]
 
 = Links =
 [TBD]
