@@ -114,3 +114,9 @@ Now you can access sandbox developer environment from your host machine using xt
   * Shutdown virtual machine
   * Take a backup of the newly created development environment
   * As if you fail in some point, then you can just start a new image with working environment and other thing is that you can take the whole environment on an USB stick as well. The total size for me is now 1.3Gb.
+== start_xephyr.sh ==
+You might want to create a script for the next usage time.
+{{{
+export DISPLAY=192.168.207.2:0
+Xephyr :2 -host-cursor -screen 800x480x16 -dpi 96 -ac &
+}}}
