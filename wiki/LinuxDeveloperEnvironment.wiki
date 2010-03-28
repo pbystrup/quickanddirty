@@ -1,5 +1,7 @@
 #summary Creating Linux developer environment @ Win32
 #labels Featured
+= TOC =
+<wiki:toc max_depth="3" />
 
 = Introduction =
 
