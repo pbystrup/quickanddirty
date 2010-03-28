@@ -91,6 +91,7 @@ fakeroot apt-get install nokia-binaries
 }}}
 = Launch XServer for maemo =
   * execute on the debian virtual host
+[http://quickanddirty.googlecode.com/files/vmware-xephyr-launch.png]
   * Set environment flags:
 {{{
 export DISPLAY=192.168.x.x:0
