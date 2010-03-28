@@ -1,4 +1,5 @@
 #summary Replacing almost 10 year old Windows CE with same age Linux.
+<wiki:toc max_depth="3" />
 
 = Introduction =
 
