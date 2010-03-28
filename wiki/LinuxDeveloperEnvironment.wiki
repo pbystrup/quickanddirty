@@ -110,3 +110,7 @@ af-sb-init.sh start
 [http://quickanddirty.googlecode.com/files/xephyr-af-sb-init.png]
 == Done ==
 Now you can access sandbox developer environment from your host machine using xterm. This way you do not screw things up. :)
+= Finishing touch =
+  * Shutdown virtual machine
+  * Take a backup of the newly created development environment
+  * As if you fail in some point, then you can just start a new image with working environment and other thing is that you can take the whole environment on an USB stick as well. The total size for me is now 1.3Gb.
