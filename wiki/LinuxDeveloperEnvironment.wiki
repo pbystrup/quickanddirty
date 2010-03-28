@@ -1,4 +1,4 @@
-#summary Creating Linux developer environment
+#summary Creating Linux developer environment @ Win32
 
 = Introduction =
 
@@ -9,9 +9,10 @@ Usually you have all your developer utilities on your every day machine? Right. 
   * Download and Install [www.vmware.com/products/player/ VMware Player]
   * Download [http://cdimage.debian.org/debian-cd/5.0.4/i386/iso-cd/debian-504-i386-netinst.iso Debian netinst CD] iso-image
   * Install Debian base install without X
-  * Download _Cygwin/X_ on host machine
+  * Download [http://x.cygwin.com/ _Cygwin/X_] on host machine
   * Install cygwin and select _xinit_ package.
-  * Run X Server
+  * Run X Server on your host machine 
+
 == Client machine ==
   * Download [http://repository.maemo.org/stable/5.0/maemo-scratchbox-install_5.0.sh Scratchbox install] script
   * Set environment flag:
