@@ -79,6 +79,11 @@ apt-get update
 {{{
 fakeroot apt-get install maemo-sdk-debug
 }}}
+  * Install closed source Nokia binaries
+     * visit [http://tablets-dev.nokia.com/eula/index.php Nokia site] to get a line for /etc/apt/sources.list
+     * nano /etc/apt/sources.list
+     * apt-get update
+     * fakeroot apt-get install nokia-binaries
   * Set environment flags:
 {{{
 export DISPLAY=192.168.x.x:0
