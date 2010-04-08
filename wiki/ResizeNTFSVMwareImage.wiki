@@ -10,12 +10,12 @@ Current virtual disk size: 10Gb
 Target virtual disk size: 20Gb
 }}}
 
-= Resize the vmware image =
+= Resize the vmware image on the host machine =
 {{{
 vmware-vdiskmanager -x 20G imagename.vmdk
 }}}
 
-= Resize the ntfs partition using Linux =
+= Resize the ntfs partition using Linux on virtual machine =
 == Check that you have correct drive information ==
 {{{
 ntfsresize -i /dev/[your_drive]
@@ -30,3 +30,6 @@ ntfsresize -n -s 20G /dev/[your_drive]
 {{{
 ntfsresize -s 20G /dev/[your_drive]
 }}}
+
+= Boot your windows virtual machine =
+You should have now a bigger hard disk.
