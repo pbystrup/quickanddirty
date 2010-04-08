@@ -16,6 +16,7 @@ vmware-vdiskmanager -x 20G imagename.vmdk
 }}}
 
 = Resize the ntfs partition using Linux on virtual machine =
+Use Knoppix or install Debian from netinst to a new virtual machine. Install ntfs-3g package.
 == Check that you have correct drive information ==
 {{{
 ntfsresize -i /dev/[your_drive]
