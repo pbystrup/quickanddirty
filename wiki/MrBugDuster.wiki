@@ -8,14 +8,14 @@ The short idea is to have a remote controlled robot.
 
 
 = Hardware =
-|| Name || Amount || Purpose ||
-|| 5mm RGB Led || 6 || Debug lights, driving lights, etc ||
-|| Parallax Continuous Servo || 2 || controlled wheels ||
-|| ball caster || 1 || wheel ||
-|| ATtiny2313 || 1 || support cpu - wheel and light controller ||
-|| ATmega8 || 1 || main cpu ||
-|| Wii Nunchuk Controller || 1 || The remote controller ||
-|| Resistors || n || for leds and etc. ||
+|| Name || Amount || Purpose || Price ||
+|| 5mm RGB Led || 6 || Debug lights, driving lights, etc || ||
+|| Parallax Continuous Servo || 2 || controlled wheels || ||
+|| ball caster || 1 || wheel || ||
+|| ATtiny2313 || 1 || support cpu - wheel and light controller || ||
+|| ATmega8 || 1 || main cpu || ||
+|| Wii Nunchuk Controller || 1 || The remote controller and accelerometer  || 6e for wired, 10e for wireless in konebox.fi ||
+|| Resistors || n || for leds and etc. || ||
 
 = Software =
 C Language for the on-board microprocessors. 
