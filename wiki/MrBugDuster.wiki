@@ -1,5 +1,7 @@
 #summary Remote Controlled DYI Robot
 
+= /!\ This document is under construction /!\ =
+
 = Introduction =
 
 The short idea is to have a remote controlled robot.
