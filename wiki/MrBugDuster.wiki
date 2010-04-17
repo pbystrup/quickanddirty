@@ -1,0 +1,14 @@
+#summary Remote Controlled DYI Robot
+
+= Introduction =
+
+The short idea is to have a remote controlled robot.
+
+
+= Hardware =
+|| *item* || *Amount* || *Purpose* ||
+|| 5mm RGB Led || 6 || Debug lights, driving lights, etc ||
+|| Parallax Continuous Servo || 2 || controlled wheels ||
+|| ball caster || 1 || wheel ||
+|| ATtiny2313 || 1 || support cpu - wheel and light controller ||
+|| ATmega8 || 1 || main cpu ||
