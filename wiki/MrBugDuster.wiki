@@ -25,6 +25,10 @@ C Language for the on-board microprocessors. PWM for Leds and Servos. I2C protoc
 || Led || Mode || Color || Triggered On Action ||
 || Front Left || Blink || Yellow || Turn left ||
 || Front Right || Blink || Yellow || Turn right ||
+|| Middle Left || Blink || Yellow || Turn left ||
+|| Middle Right || Blink || Yellow || Turn right ||
+|| Rear Left || Blink || Yellow || Turn left ||
+|| Rear Right || Blink || Yellow || Turn right ||
 
 == Remote Controller ==
 Protocol: i2c
