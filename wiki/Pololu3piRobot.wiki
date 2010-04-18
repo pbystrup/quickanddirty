@@ -4,6 +4,12 @@
 = Introduction =
 Misc information about the Pololu 3pi Line following / Maze solving robot. The idea of this document is to have a cheat sheet.
 
+= Videos =
+[http://www.youtube.com/watch?v=UupwNy5Hsgw&feature=player_embedded]
+[http://www.youtube.com/watch?v=Dx2Dkrl41YI&feature=player_embedded]
+[http://www.youtube.com/watch?v=4jDzcXqRmxM&feature=player_embedded]
+[http://www.youtube.com/watch?v=4rXm4OSpaZg&feature=player_embedded]
+
 = Hardware =
 [http://quickanddirty.googlecode.com/svn/trunk/documents/pololu/3pi/3pirobot_top.jpg]
 [http://quickanddirty.googlecode.com/svn/trunk/documents/pololu/3pi/3pirobot_top_specific.jpg]
@@ -30,6 +36,7 @@ http://quickanddirty.googlecode.com/svn/trunk/documents/pololu/3pi/3pirobot_bott
 [http://quickanddirty.googlecode.com/svn/trunk/documents/pololu/3pi/3pirobot_powermanagement.png]
 ==== Monitoring ====
 [http://quickanddirty.googlecode.com/svn/trunk/documents/pololu/3pi/3pirobot_powermonitoring.png]
+
 = Links =
   * [http://www.pololu.com/catalog/product/975 Pololu 3pi Robot]
   * [http://www.pololu.com/docs/0J21 User Guide]
