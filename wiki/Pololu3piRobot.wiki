@@ -15,6 +15,14 @@ Arduino compatible.
 
 ==== Reflector Sensor ====
 [http://quickanddirty.googlecode.com/svn/trunk/documents/pololu/3pi/3pirobot_digitalio_reflectorsensor.png]
+
+=== Motor ===
+[http://quickanddirty.googlecode.com/svn/trunk/documents/pololu/3pi/3pirobot_motor.jpg]
+==== Operation ====
+[http://quickanddirty.googlecode.com/svn/trunk/documents/pololu/3pi/3pirobot_motor_operation.jpg]
+==== Turning ====
+[http://quickanddirty.googlecode.com/svn/trunk/documents/pololu/3pi/3pirobot_motor_turning.jpg]
+
 = Links =
   * [http://www.pololu.com/catalog/product/975 Pololu 3pi Robot]
   * [http://www.pololu.com/docs/0J21 User Guide]
