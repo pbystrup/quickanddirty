@@ -2,14 +2,19 @@
 [http://quickanddirty.googlecode.com/svn/trunk/documents/pololu/3pi/3pirobot.jpg]
 
 = Introduction =
-Misc information about the Pololu 3pi Line following / Maze solving robot. The idea of this document is to have "quick" manual for the usage.
+Misc information about the Pololu 3pi Line following / Maze solving robot. The idea of this document is to have a cheat sheet.
 
 = Hardware =
 Arduino compatible.
 
 == Schematic ==
 [http://quickanddirty.googlecode.com/svn/trunk/documents/pololu/3pi/3pirobot_schematic.png]
+=== Digital IO ===
+==== Button ====
+[http://quickanddirty.googlecode.com/svn/trunk/documents/pololu/3pi/3pirobot_digitalio_button.png]
 
+==== Reflector Sensor ====
+[http://quickanddirty.googlecode.com/svn/trunk/documents/pololu/3pi/3pirobot_digitalio_reflectorsensor.png]
 = Links =
   * [http://www.pololu.com/catalog/product/975 Pololu 3pi Robot]
   * [http://www.pololu.com/docs/0J21 User Guide]
