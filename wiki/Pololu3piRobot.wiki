@@ -6,6 +6,9 @@ Misc information about the Pololu 3pi Line following / Maze solving robot. The i
 
 = Hardware =
 Arduino compatible.
+[http://quickanddirty.googlecode.com/svn/trunk/documents/pololu/3pi/3pirobot_top.jpg]
+[http://quickanddirty.googlecode.com/svn/trunk/documents/pololu/3pi/3pirobot_top_specific.jpg]
+http://quickanddirty.googlecode.com/svn/trunk/documents/pololu/3pi/3pirobot_bottom.jpg]
 
 == Schematic ==
 [http://quickanddirty.googlecode.com/svn/trunk/documents/pololu/3pi/3pirobot_schematic.png]
