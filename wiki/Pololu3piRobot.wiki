@@ -23,6 +23,11 @@ Arduino compatible.
 ==== Turning ====
 [http://quickanddirty.googlecode.com/svn/trunk/documents/pololu/3pi/3pirobot_motor_turning.jpg]
 
+=== Power ===
+==== Management ====
+[http://quickanddirty.googlecode.com/svn/trunk/documents/pololu/3pi/3pirobot_powermanagement.png]
+==== Monitoring ====
+[http://quickanddirty.googlecode.com/svn/trunk/documents/pololu/3pi/3pirobot_powermonitoring.png]
 = Links =
   * [http://www.pololu.com/catalog/product/975 Pololu 3pi Robot]
   * [http://www.pololu.com/docs/0J21 User Guide]
