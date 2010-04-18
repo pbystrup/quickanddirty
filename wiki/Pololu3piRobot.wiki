@@ -9,6 +9,11 @@ Misc information about the Pololu 3pi Line following / Maze solving robot. The i
 <wiki:video url="http://www.youtube.com/watch?v=Dx2Dkrl41YI"/>
 <wiki:video url="http://www.youtube.com/watch?v=4jDzcXqRmxM"/>
 <wiki:video url="http://www.youtube.com/watch?v=4rXm4OSpaZg"/>
+<wiki:video url="http://www.youtube.com/watch?v=jIzVUNi-YRk"/>
+<wiki:video url="http://www.youtube.com/watch?v=SwSKEaJcOV8"/>
+<wiki:video url="http://www.youtube.com/watch?v=mJV-KDqHgDQ"/>
+<wiki:video url="http://www.youtube.com/watch?v=lluV0au91uk"/>
+<wiki:video url="http://www.youtube.com/watch?v=cBUt0tYS2WE"/>
 
 = Hardware =
 [http://quickanddirty.googlecode.com/svn/trunk/documents/pololu/3pi/3pirobot_top.jpg]
