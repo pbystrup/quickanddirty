@@ -12,3 +12,8 @@ The idea was to create a software package for the webcam and servos, which would
 = Software =
   * Python
   * OpenCV
+
+= Software available @ svn =
+The face detection and webcam capture is done.
+_driver_ for the micro maestro is done.
+_driver_ to be added to the webcam and face detection.
