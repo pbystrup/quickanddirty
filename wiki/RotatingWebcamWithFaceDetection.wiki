@@ -29,3 +29,4 @@ I have an issue with my laptop with external webcam, as the internal webcam is m
   * [http://www.face-rec.org/databases/]
   * [http://www.cl.cam.ac.uk/research/dtg/attarchive/facedatabase.html]
   * [http://www.nist.gov/srd/index.htm]
+  * [http://vis-www.cs.umass.edu/lfw/]
