@@ -16,4 +16,8 @@ The idea was to create a software package for the webcam and servos, which would
 = Software available @ svn =
   * The face detection and webcam capture is done.
   * _driver_ for the micro maestro is done.
-  * _driver_ to be added to the webcam and face detection.
+  * servo _driver_ added to the webcam and face detection.
+
+= Known Issues =
+The servo's are not controlled correctly. 
+I have an issue with my laptop with external webcam, as the internal webcam is messing things up with V4L. To be investigated.
