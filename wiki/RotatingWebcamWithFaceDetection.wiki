@@ -1,0 +1,14 @@
+#summary An old Creative Webcam NX Ultra! @ Linux with a couple of servos with tilt/pan functionality
+
+= Introduction =
+The idea was to create a software package for the webcam and servos, which would enable automatic object tracking using Linux.
+
+= Hardware =
+  * Creative Webcam NX Ultra!
+  * Pan/Tilt sensor kit from Lets Make Robots
+  * 2 Servos
+  * Pololu Micro Maestro 6-Channel USB Servo Controller
+  
+= Software =
+  * Python
+  * OpenCV
