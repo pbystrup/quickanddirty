@@ -23,7 +23,8 @@ The servo's are not controlled correctly.
 I have an issue with my laptop with external webcam, as the internal webcam is messing things up with V4L. To be investigated.
 
 = Links =
-[http://note.sonots.com/SciSoftware/haartraining.html Tutorial: OpenCV haar training]
-[http://cvc.yale.edu/projects/yalefacesB/yalefacesB.html]
-[http://www.bioid.com/support/downloads/software/bioid-face-database.html]
-[http://www.face-rec.org/databases/]
+  * [http://note.sonots.com/SciSoftware/haartraining.html Tutorial: OpenCV haar training]
+  * [http://cvc.yale.edu/projects/yalefacesB/yalefacesB.html]
+  * [http://www.bioid.com/support/downloads/software/bioid-face-database.html]
+  * [http://www.face-rec.org/databases/]
+  * [http://www.cl.cam.ac.uk/research/dtg/attarchive/facedatabase.html]
