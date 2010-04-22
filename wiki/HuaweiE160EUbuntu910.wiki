@@ -41,9 +41,11 @@ Password = " "
 }}}
   * Make wvdial run on the boot time, add a line to /etc/rc.local:
 {{{
-wvdial >/var/log/wvdial
+wvdial > /var/log/wvdial
 }}}
-  * Or you could also create a rule for the udev, so that it would be started on the device connected message.
-
+  * Or you could also create a rule for the udev, so that it would be started on the device connected message. Edit /etc/udev/rules.d/99-wvdial.rules with something like:
+{{{
+ACTION=="add", KERNEL=="ttyUSB0", RUN="/bin/sh -c wvdial > /var/log/wvdial"
+}}}
 = The End =
 Happy Surfing.
