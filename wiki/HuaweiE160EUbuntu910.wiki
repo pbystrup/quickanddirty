@@ -41,7 +41,7 @@ Password = " "
 }}}
   * Make wvdial run on the boot time, add a line to /etc/rc.local:
 {{{
-wvdial&>/var/log/wvdial&
+wvdial >/var/log/wvdial
 }}}
   * Or you could also create a rule for the udev, so that it would be started on the device connected message.
 
