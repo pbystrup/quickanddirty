@@ -1,0 +1,49 @@
+#summary Setup Huawei E160E USB 3G Modem with Ubuntu 9.10
+
+= Introduction =
+
+There was several issues with the Ubuntu 9.10.<br />
+First things first.<br />
+
+_Update the kernel!_
+{{{
+sudo apt-get install linux
+}}}
+
+And the kernel headers as well:
+{{{
+sudo apt-get install linux-headers-[your kernel version]
+}}}
+
+== Disable PIN query ==
+Remember to disable PIN query for the SIM card which you are using. This will ease the pain as well.
+  * Note: If you have a fixed data plan and you have blocked all phone calls and sms, etc. then there is no real risk from this one. At least this is my opinion on this matter. But still do this at your own risk.
+
+== Remember ~60s boot-up time ==
+The modem will boot for about 60 seconds. As it will first enable internal cd-rom emulation and the micro-sd drive for the operating system. After those ones it will enable the modem functionality. So it takes time as the OS might scan the disk drives as well, etc.
+
+= Details =
+
+It really seems that for a computer which has E160E as primary network device and always connected the NetworkManager is not the optimal solution at all.
+  * Install wvdial
+{{{
+sudo apt-get install wvdial
+}}}
+  * Configure wvdial (example for [http://www.saunalahti.fi Saunalahti]):
+{{{
+[Dialer Defaults]
+Modem = /dev/ttyUSB0
+Init1 = AT+CGDCONT=1,"IP","internet.saunalahti"
+Phone = *99***1#
+Stupid Mode = 1
+Username = " "
+Password = " "
+}}}
+  * Make wvdial run on the boot time, add a line to /etc/rc.local:
+{{{
+wvdial&>/var/log/wvdial&
+}}}
+  * Or you could also create a rule for the udev, so that it would be started on the device connected message.
+
+= The End =
+Happy Surfing.
