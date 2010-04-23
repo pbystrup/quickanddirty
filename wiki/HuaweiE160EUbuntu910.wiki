@@ -50,7 +50,7 @@ Password = " "
 The _Carrier Check = off_ will fix the _NO CARRIER_ issue with the usb modem.<br />
 The _Auto DNS = off_ will block automatic /etc/resolv.conf overwriting.
 == pppd ==
-Comment out usepeerdns (/etc/ppp/peers/wvdial)
+Comment out usepeerdns (/etc/ppp/peers/wvdial) for disabling dns server information query from peer.
 
 == supervisord ==
   * Create configuration template for _supervisord_:
