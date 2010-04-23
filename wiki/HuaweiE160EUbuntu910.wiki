@@ -121,3 +121,20 @@ $ dig engadget.com
 $ dig engadget.com
 ;; Query time: 8 msec
 }}}
+== connection startup test ==
+{{{
+$ cat test-connection.sh 
+#!/bin/sh
+sudo supervisorctl start saunalahti:wvdial
+wget --quiet --retry-connrefused -t0 http://www.slashdot.org
+}}}
+{{{
+$ chmod +x test-connection.sh
+$ sudo supervisorctl stop saunalahti:wvdial
+$ time ./test-connection.sh
+saunalahti:wvdial: started
+
+real	0m9.396s
+user	0m0.164s
+sys	0m0.064s
+}}}
