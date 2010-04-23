@@ -107,9 +107,9 @@ nameserver 127.0.0.1
 nameserver 208.67.222.222
 nameserver 208.67.220.220
 }}}
-== enable Squid and DansGuardian ==
+== Cache Content and Block Unwanted Content ==
 The fact is that nowadays nearly 50% of all the traffic which is generated is flash-ads or similar not needed information. With 3G modem connection this sucks a bit too much. I know that this approach is a bit heavy but still it works and it is easy to do.
-=== Install Squid and DansGuardian ===
+=== Install Squid and Dansguardian ===
 {{{
 sudo apt-get install squid dansguardian apache2 iptables
 }}}
