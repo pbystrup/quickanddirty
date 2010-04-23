@@ -73,24 +73,18 @@ ACTION=="remove", ATTRS{vendor}=="0x12d1", ATTRS{device}=="0x1003", KERNEL=="tty
 }}}
 = The End =
 Happy Surfing.
-== install squid to boost things up ==
-I installed squid on the same machine to offer localhost caching, which should improve the usability a bit at least in theory.
+== enable proxy server for increased security ==
+As you browse web now with your mobile, you are showing your mobile phone number as well. So it would make sense to enable proxy servers.
 {{{
 sudo apt-get install squid
 }}}
-=== change port from 3128 to 8080 ===
-The 8080 is a lot easier to remember. Edit /etc/squid/squid.conf.
-{{{
-replace:
- http_port 3128
-with:
- http_port 8080
-}}}
 Then remember to configure the system proxy server settings. ;)
 === install local dns cache ===
-It seems that the dns queries will take a lot of time over the 3G connection, so the local dns cache actually would make a huge difference.
+It seems that the dns queries will take a lot of time over the 3G connection, so the local dns cache actually would make a huge difference.<br /><br />
+Edit /etc/bash.bashrc and add following lines:
 {{{
-sudo apt-get install dnsmasq
+export http_proxy="http://varasto.saunalahti.fi:80"
+export ftp_proxy="http://varasto.saunalahti.fi:80"
 }}}
 Configure the dnsmasq (/etc/dnsmasq.conf) by adding line:
 {{{
@@ -99,4 +93,10 @@ listen-address=127.0.0.1
 Reboot the service:
 {{{
 sudo /etc/init.d/dnsmasq restart
+}}}
+Take dns service into use, edit (/etc/dhcp3/dhclient.conf):
+{{{
+prepend domain-name-servers 127.0.0.1;
+prepend domain-name-servers 208.67.222.222;
+prepend domain-name-servers 208.67.220.220;
 }}}
