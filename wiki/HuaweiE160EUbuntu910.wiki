@@ -22,6 +22,7 @@ Remember to disable PIN query for the SIM card which you are using. This will ea
 
 == Remember ~60s boot-up time ==
 The modem will boot for about 60 seconds. As it will first enable internal cd-rom emulation and the micro-sd drive for the operating system. After those ones it will enable the modem functionality. So it takes time as the OS might scan the disk drives as well, etc.
+  * this could be improved by disabling usb-storage for the usb-modem by vendor and device id with udev?
 
 = How I did it =
 
@@ -155,8 +156,10 @@ $ sudo update-rd.d 3gfilteringproxy enable
 }}}
 
 === Enable proxy settings ===
+/etc/bash.bashrc
 {{{
-
+export http_proxy="127.0.0.1:8080"
+export ftp_proxy="127.0.0.1:8080"
 }}}
 
 = Tests =
