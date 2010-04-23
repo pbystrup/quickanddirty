@@ -85,7 +85,7 @@ export http_proxy="http://varasto.saunalahti.fi:80"
 export ftp_proxy="http://varasto.saunalahti.fi:80"
 }}}
 
-== enable local dns cache ==
+== enable local dns cache and OpenDNS ==
 It seems that the dns queries will take a lot of time over the 3G connection, so the local dns cache actually would make a huge difference.
 {{{
 sudo apt-get install dnsmasq
