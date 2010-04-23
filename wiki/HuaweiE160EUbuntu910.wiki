@@ -1,4 +1,5 @@
 #summary Setup Huawei E160E USB 3G Modem with Ubuntu 9.10
+<wiki:toc max_depth="3" />
 
 = Introduction =
 
