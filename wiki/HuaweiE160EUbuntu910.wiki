@@ -87,3 +87,16 @@ with:
  http_port 8080
 }}}
 Then remember to configure the system proxy server settings. ;)
+=== install local dns cache ===
+It seems that the dns queries will take a lot of time over the 3G connection, so the local dns cache actually would make a huge difference.
+{{{
+sudo apt-get install dnsmasq
+}}}
+Configure the dnsmasq (/etc/dnsmasq.conf) by adding line:
+{{{
+listen-address=127.0.0.1
+}}}
+Reboot the service:
+{{{
+sudo /etc/init.d/dnsmasq restart
+}}}
