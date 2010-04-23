@@ -124,6 +124,8 @@ connect_timeout 30 seconds
 forward_timeout 1 minute
 request_timeout 2 minutes
 forwarded_for off
+cache_peer varasto.saunalahti.fi parent 80 7 no-query default
+prefer_direct off
 }}}
 
 === Configure DansGuardian === 
@@ -161,6 +163,9 @@ $ sudo update-rd.d 3gfilteringproxy enable
 export http_proxy="127.0.0.1:8080"
 export ftp_proxy="127.0.0.1:8080"
 }}}
+
+=== Customize message for the content blocks ===
+Edit /usr/lib/cgi-bin/dansguardian.pl
 
 = Tests =
 == download slashdot.org ==
