@@ -64,8 +64,8 @@ lsmod | grep Huawei
 }}}
   * Create a rules for the udev (/etc/udev/rules.d/99-wvdial.rules):
 {{{
-ACTION=="add", ATTRS{vendor}=="0x12d1", ATTRS{device}=="0x1003", KERNEL=="ttyUSB0", RUN="supervisorctl start saunalahti"
-ACTION=="remove", ATTRS{vendor}=="0x12d1", ATTRS{device}=="0x1003", KERNEL=="ttyUSB0", RUN="supervisorctl stop saunalahti"
+ACTION=="add", ATTRS{vendor}=="0x12d1", ATTRS{device}=="0x1003", KERNEL=="ttyUSB0", RUN="supervisorctl start saunalahti:wvdial"
+ACTION=="remove", ATTRS{vendor}=="0x12d1", ATTRS{device}=="0x1003", KERNEL=="ttyUSB0", RUN="supervisorctl stop saunalahti:wvdial"
 }}}
 = The End =
 Happy Surfing.
