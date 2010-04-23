@@ -25,11 +25,13 @@ The modem will boot for about 60 seconds. As it will first enable internal cd-ro
 = How I did it =
 
 It really seems that for a computer which has E160E as primary network device and always connected the NetworkManager is not the optimal solution at all.
+== install the applications ==
   * Install wvdial and supervisor
 {{{
 sudo apt-get install wvdial python-setuptools
 sudo easy_install supervisor
 }}}
+== wvdial ==
   * Configure wvdial (example for [http://www.saunalahti.fi Saunalahti]):
 {{{
 [Dialer Defaults]
@@ -40,6 +42,7 @@ Stupid Mode = 1
 Username = " "
 Password = " "
 }}}
+== supervisord ==
   * Create configuration template for _supervisord_:
 {{{
 echo_supervisord_conf > supervisord.conf
@@ -54,6 +57,7 @@ autorestart=true
 process_name=wvdial
 startretries=10
 }}}
+== make them run @ boot time and on request ==
   * Make _supervisord_ run on the boot time, add a line to /etc/rc.local:
 {{{
 /usr/local/bin/supervisord
@@ -69,3 +73,17 @@ ACTION=="remove", ATTRS{vendor}=="0x12d1", ATTRS{device}=="0x1003", KERNEL=="tty
 }}}
 = The End =
 Happy Surfing.
+== install squid to boost things up ==
+I installed squid on the same machine to offer localhost caching, which should improve the usability a bit at least in theory.
+{{{
+sudo apt-get install squid
+}}}
+=== change port from 3128 to 8080 ===
+The 8080 is a lot easier to remember. Edit /etc/squid/squid.conf.
+{{{
+replace:
+ http_port 3128
+with:
+ http_port 8080
+}}}
+Then remember to configure the system proxy server settings. ;)
