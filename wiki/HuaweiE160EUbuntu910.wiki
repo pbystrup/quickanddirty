@@ -38,6 +38,7 @@ sudo easy_install supervisor
 Modem = /dev/ttyUSB0
 Init1 = AT+CGDCONT=1,"IP","internet.saunalahti"
 Phone = *99***1#
+Carrier Check = off
 Stupid Mode = 1
 Username = " "
 Password = " "
