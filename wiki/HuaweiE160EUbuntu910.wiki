@@ -39,10 +39,14 @@ Modem = /dev/ttyUSB0
 Init1 = AT+CGDCONT=1,"IP","internet.saunalahti"
 Phone = *99***1#
 Carrier Check = off
+auto DNS = off
 Stupid Mode = 1
 Username = " "
 Password = " "
 }}}
+== pppd ==
+Comment out usepeerdns (/etc/ppp/peers/wvdial)
+
 == supervisord ==
   * Create configuration template for _supervisord_:
 {{{
