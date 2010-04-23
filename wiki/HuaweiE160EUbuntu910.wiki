@@ -22,12 +22,13 @@ Remember to disable PIN query for the SIM card which you are using. This will ea
 == Remember ~60s boot-up time ==
 The modem will boot for about 60 seconds. As it will first enable internal cd-rom emulation and the micro-sd drive for the operating system. After those ones it will enable the modem functionality. So it takes time as the OS might scan the disk drives as well, etc.
 
-= Details =
+= How I did it =
 
 It really seems that for a computer which has E160E as primary network device and always connected the NetworkManager is not the optimal solution at all.
-  * Install wvdial
+  * Install wvdial and supervisor
 {{{
-sudo apt-get install wvdial
+sudo apt-get install wvdial python-setuptools
+sudo easy_install supervisor
 }}}
   * Configure wvdial (example for [http://www.saunalahti.fi Saunalahti]):
 {{{
@@ -39,13 +40,28 @@ Stupid Mode = 1
 Username = " "
 Password = " "
 }}}
-  * Make wvdial run on the boot time, add a line to /etc/rc.local:
+  * Create configuration template for _supervisord_:
 {{{
-wvdial > /var/log/wvdial
+echo_supervisord_conf > supervisord.conf
+sudo mv supervisord.conf /etc/supervisord.conf
+}}}
+  * Configure _supervisord_ (/etc/supervisord.conf):
+{{{
+[program:saunalahti]
+command=/usr/bin/wvdial
+autostart=true
+autorestart=true
+process_name=wvdial
+startretries=10
+}}}
+  * Make _supervisord_ run on the boot time, add a line to /etc/rc.local:
+{{{
+/usr/local/bin/supervisord
 }}}
   * Or you could also create a rule for the udev, so that it would be started on the device connected message. Edit /etc/udev/rules.d/99-wvdial.rules with something like:
 {{{
-ACTION=="add", KERNEL=="ttyUSB0", RUN="/bin/sh -c wvdial > /var/log/wvdial"
+ACTION=="add", KERNEL=="ttyUSB0", RUN="supervisorctl start saunalahti"
+ACTION=="remove", KERNEL=="ttyUSB0", RUN="supervisorctl stop saunalahti"
 }}}
 = The End =
 Happy Surfing.
