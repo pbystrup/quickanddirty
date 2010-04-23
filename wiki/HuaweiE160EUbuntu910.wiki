@@ -74,17 +74,17 @@ ACTION=="remove", ATTRS{vendor}=="0x12d1", ATTRS{device}=="0x1003", KERNEL=="tty
 = The End =
 Happy Surfing.
 == enable proxy server for increased security ==
-As you browse web now with your mobile, you are showing your mobile phone number as well. So it would make sense to enable proxy servers.
-{{{
-sudo apt-get install squid
-}}}
-Then remember to configure the system proxy server settings. ;)
-=== install local dns cache ===
-It seems that the dns queries will take a lot of time over the 3G connection, so the local dns cache actually would make a huge difference.<br /><br />
+As you browse web now with your mobile, you are showing your mobile phone number as well. So it would make sense to enable proxy servers.<br /><br />
 Edit /etc/bash.bashrc and add following lines:
 {{{
 export http_proxy="http://varasto.saunalahti.fi:80"
 export ftp_proxy="http://varasto.saunalahti.fi:80"
+}}}
+
+=== install local dns cache ===
+It seems that the dns queries will take a lot of time over the 3G connection, so the local dns cache actually would make a huge difference.
+{{{
+sudo apt-get install dnsmasq
 }}}
 Configure the dnsmasq (/etc/dnsmasq.conf) by adding line:
 {{{
