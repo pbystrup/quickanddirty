@@ -40,7 +40,7 @@ Baud = 921600
 Init1 = AT+CGDCONT=1,"IP","internet.saunalahti"
 Phone = *99***1#
 Carrier Check = off
-auto DNS = off
+Auto DNS = off
 Stupid Mode = 1
 Username = " "
 Password = " "
