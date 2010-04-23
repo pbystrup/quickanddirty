@@ -106,6 +106,33 @@ nameserver 127.0.0.1
 nameserver 208.67.222.222
 nameserver 208.67.220.220
 }}}
+== enable Squid and DansGuardian ==
+The fact is that nowadays nearly 50% of all the traffic which is generated is flash-ads or similar not needed information. With 3G modem connection this sucks a bit too much. I know that this approach is a bit heavy but still it works and it is easy to do.
+=== Install Squid and DansGuardian ===
+{{{
+sudo apt-get install squid dansguardian apache2 iptables
+}}}
+
+=== Configure Squid === 
+{{{
+
+}}}
+
+=== Configure DansGuardian === 
+{{{
+
+}}}
+
+=== Configure iptables === 
+{{{
+
+}}}
+
+=== Enable proxy settings ===
+{{{
+
+}}}
+
 = Tests =
 == download slashdot.org ==
 {{{
