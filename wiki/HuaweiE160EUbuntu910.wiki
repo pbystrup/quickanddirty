@@ -145,6 +145,9 @@ forwardedfor = off
 usexforwardedfor = off
 logadblocks = on
 }}}
+==== block hosts ====
+Look into folder /etc/dansguardian/lists.
+Modify /etc/dansguardian/lists/bannedsitelist
 
 === Configure iptables === 
 Create and edit file /etc/init.d/3gfilteringproxy
