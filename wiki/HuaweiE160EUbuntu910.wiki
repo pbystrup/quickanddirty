@@ -47,6 +47,8 @@ Stupid Mode = 1
 Username = " "
 Password = " "
 }}}
+The _Carrier Check = off_ will fix the _NO CARRIER_ issue with the usb modem.<br />
+The _Auto DNS = off_ will block automatic /etc/resolv.conf overwriting.
 == pppd ==
 Comment out usepeerdns (/etc/ppp/peers/wvdial)
 
