@@ -114,18 +114,44 @@ sudo apt-get install squid dansguardian apache2 iptables
 }}}
 
 === Configure Squid === 
+Edit default config @ /etc/squid/squid.conf:
 {{{
-
+acl Safe_ports port 5222        # gtalk
+acl SSL_ports port 5222         # gtalk
+http_port 3128 transparent
+connect_timeout 30 seconds
+forward_timeout 1 minute
+request_timeout 2 minutes
+forwarded_for off
 }}}
 
 === Configure DansGuardian === 
+Edit default config @ /etc/dansguardian/dansguardian.conf:
 {{{
-
+#UNCONFIGURED
+reportinglevel = 2
+loglevel = 1
+filterip = 127.0.0.1
+filterport = 8080
+proxyip = 127.0.0.1
+proxyport = 3128
+accessdeniedaddress = 'http://localhost/cgi-bin/dansguardian.pl'
+weightedphrasemode = 0
+phrasefiltermode = 1
+forwardedfor = off
+usexforwardedfor = off
+logadblocks = on
 }}}
 
 === Configure iptables === 
+Create and edit file /etc/init.d/3gfilteringproxy
 {{{
-
+iptables -t nat -A OUTPUT -p tcp -m owner ! --uid-owner proxy --dport 80 -j REDIRECT --to-port 8080
+}}}
+Add rights and enable startup: 
+{{{
+$ sudo chmod a+x /etc/init.d/3gfilteringproxy
+$ sudo update-rd.d 3gfilteringproxy enable
 }}}
 
 === Enable proxy settings ===
