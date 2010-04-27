@@ -1,0 +1,8 @@
+#summary Misc information about Atmel AVR programming
+
+= Introduction =
+
+
+= Details =
+== Avrdude ==
+== Gcc ==
