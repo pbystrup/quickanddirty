@@ -4,5 +4,18 @@
 
 
 = Details =
-== Avrdude ==
-== Gcc ==
+== avr-gcc ==
+=== make elf ===
+{{{
+# avr-gcc -mmcu=attiny2313 -o main.elf main.c
+}}}
+== avr-objcopy ==
+=== make hex from elf ===
+{{{
+# avr-objcopy -R .eeprom -O ihex main.elf main.hex
+}}}
+== avrdude ==
+=== write hex ===
+{{{
+# avrdude -c avrispmkII -P usb -p t2313 -U flash:w:main.hex
+}}}
