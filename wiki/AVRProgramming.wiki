@@ -19,3 +19,13 @@
 {{{
 # avrdude -c avrispmkII -P usb -p t2313 -U flash:w:main.hex
 }}}
+
+= Errors =
+== avrdude: stk500v2_paged_write: write command failed with 128 ==
+_Apparently the factory setting for the clock on these chips is fairly random, so you need to set that explicitly before you try doing anything else like uploading code. If you don't do that, then you'll get a bunch of nasty timeout errors like avrdude: stk500v2_paged_write: write command failed with 128. So set the clock by dropping into the avr terminal:_
+Source: [http://blog.kfish.org/2007/02/atmel-avr-isp-mkii-avrdude-ubuntu.html blog.kfish.org]
+{{{
+$ avrdude -c avrispmkII -P usb -p m8 -F -u -t
+avrdude> sck 10
+avrdude> quit
+}}}
