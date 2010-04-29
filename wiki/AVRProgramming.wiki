@@ -3,7 +3,7 @@
 = Introduction =
 
 
-= Details =
+= Compiling and Burning for ATtiny2313 =
 == avr-gcc ==
 === make elf ===
 {{{
