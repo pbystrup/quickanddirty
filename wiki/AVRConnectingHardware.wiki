@@ -2,7 +2,7 @@
 
 = Input =
 == Switch ==
-=== Connecting LED to AVR ===
+=== Connecting Switch to AVR ===
 [http://quickanddirty.googlecode.com/svn/trunk/documents/switch/attiny2313_switch.png]
 ==== Schematic ====
 [http://quickanddirty.googlecode.com/svn/trunk/documents/switch/attiny2313_switch.sch Eagle -format]
