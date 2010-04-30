@@ -16,6 +16,11 @@
 [http://quickanddirty.googlecode.com/svn/trunk/documents/led/attiny2313_led.png]
 ==== Schematic ====
 [http://quickanddirty.googlecode.com/svn/trunk/documents/led/attiny2313_led.sch Eagle -format]
+== HD44780 ==
+=== Connecting HD44780 to AVR ===
+[http://quickanddirty.googlecode.com/svn/trunk/documents/hd44780/attiny2313_hd44780.png]
+=== Schematic ===
+[http://quickanddirty.googlecode.com/svn/trunk/documents/hd44780/attiny2313_hd44780.sch Eagle -format]
 == Relay ==
 [http://quickanddirty.googlecode.com/svn/trunk/documents/relay/srd-s.jpg]<br />
 With relays you can control several different devices. According to [http://www.sanyourelay.ca/public/products/product_list_new.php?series=43&listby=0 Sanyou] the typical applications are:
