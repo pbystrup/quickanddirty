@@ -4,7 +4,7 @@
 == Switch ==
 === Connecting Switch to AVR ===
 [http://quickanddirty.googlecode.com/svn/trunk/documents/switch/attiny2313_switch.png]
-==== Schematic ====
+=== Schematic ===
 [http://quickanddirty.googlecode.com/svn/trunk/documents/switch/attiny2313_switch.sch Eagle -format]
 
 
@@ -14,7 +14,7 @@
 [http://quickanddirty.googlecode.com/svn/trunk/documents/led/led_schematic.gif]
 === Connecting LED to AVR ===
 [http://quickanddirty.googlecode.com/svn/trunk/documents/led/attiny2313_led.png]
-==== Schematic ====
+=== Schematic ===
 [http://quickanddirty.googlecode.com/svn/trunk/documents/led/attiny2313_led.sch Eagle -format]
 == HD44780 ==
 === Connecting HD44780 to AVR ===
@@ -40,8 +40,8 @@ But the point is that a relay is just _a switch_. You can use lower voltage to s
 }}}
 [http://quickanddirty.googlecode.com/svn/trunk/documents/relay/attiny2313_relay.png]<br />
 If you want to switch the Load ON when the AVR has power then connect the Load between _Output Load 2_ and _Input Load_. In this way you can switch the Load ON by setting _AVR PIN_ to HIGH.
-==== Schematic ====
+=== Schematic ===
 [http://quickanddirty.googlecode.com/svn/trunk/documents/relay/attiny2313_relay.sch Eagle -format]
 
-=== Documents / Downloads ===
+=== Downloads ===
   * [http://quickanddirty.googlecode.com/svn/trunk/documents/relay/Sanyou-SRD.pdf SRD-S Datasheet]
