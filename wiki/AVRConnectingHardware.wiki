@@ -1,5 +1,5 @@
 #summary How can you connect different devices to AVR and control them
-
+<wiki:toc max_depth="3" />
 = Input =
 == Switch ==
 === Connecting Switch to AVR ===
