@@ -10,3 +10,8 @@
 == Relay ==
 [http://quickanddirty.googlecode.com/svn/trunk/documents/relay/srd-s.jpg]<br />
 [http://quickanddirty.googlecode.com/svn/trunk/documents/relay/srd-s-schematic.png]
+With relays you can control several different devices. According to Sanyou the typical applications are:
+  * Home appliances, Air conditioner,heater,etc.
+  * Office machines, PC, facsimile, etc.
+  * Vending machine
+  * Automotive Power-window, car antenna,door-lock,etc.
