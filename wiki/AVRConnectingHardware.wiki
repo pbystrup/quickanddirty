@@ -1,12 +1,14 @@
 #summary How can you connect different devices to AVR and control them
 
-= Sensors =
-
+= Input =
+== Switch ==
+[TBD]
 
 
 
 = Output =
-
+== LED ==
+[TBD]
 == Relay ==
 [http://quickanddirty.googlecode.com/svn/trunk/documents/relay/srd-s.jpg]<br />
 With relays you can control several different devices. According to [http://www.sanyourelay.ca/public/products/product_list_new.php?series=43&listby=0 Sanyou] the typical applications are:
