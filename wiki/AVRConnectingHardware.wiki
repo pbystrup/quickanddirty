@@ -1,0 +1,12 @@
+#summary How can you connect different devices to AVR and control them
+
+= Sensors =
+
+
+
+
+= Output =
+
+== Relay ==
+[http://quickanddirty.googlecode.com/svn/trunk/documents/relay/srd-s.jpg]<br />
+[http://quickanddirty.googlecode.com/svn/trunk/documents/relay/srd-s-schematic.png]
