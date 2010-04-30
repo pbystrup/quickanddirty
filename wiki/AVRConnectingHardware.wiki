@@ -9,7 +9,7 @@
 
 == Relay ==
 [http://quickanddirty.googlecode.com/svn/trunk/documents/relay/srd-s.jpg]<br />
-With relays you can control several different devices. According to Sanyou the typical applications are:
+With relays you can control several different devices. According to [http://www.sanyourelay.ca/public/products/product_list_new.php?series=43&listby=0 Sanyou] the typical applications are:
   * Home appliances, Air conditioner,heater,etc.
   * Office machines, PC, facsimile, etc.
   * Vending machine
