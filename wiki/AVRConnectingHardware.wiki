@@ -8,10 +8,11 @@
 
 = Output =
 == LED ==
-[http://quickanddirty.googlecode.com/svn/trunk/documents/led/led_schematic.gif]<br />
+[http://quickanddirty.googlecode.com/svn/trunk/documents/led/led_schematic.gif]
 === Connecting LED to AVR ===
-[http://quickanddirty.googlecode.com/svn/trunk/documents/led/attiny2313_led.png]<br />
-
+[http://quickanddirty.googlecode.com/svn/trunk/documents/led/attiny2313_led.png]
+==== Schematic ====
+[http://quickanddirty.googlecode.com/svn/trunk/documents/led/attiny2313_led.sch]
 == Relay ==
 [http://quickanddirty.googlecode.com/svn/trunk/documents/relay/srd-s.jpg]<br />
 With relays you can control several different devices. According to [http://www.sanyourelay.ca/public/products/product_list_new.php?series=43&listby=0 Sanyou] the typical applications are:
