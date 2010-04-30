@@ -9,9 +9,19 @@
 
 == Relay ==
 [http://quickanddirty.googlecode.com/svn/trunk/documents/relay/srd-s.jpg]<br />
-[http://quickanddirty.googlecode.com/svn/trunk/documents/relay/srd-s-schematic.png]
 With relays you can control several different devices. According to Sanyou the typical applications are:
   * Home appliances, Air conditioner,heater,etc.
   * Office machines, PC, facsimile, etc.
   * Vending machine
   * Automotive Power-window, car antenna,door-lock,etc.
+But the point is relay is just _a switch_. You can use lower voltage to switch higher voltage/current devices.
+=== Connecting a relay to avr ===
+[http://quickanddirty.googlecode.com/svn/trunk/documents/relay/srd-s-schematic.png]<br />
+{{{
+1 | Output Load 1 (default state)
+2 | Output Load 2
+3 | to AVR PIN
+4 | Input Load
+5 | to AVR GND
+}}}
+If you want to switch the load on when the avr has power then connect the Load between _Output Load 2_ and _Input Load_.
