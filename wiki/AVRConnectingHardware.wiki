@@ -1,5 +1,16 @@
 #summary How can you connect different devices to AVR and control them
 <wiki:toc max_depth="3" />
+
+= Power Supply =
+for each project you will need a power supply. I use regular 9V battery as usually I can find them for 1e each from [http://www.tarjoustalo.fi/ Tarjoustalo].
+
+== Schematics =
+=== 5V ===
+[tbd]
+
+=== 3.3V ===
+[tbd]
+
 = Input =
 == Switch ==
 === Connecting Switch to AVR ===
