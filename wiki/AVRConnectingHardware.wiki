@@ -21,6 +21,7 @@ for each project you will need a power supply. I use regular 9V battery as usual
 [http://quickanddirty.googlecode.com/svn/trunk/documents/power-supply/usb.sch Eagle -format]
 ==== Notes ====
 The 1N4148 voltage drop down is around 0.6 to 0.9 so the resulting voltage will differ, but most of the MCU's can operate on scale from 2.7V to 5V so the end result is still fine.
+==== Connector layout ====
 [http://upload.wikimedia.org/wikipedia/commons/thumb/6/67/USB.svg/220px-USB.svg.png]
 
 = Input =
