@@ -6,11 +6,13 @@ for each project you will need a power supply. I use regular 9V battery as usual
 
 == Schematics =
 === 5V with 7805 ===
-[http://quickanddirty.googlecode.com/svn/trunk/documents/power-supply/7805.png]
+[http://quickanddirty.googlecode.com/svn/trunk/documents/power-supply/7805.png]<br />
+[http://quickanddirty.googlecode.com/svn/trunk/documents/power-supply/7805.sch Eagle -format]
 
 === 3.3V with LM2937ET-3.3 ===
 [http://quickanddirty.googlecode.com/svn/trunk/documents/power-supply/LM2937ET-3.3.png]
-
+<br />
+[http://quickanddirty.googlecode.com/svn/trunk/documents/power-supply/LM2937ET-3.3.sch Eagle -format]
 = Input =
 == Switch ==
 === Connecting Switch to AVR ===
