@@ -1,4 +1,5 @@
 #summary How can you connect different devices to AVR and control them
+#labels Featured
 <wiki:toc max_depth="3" />
 
 = Power Supply =
