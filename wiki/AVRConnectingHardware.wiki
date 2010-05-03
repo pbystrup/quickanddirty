@@ -5,10 +5,10 @@
 for each project you will need a power supply. I use regular 9V battery as usually I can find them for 1e each from [http://www.tarjoustalo.fi/ Tarjoustalo].
 
 == Schematics =
-=== 5V ===
-[tbd]
+=== 5V with 7805 ===
+[http://quickanddirty.googlecode.com/svn/trunk/documents/power-supply/7805.png]
 
-=== 3.3V ===
+=== 3.3V with LM2937ET-3.3 ===
 [tbd]
 
 = Input =
