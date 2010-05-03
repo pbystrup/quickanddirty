@@ -13,6 +13,12 @@ for each project you will need a power supply. I use regular 9V battery as usual
 [http://quickanddirty.googlecode.com/svn/trunk/documents/power-supply/LM2937ET-3.3.png]
 <br />
 [http://quickanddirty.googlecode.com/svn/trunk/documents/power-supply/LM2937ET-3.3.sch Eagle -format]
+
+=== USB ===
+[http://quickanddirty.googlecode.com/svn/trunk/documents/power-supply/usb.png]
+<br />
+[http://quickanddirty.googlecode.com/svn/trunk/documents/power-supply/usb.sch Eagle -format]
+
 = Input =
 == Switch ==
 === Connecting Switch to AVR ===
