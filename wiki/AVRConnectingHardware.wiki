@@ -9,7 +9,7 @@ for each project you will need a power supply. I use regular 9V battery as usual
 [http://quickanddirty.googlecode.com/svn/trunk/documents/power-supply/7805.png]
 
 === 3.3V with LM2937ET-3.3 ===
-[tbd]
+[http://quickanddirty.googlecode.com/svn/trunk/documents/power-supply/LM2937ET-3.3.png]
 
 = Input =
 == Switch ==
