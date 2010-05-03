@@ -16,6 +16,7 @@ for each project you will need a power supply. I use regular 9V battery as usual
 [http://quickanddirty.googlecode.com/svn/trunk/documents/power-supply/LM2937ET-3.3.sch Eagle -format]
 
 === USB ===
+[http://upload.wikimedia.org/wikipedia/commons/thumb/6/67/USB.svg/220px-USB.svg.png]
 [http://quickanddirty.googlecode.com/svn/trunk/documents/power-supply/usb.png]
 <br />
 [http://quickanddirty.googlecode.com/svn/trunk/documents/power-supply/usb.sch Eagle -format]
