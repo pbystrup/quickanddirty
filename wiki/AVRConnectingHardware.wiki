@@ -82,7 +82,7 @@ The idea of this project is to enable remote shutdown of all tv related devices 
 [http://code.google.com/p/quickanddirty/source/browse/#svn/trunk/avr/jpiirelay svn]
 
 == jpiiWorklights ==
-[http://quickanddirty.googlecode.com/svn/trunk/avr/jpiiWorklights/jpiiWorklights.png]<br /> 
+[http://quickanddirty.googlecode.com/svn/trunk/avr/jpiiWorklights/jpiiWorklights.picture.png]<br /> 
 The need for this project came from the fact that I had bought some LED Strip for 12V use from [http://www.partco.biz Partco], so I needed some kind of controller for it. I powered the controller with 9V battery and then used relays to run 12V external power supply. The end result is nothing but quick-and-dirty, but it works for me.
 
 === schematics ===
