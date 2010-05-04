@@ -75,7 +75,15 @@ If you want to switch the Load ON when the AVR has power then connect the Load b
 == jpiiRelay ==
 The idea of this project is to enable remote shutdown of all tv related devices (including tv itself).
 === schematic ===
-[http://quickanddirty.googlecode.com/svn/trunk/avr/jpiirelay/jpiirelay.png]
+[http://quickanddirty.googlecode.com/svn/trunk/avr/jpiirelay/jpiirelay.png]<br />
+[http://quickanddirty.googlecode.com/svn/trunk/avr/jpiirelay/jpiirelay.sch Eagle] -format
 
 === source code ===
 [http://code.google.com/p/quickanddirty/source/browse/#svn/trunk/avr/jpiirelay svn]
+
+== jpiiWorklights ==
+=== schematics ===
+[http://quickanddirty.googlecode.com/svn/trunk/avr/jpiiWorklights/jpiiWorklights.sch.png]<br />
+[http://quickanddirty.googlecode.com/svn/trunk/avr/jpiiWorklights/jpiiWorklights.sch Eagle] -format
+=== source code ===
+[http://code.google.com/p/quickanddirty/source/browse/#svn/trunk/avr/jpiiWorklights svn]
