@@ -93,7 +93,7 @@ The need for this project came from the fact that I had bought some LED Strip fo
 === pending improvements ===
   * use external interrupts
   * use sleep
-  * add toggle _test_ button for the regulator led, so now it is just spending battery power.
+  * add _test_ button for the regulator led, so now it is just spending battery power.
 
 == Handheld Power Supply for 5V and 3.3V ==
 The fact is that I need a portable quick-and-dirty power supply for prototyping. So I combined both 5V and 3.3V regulators into a same box. Now all I need is a 9V battery and I am ready to go.<br />
