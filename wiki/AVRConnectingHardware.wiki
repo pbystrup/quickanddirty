@@ -90,3 +90,6 @@ The need for this project came from the fact that I had bought some LED Strip fo
 [http://quickanddirty.googlecode.com/svn/trunk/avr/jpiiWorklights/jpiiWorklights.sch Eagle] -format
 === source code ===
 [http://code.google.com/p/quickanddirty/source/browse/#svn/trunk/avr/jpiiWorklights svn]
+=== pending improvements ===
+  * use external interrupts
+  * use sleep
