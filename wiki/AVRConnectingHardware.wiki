@@ -95,5 +95,5 @@ The need for this project came from the fact that I had bought some LED Strip fo
   * use sleep
 
 == Handheld Power Supply for 5V and 3.3V ==
-The fact is that I need a portable quick-and-dirty power supply for prototyping. So I combined both 5V and 3.3V regulators into a same box. Now all I need is a 9V battery and I am ready to go.
+The fact is that I need a portable quick-and-dirty power supply for prototyping. So I combined both 5V and 3.3V regulators into a same box. Now all I need is a 9V battery and I am ready to go.<br />
 [http://quickanddirty.googlecode.com/svn/trunk/documents/power-supply/quick-and-dirty-9v-to-5v-or-3.3v.png]
