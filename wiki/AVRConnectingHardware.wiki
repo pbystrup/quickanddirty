@@ -94,6 +94,8 @@ The need for this project came from the fact that I had bought some LED Strip fo
   * use external interrupts
   * use sleep
   * add _test_ button for the regulator led, so now it is just spending battery power.
+  * it now runs 4h with a fresh 9V battery, this needs to be fixed. should be days or months at least.
+  * check current usage on all unused pins
 
 == Handheld Power Supply for 5V and 3.3V ==
 The fact is that I need a portable quick-and-dirty power supply for prototyping. So I combined both 5V and 3.3V regulators into a same box. Now all I need is a 9V battery and I am ready to go.<br />
