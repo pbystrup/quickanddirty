@@ -1,0 +1,23 @@
+#summary quick-and-dirty cheat sheet for installing apache, php and sqlite
+
+= Details =
+== Install packages ==
+{{{
+$ apt-get install apache2 php5 php5-sqlite
+}}}
+== Enable support for userdir www folders ==
+{{{
+$ ln -s /etc/apache2/mods-available/userdir.* /etc/apache2/mods-enabled/
+$ nano /etc/apache2/sites-enabled/007-qad
+UserDir enabled *
+UserDir disabled root
+<Directory /home/*/public_html/cgi-bin/>
+ Options ExecCGI
+ SetHandler cgi-script
+</Directory>
+}}}
+
+== Restart Apache2 ==
+{{{
+$ service apache2 restart
+}}}
