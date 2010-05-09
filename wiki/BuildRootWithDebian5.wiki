@@ -1,0 +1,43 @@
+#summary setting up BuildRoot with Debian 5
+
+= Introduction =
+
+= Ten steps away from your own Embedded Linux distribution =
+== step 0) go to home folder ==
+{{{
+$ cd 
+}}}
+== step 1) download BuildRoot ==
+{{{
+$ wget -c http://buildroot.uclibc.org/downloads/buildroot-2010.02.tar.gz
+}}}
+== step 2) unpack BuildRoot ==
+{{{
+$ tar -xvzpf buildroot-2010.02.tar.gz
+}}}
+== step 3) move BuildRoot to ~/buildroot ==
+{{{
+$ mv buildroot-2010.02 buildroot
+}}}
+== step 4) install external dependencies ==
+{{{
+$ apt-get install binutils bzip2 automake g++ bison flex make ncurses-dev gettext
+}}}
+== step 5) go to ~/buildroot ==
+{{{
+$ cd buildroot
+}}}
+== step 6) configure BuildRoot ==
+{{{
+$ make menuconfig
+}}}
+== step 7) configure kernel ==
+{{{
+$ make linux26-menuconfig
+}}}
+== step 8) build BuiltRoot and Kernel ==
+{{{
+$ make
+}}}
+== step 9) install new root and kernel ==
+TBD
