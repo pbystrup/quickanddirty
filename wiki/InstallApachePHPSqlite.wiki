@@ -16,6 +16,8 @@ UserDir disabled root
  SetHandler cgi-script
 </Directory>
 }}}
+== enable php5 for userdir ==
+read comments in /etc/apache2/mods-enabled/php5.conf.
 
 == Restart Apache2 ==
 {{{
