@@ -3,7 +3,7 @@
 = Introduction =
 Sometimes you might need to build a very small Linux rootfs+kernel for your embedded device, or you just want to optimize the space required for the core operating system. One way is to use [http://wiki.openembedded.net/index.php/Main_Page OpenEmbedded], but there are other alternatives like [http://buildroot.uclibc.org/ BuildRoot] in this example.
 
-= Ten steps away from your own Embedded Linux distribution =
+= Steps =
 == step 0) go to home folder ==
 {{{
 $ cd 
