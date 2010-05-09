@@ -1,12 +1,15 @@
 #summary Watching DVB-T transmissions with Debian 5
 
 = Steps =
-== Install dvb-apps ==
+== step 0) Install dvb-apps ==
 {{{
 $ apt-get install dvb-apps
 }}}
-== Scan available channels ==
+== step 1) Scan available channels ==
 {{{
 $ scan /usr/share/dvb/dvb-t/fi-Espoo > channels.conf
 }}}
-== [TBD] ==
+== step 2) View channels with VLC ==
+{{{
+$ vlc channels.conf
+}}}
