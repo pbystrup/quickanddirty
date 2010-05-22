@@ -9,7 +9,7 @@ The backfire/ifxmips version of the openwrt should have a support for ARV4519 ba
  * [http://www.linux-mips.org/wiki/Danube]
  * [http://www.mail-archive.com/openwrt-devel@lists.openwrt.org/msg01503.html]
  * [https://forum.openwrt.org/viewtopic.php?id=15934]
-
+ * [http://backfire.openwrt.org/10.03-rc3/README]
 
 == Enabling MIPS JTAG ==
 There is also an existing place holder for the JTAG. - not tried yet.. we should be able to access the flash using that one and also modify the filesystem, etc.
