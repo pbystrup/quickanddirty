@@ -18,7 +18,7 @@ _BRN Bootloader_ is installed, but _u-boot_ is required for better usage.. and t
 === Other ===
 There should be a hidden bootloader inside the main cpu as well. according to the discussion in openwrt devel mailinglist there should be few resistors on the board which needs to be changed to enable UART bootloader, or something.
 
-== The pins on the board ==
+== UART - The pins on the board ==
 {{{
 Now you have to identify the bootstrap pins. Maybe John knows more about 
 it?
@@ -44,6 +44,38 @@ have to live with the original bootloader :-(
 
 == Enabling MIPS JTAG ==
 There is also an existing place holder for the JTAG. - not tried yet.. we should be able to access the flash using that one and also modify the filesystem, etc.
+=== Info ===
+{{{
+First read the original configuration information from flash:
+
+cable parallel 0x378 WIGGLER
+detect
+include admtek/adm5120/adm5120
+detectflash 0xd000000
+readmem 0x0d020000 0x20000 config.bin
+
+Mount config.bin (it's in ext2 format) and find following line from
+router.conf (hash changed in this example):
+
+UserTable_1_Unix_Password='$1$$ASDFasdfASDfasdf'
+
+and replace it with a password hash of your own choice.
+
+check the size of router.conf and change router.magic accordingly. 
+
+unmount and program flash:
+
+cable parallel 0x378 WIGGLER
+detect
+include admtek/adm5120/adm5120
+detectflash 0xd000000
+flashmem 0x0d020000 config.bin
+
+reboot the router, ssh root@192.168.0.1, enjoy.
+}}}
+ * [http://koti.kapsi.fi/jvaarani/homebox/jtag_flash_procedure.txt]
+
+
 == Enabling Multicast mode on boot loader ==
 Press _Wifi_ button when switching power On.
  * No idea what this mode does, Stays in multicast mode for few seconds.
