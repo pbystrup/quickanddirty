@@ -1,8 +1,10 @@
 #summary Research on Wippies HomeBox (black) / Bewan iBox
+This wiki page is meant for me (Juhapekka Piiroinen) as online notepad for the research project.
 
 = Details =
 == Hardware ==
 [http://www.arcadyan.com/english/products/product_detail.asp?PROD_L1ID=00000003&PROD_ID=00000024]
+
 == Misc ==
 The backfire/ifxmips version of the openwrt should have a support for ARV4519 based Arcadian boards.
  * [http://backfire.openwrt.org/10.03-beta/ifxmips/]
@@ -12,6 +14,8 @@ The backfire/ifxmips version of the openwrt should have a support for ARV4519 ba
  * [http://backfire.openwrt.org/10.03-rc3/README]
 == Bootloader ==
 _BRN Bootloader_ is installed, but _u-boot_ is required for better usage.. and there is no asking for _space_ or anything so that we could access the _BRN Bootloader_ menu..
+=== Other ===
+There should be a hidden bootloader inside the main cpu as well. according to the discussion in openwrt devel mailinglist there should be few resistors on the board which needs to be changed to enable UART bootloader, or something.
 
 == The pins on the board ==
 {{{
