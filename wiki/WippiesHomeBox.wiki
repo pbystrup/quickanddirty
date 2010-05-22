@@ -3,6 +3,17 @@
 = Details =
 == Enabling MIPS JTAG ==
 There is also an existing place holder for the JTAG. - not tried yet.. we should be able to access the flash using that one and also modify the filesystem, etc.
+== Enabling Multicast mode on boot loader ==
+Press _Wifi_ button when switching power On.
+ * No idea what this mode does, but a wild guess is that this is some sort of TFTP firmware updating or something in the boot loader..
+{{{
+  Capabilities    : 80000001
+
+Entering multicast mode
+Leaving multicast mode
+
+Found valid bootable partition 0:
+}}}
 
 == Enabling Serial port ==
 There is an existing connector inside the box. 
