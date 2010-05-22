@@ -1,6 +1,13 @@
 #summary Research on Wippies HomeBox (black) / Bewan iBox
 
 = Details =
+== Hardware ==
+[http://www.arcadyan.com/english/products/product_detail.asp?PROD_L1ID=00000003&PROD_ID=00000024]
+== OS ==
+The backfire/ifxmips version of the openwrt should have a support for ARV4519 based Arcadian boards.
+[http://backfire.openwrt.org/10.03-beta/ifxmips/]
+
+
 == Enabling MIPS JTAG ==
 There is also an existing place holder for the JTAG. - not tried yet.. we should be able to access the flash using that one and also modify the filesystem, etc.
 == Enabling Multicast mode on boot loader ==
