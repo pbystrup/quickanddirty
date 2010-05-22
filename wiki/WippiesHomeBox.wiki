@@ -4,6 +4,14 @@ This wiki page is meant for me (Juhapekka Piiroinen) as online notepad for the r
 = Details =
 == Hardware ==
 [http://www.arcadyan.com/english/products/product_detail.asp?PROD_L1ID=00000003&PROD_ID=00000024]
+== Memory ==
+{{{
+0x00000000-0x01000000 : "Flash"
+0x00000000-0x00020000 : "Loader"
+0x00020000-0x00040000 : "Config"
+0x00040000-0x00820000 : "Firmware"
+0x00820000-0x01000000 : "OldFirmware"
+}}}
 
 == Misc ==
 The backfire/ifxmips version of the openwrt should have a support for ARV4519 based Arcadian boards.
@@ -15,6 +23,49 @@ The backfire/ifxmips version of the openwrt should have a support for ARV4519 ba
 == Bootloader ==
 _BRN Bootloader_ is installed, but _u-boot_ is required for better usage.. and there is no asking for _space_ or anything so that we could access the _BRN Bootloader_ menu..
  * [http://backfire.openwrt.org/10.03-beta/ifxmips/uboot-ifxmips/]
+=== Pins ===
+==== J16 ====
+{{{
+ROM VER: 1.0.3
+CFG 05
+Read EEPROMX
+ X
+SFLASH
+X
+SFLAS5)Â5ReÅ*jªÕH¨HHÕª
+                      U*'HL.3
+CFG 05
+Read EEPROMX
+ X
+}}}
+
+==== J21 ====
+
+no header information (ROM VER.. etc). just booting normally.
+
+{{{
+Booting from partition 0 in flash.
+
+Loading: Linux Kernel Image
+
+Load address = 80000000
+Uncompressing Linux.....................
+
+kernel corrupted!
+
+
+ -- System halted]
+}}}
+
+==== J16+J21 ====
+{{{
+ROM VER: 1.0.3
+CFG 04
+Read EEPROMX
+ X
+UART
+}}}
+
 === Other ===
 There should be a hidden bootloader inside the main cpu as well. according to the discussion in openwrt devel mailinglist there should be few resistors on the board which needs to be changed to enable UART bootloader, or something.
 
