@@ -10,6 +10,9 @@ The backfire/ifxmips version of the openwrt should have a support for ARV4519 ba
  * [http://www.mail-archive.com/openwrt-devel@lists.openwrt.org/msg01503.html]
  * [https://forum.openwrt.org/viewtopic.php?id=15934]
  * [http://backfire.openwrt.org/10.03-rc3/README]
+== Bootloader ==
+_BRN Bootloader_ is installed, but _u-boot_ is required for better usage.. and there is no asking for _space_ or anything so that we could access the _BRN Bootloader_ menu..
+
 == The pins on the board ==
 {{{
 Now you have to identify the bootstrap pins. Maybe John knows more about 
