@@ -10,6 +10,29 @@ The backfire/ifxmips version of the openwrt should have a support for ARV4519 ba
  * [http://www.mail-archive.com/openwrt-devel@lists.openwrt.org/msg01503.html]
  * [https://forum.openwrt.org/viewtopic.php?id=15934]
  * [http://backfire.openwrt.org/10.03-rc3/README]
+== The pins on the board ==
+{{{
+Now you have to identify the bootstrap pins. Maybe John knows more about 
+it?
+
+Your mode is 1 (BootSel0 1, BootSel1 0, BootSel2 0) .
+We would need the configuration 4 for UART mode (BootSel0 0, BootSel1 0, 
+BootSel2 1) .
+The UART boot log should look like ...
+
+>>>
+ROM VER: 1.0.3
+CFG 04
+Read EEPROMX
+ X
+UART    
+<<<
+
+In case that's not possible to identify the correct bootstrap pins you would 
+have to live with the original bootloader :-(
+
+}}}
+ * [http://www.mail-archive.com/openwrt-devel@lists.openwrt.org/msg03920.html]
 
 == Enabling MIPS JTAG ==
 There is also an existing place holder for the JTAG. - not tried yet.. we should be able to access the flash using that one and also modify the filesystem, etc.
