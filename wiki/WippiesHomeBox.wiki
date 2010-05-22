@@ -3,11 +3,12 @@
 = Details =
 == Hardware ==
 [http://www.arcadyan.com/english/products/product_detail.asp?PROD_L1ID=00000003&PROD_ID=00000024]
-== OS ==
+== Misc ==
 The backfire/ifxmips version of the openwrt should have a support for ARV4519 based Arcadian boards.
  * [http://backfire.openwrt.org/10.03-beta/ifxmips/]
  * [http://www.linux-mips.org/wiki/Danube]
-
+ * [http://www.mail-archive.com/openwrt-devel@lists.openwrt.org/msg01503.html]
+ * [https://forum.openwrt.org/viewtopic.php?id=15934]
 
 
 == Enabling MIPS JTAG ==
