@@ -1,11 +1,9 @@
 #summary Research on Wippies HomeBox (black) / Bewan iBox
 
-= Introduction =
-
-Add your content here.
-
-
 = Details =
+== Enabling MIPS JTAG ==
+There is also an existing place holder for the JTAG. - not tried yet.. we should be able to access the flash using that one and also modify the filesystem, etc.
+
 == Enabling Serial port ==
 There is an existing connector inside the box. 
 {{{
