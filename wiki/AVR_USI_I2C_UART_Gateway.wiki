@@ -5,7 +5,7 @@
 The idea is to create a i^2^c master device with ATtiny2313 which could be then commanded using hardware UART from a PC/MAC. This kind of debugging devices are already out there in the markets, but this should be relatively easy practice for everyone who are interested in the protocol itself and the 8-bit MCU's.
 
 == What is ATtiny2313? ==
-[http://upload.wikimedia.org/wikipedia/commons/thumb/8/86/ATtiny2313.png/240px-ATtiny2313.png]<br />
+[http://upload.wikimedia.org/wikipedia/commons/thumb/8/86/ATtiny2313.png/240px-ATtiny2313.png][http://www.avrfreaks.net/index.php?module=photoshare&func=viewimage&thumbnail=&iid=538]<br />
 [http://www.atmel.com/dyn/resources/prod_documents/doc2543.PDF ATtiny2313] is a low power 8-bit microcontroller.
   * 2KB of In-System Self-Programmable Flash
   * 128 Bytes In-System Programmable EEPROM
