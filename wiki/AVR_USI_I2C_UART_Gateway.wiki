@@ -1,4 +1,6 @@
 #summary i2c to UART gateway.
+= WORK IN PROGRESS =
+this article is not finalized yet. I am currently planning and making mistakes. When things are working, I will document the progress and notes here for later usage. feel free to use for your own usage as well.
 
 = Introduction =
 
