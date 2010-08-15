@@ -2,6 +2,9 @@
 = WORK IN PROGRESS =
 this article is not finalized yet. I am currently planning and making mistakes. When things are working, I will document the progress and notes here for later usage. feel free to use for your own usage as well.
 
+<wiki:toc max_depth="4" />
+
+
 = Introduction =
 
 The idea is to create a i^2^c master device with ATtiny2313 which could be then commanded using hardware UART from a PC/MAC. This kind of debugging devices are already out there in the markets, but this should be relatively easy practice for everyone who are interested in the protocol itself and the 8-bit MCU's.
