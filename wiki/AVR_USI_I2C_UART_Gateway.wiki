@@ -27,9 +27,62 @@ I^2^C is a multi-master serial single-ended computer bus invented by Philips tha
 [http://quickanddirty.googlecode.com/files/avr-uart-blockdiagram.png]
 == registers ==
 [http://quickanddirty.googlecode.com/files/attiny2313-uart-registers.png]
-=== udr ===
-[http://quickanddirty.googlecode.com/files/avr-uart-register-udr.png]
-
+=== USART I/O Data Register – UDR ===
+The USART Transmit Data Buffer Register and USART Receive Data Buffer Registers share the
+same I/O address referred to as USART Data Register or UDR. The Transmit Data Buffer Register
+(TXB) will be the destination for data written to the UDR Register location. Reading the
+UDR Register location will return the contents of the Receive Data Buffer Register (RXB).
+For 5-, 6-, or 7-bit characters the upper unused bits will be ignored by the Transmitter and set to
+zero by the Receiver.
+The transmit buffer can only be written when the UDRE flag in the UCSRA Register is set. Data
+written to UDR when the UDRE flag is not set, will be ignored by the USART Transmitter. When
+data is written to the transmit buffer, and the Transmitter is enabled, the Transmitter will load the
+data into the Transmit Shift Register when the Shift Register is empty. Then the data will be serially
+transmitted on the TxD pin.
+The receive buffer consists of a two level FIFO. The FIFO will change its state whenever the
+receive buffer is accessed. Due to this behavior of the receive buffer, do not use Read-Modify-
+Write instructions (SBI and CBI) on this location. Be careful when using bit test instructions
+(SBIC and SBIS), since these also will change the state of the FIFO.
+=== USART Control and Status Register A – UCSRA===
+==== Bit 7 – RXC: USART Receive Complete==== 
+This flag bit is set when there are unread data in the receive buffer and cleared when the receive
+buffer is empty (i.e., does not contain any unread data). If the Receiver is disabled, the receive
+buffer will be flushed and consequently the RXC bit will become zero. The RXC flag can be used
+to generate a Receive Complete interrupt (see description of the RXCIE bit).
+==== Bit 6 – TXC: USART Transmit Complete==== 
+This flag bit is set when the entire frame in the Transmit Shift Register has been shifted out and
+there are no new data currently present in the transmit buffer (UDR). The TXC flag bit is automatically
+cleared when a transmit complete interrupt is executed, or it can be cleared by writing
+a one to its bit location. The TXC flag can generate a Transmit Complete interrupt (see description
+of the TXCIE bit).
+==== Bit 5 – UDRE: USART Data Register Empty====
+The UDRE flag indicates if the transmit buffer (UDR) is ready to receive new data. If UDRE is
+one, the buffer is empty, and therefore ready to be written. The UDRE flag can generate a Data
+Register Empty interrupt (see description of the UDRIE bit).
+UDRE is set after a reset to indicate that the Transmitter is ready.
+==== Bit 4 – FE: Frame Error====
+This bit is set if the next character in the receive buffer had a Frame Error when received. I.e.,
+when the first stop bit of the next character in the receive buffer is zero. This bit is valid until the
+receive buffer (UDR) is read. The FE bit is zero when the stop bit of received data is one. Always
+set this bit to zero when writing to UCSRA.
+==== Bit 3 – DOR: Data OverRun====
+This bit is set if a Data OverRun condition is detected. A Data OverRun occurs when the receive
+buffer is full (two characters), it is a new character waiting in the Receive Shift Register, and a
+new start bit is detected. This bit is valid until the receive buffer (UDR) is read. Always set this bit
+to zero when writing to UCSRA.
+==== Bit 2 – UPE: USART Parity Error====
+This bit is set if the next character in the receive buffer had a Parity Error when received and the
+Parity Checking was enabled at that point (UPM1 = 1). This bit is valid until the receive buffer
+(UDR) is read. Always set this bit to zero when writing to UCSRA.
+==== Bit 1 – U2X: Double the USART Transmission Speed====
+This bit only has effect for the asynchronous operation. Write this bit to zero when using synchronous
+operation.
+Writing this bit to one will reduce the divisor of the baud rate divider from 16 to 8 effectively doubling
+the transfer rate for asynchronous communication.
+==== Bit 0 – MPCM: Multi-processor Communication Mode====
+This bit enables the Multi-processor Communication mode. When the MPCM bit is written to
+one, all the incoming frames received by the USART Receiver that do not contain address information
+will be ignored. The Transmitter is unaffected by the MPCM setting.
 == UBRR register - setting baud rate ==
 [http://quickanddirty.googlecode.com/files/avr-UBRR.png]
 == Init 2400 8 n 1 / F_CPU 16MHz ==
