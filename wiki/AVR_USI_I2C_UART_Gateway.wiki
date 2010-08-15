@@ -24,7 +24,7 @@ Checklist
   * Search and read Atmel Application Notes *check*
     * [http://atmel.com/dyn/resources/prod_documents/doc2561.pdf AVR310]: Using the USI module as a I2C master [http://atmel.com/dyn/resources/prod_documents/AVR310.zip src]
     * [http://atmel.com/dyn/resources/prod_documents/doc2547.pdf AVR244]: AVR UART as ANSI Terminal Interface [http://atmel.com/dyn/resources/prod_documents/AVR244.zip src]
-    * [http://atmel.com/dyn/resources/prod_documents/doc2557.pdf AVR303]: SPI-UART Gateway [http://atmel.com/dyn/resources/prod_documents/AVR303.zip]
+    * [http://atmel.com/dyn/resources/prod_documents/doc2557.pdf AVR303]: SPI-UART Gateway [http://atmel.com/dyn/resources/prod_documents/AVR303.zip src]
   * Research the devices in the application notes *in progress*
   * Combine information from the application notes into a single black box device
   * add UART to USB chip for better usability
