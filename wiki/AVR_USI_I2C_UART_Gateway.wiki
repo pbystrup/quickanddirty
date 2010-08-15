@@ -23,6 +23,8 @@ I^2^C is a multi-master serial single-ended computer bus invented by Philips tha
   * read more @ [http://en.wikipedia.org/wiki/I%C2%B2C wikipedia].
 = UART =
 *Always* use external oscillator for time critical tasks.
+== block diagram ==
+[http://quickanddirty.googlecode.com/files/avr-uart-blockdiagram.png]
 == registers ==
 [http://quickanddirty.googlecode.com/files/attiny2313-uart-registers.png]
 == UBRR register - setting baud rate ==
