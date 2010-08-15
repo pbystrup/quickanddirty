@@ -1,0 +1,20 @@
+#summary i^2^c to UART gateway.
+
+= Introduction =
+
+The idea is to create a i^2^c master device with ATtiny2313 which could be then commanded using hardware UART from a PC/MAC. This kind of debugging devices are already out there in the markets, but this should be relatively easy practice for everyone who are interested in the protocol itself and the 8-bit MCU's.
+ 
+= Details =
+
+Checklist
+  * Search and read Atmel Application Notes *check*
+  * Build devices in the application notes *in progress*
+  * Combine information from the application notes into a single black box device
+  * add UART to USB chip for better usability
+  * make a crossplatform UI for the hardware
+    * make a commandline prototype with Python to validate the hardware functionality
+    * make C++/Qt interface for the gateway.
+
+
+= Existing products =
+BusPirate is a really good product and which should be bought, but as i have several AVR 8-bit MCU's available I could make similar device using them, which would be then _free_ for me.
