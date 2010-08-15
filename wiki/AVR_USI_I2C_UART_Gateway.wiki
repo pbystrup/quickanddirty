@@ -83,6 +83,38 @@ the transfer rate for asynchronous communication.
 This bit enables the Multi-processor Communication mode. When the MPCM bit is written to
 one, all the incoming frames received by the USART Receiver that do not contain address information
 will be ignored. The Transmitter is unaffected by the MPCM setting.
+===USART Control and Status Register B – UCSRB ===
+====Bit 7 – RXCIE: RX Complete Interrupt Enable====
+Writing this bit to one enables interrupt on the RXC flag. A USART Receive Complete interrupt
+will be generated only if the RXCIE bit is written to one, the Global Interrupt Flag in SREG is written
+to one and the RXC bit in UCSRA is set.
+==== Bit 6 – TXCIE: TX Complete Interrupt Enable====
+Writing this bit to one enables interrupt on the TXC flag. A USART Transmit Complete interrupt
+will be generated only if the TXCIE bit is written to one, the Global Interrupt Flag in SREG is written
+to one and the TXC bit in UCSRA is set.
+==== Bit 5 – UDRIE: USART Data Register Empty Interrupt Enable====
+Writing this bit to one enables interrupt on the UDRE flag. A Data Register Empty interrupt will
+be generated only if the UDRIE bit is written to one, the Global Interrupt Flag in SREG is written
+to one and the UDRE bit in UCSRA is set.
+==== Bit 4 – RXEN: Receiver Enable====
+Writing this bit to one enables the USART Receiver. The Receiver will override normal port operation
+for the RxD pin when enabled. Disabling the Receiver will flush the receive buffer
+invalidating the FE, DOR, and UPE Flags.
+==== Bit 3 – TXEN: Transmitter Enable====
+Writing this bit to one enables the USART Transmitter. The Transmitter will override normal port
+operation for the TxD pin when enabled. The disabling of the Transmitter (writing TXEN to zero)
+will not become effective until ongoing and pending transmissions are completed, i.e., when the
+Transmit Shift Register and Transmit Buffer Register do not contain data to be transmitted.
+When disabled, the Transmitter will no longer override the TxD port.
+==== Bit 2 – UCSZ2: Character Size====
+The UCSZ2 bits combined with the UCSZ1:0 bit in UCSRC sets the number of data bits (Character
+SiZe) in a frame the Receiver and Transmitter use.
+==== Bit 1 – RXB8: Receive Data Bit 8====
+RXB8 is the ninth data bit of the received character when operating with serial frames with nine
+data bits. Must be read before reading the low bits from UDR.
+==== Bit 0 – TXB8: Transmit Data Bit 8====
+TXB8 is the ninth data bit in the character to be transmitted when operating with serial frames
+with nine data bits. Must be written before writing the low bits to UDR.
 == UBRR register - setting baud rate ==
 [http://quickanddirty.googlecode.com/files/avr-UBRR.png]
 == Init 2400 8 n 1 / F_CPU 16MHz ==
