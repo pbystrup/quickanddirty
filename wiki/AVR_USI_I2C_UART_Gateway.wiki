@@ -169,10 +169,10 @@ These bits are reserved for future use. For compatibility with future devices, t
 ==== Bit 11:0 – UBRR11:0: USART Baud Rate Register ====
 This is a 12-bit register which contains the USART baud rate. The UBRRH contains the four
 most significant bits, and the UBRRL contains the eight least significant bits of the USART baud rate. Ongoing transmissions by the Transmitter and Receiver will be corrupted if the baud rate is changed. Writing UBRRL will trigger an immediate update of the baud rate prescaler.
-
-== UBRR register - setting baud rate ==
+== Code snippets ==
+=== UBRR register - setting baud rate ===
 [http://quickanddirty.googlecode.com/files/avr-UBRR.png]
-== Init 2400 8 n 1 / F_CPU 16MHz ==
+=== Init 2400 8 n 1 / F_CPU 16MHz ===
 {{{
 #define BAUDMODE 416 //value from datasheet.
 UBRRL = BAUDMODE;
@@ -182,13 +182,13 @@ UBRRH = (BAUDMODE >> 8);
 UCSRB = (1<<TXEN) | (1<<RXEN);
 }}}
 
-== Receive data without using an INT ==
+=== Receive data without using an INT ===
 {{{
 while (!(UCSRA & (1<<RXC)) );
 received_data = UDR;
 }}}
 
-== Transmit data without using an INT ==
+=== Transmit data without using an INT ===
 {{{
 while (!(UCSRA & (1<<UDRE)) );
 UDR = data_to_be_sent;
