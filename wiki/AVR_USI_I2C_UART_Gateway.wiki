@@ -26,7 +26,7 @@ I^2^C is a multi-master serial single-ended computer bus invented by Philips tha
 == block diagram ==
 [http://quickanddirty.googlecode.com/files/avr-uart-blockdiagram.png]
 == registers ==
-[http://quickanddirty.googlecode.com/files/attiny2313-uart-registers.png]
+[http://quickanddirty.googlecode.com/files/attiny2313-uart-registers2.png]
 === USART I/O Data Register – UDR ===
 The USART Transmit Data Buffer Register and USART Receive Data Buffer Registers share the
 same I/O address referred to as USART Data Register or UDR. The Transmit Data Buffer Register
