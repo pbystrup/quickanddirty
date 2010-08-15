@@ -194,6 +194,48 @@ while (!(UCSRA & (1<<UDRE)) );
 UDR = data_to_be_sent;
 }}}
 
+=== Echo uart with interrupt ===
+{{{
+#define F_CPU 16000000UL
+#define UART_BAUDMODE 416
+
+#include <avr/io.h>
+#include <avr/interrupt.h>
+
+void UART_Init() {
+	// lets set the baud rate
+	UBRRL = (unsigned char)UART_BAUDMODE;
+	UBRRH = (UART_BAUDMODE >> 8);
+
+	// enable tx and rx
+	UCSRB = (1<<TXEN) | (1<<RXEN);
+
+	// lets enable RX interrupt
+	UCSRB |= (1 << RXCIE);
+
+	// enable interrupts
+	sei();
+}
+
+// basic echo serial sw
+ISR(USART_RX_vect) {
+	char receivedByte;
+	receivedByte = UDR;
+	UDR = receivedByte;
+}
+
+int main(void) {
+	unsigned char isRunning = 1;
+
+	UART_Init();
+
+	while (isRunning) {
+		
+	}
+	return 0;
+}
+
+}}}
 
 = Details =
 
