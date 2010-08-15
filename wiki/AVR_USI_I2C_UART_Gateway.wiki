@@ -118,24 +118,31 @@ with nine data bits. Must be written before writing the low bits to UDR.
 === USART Control and Status Register C - UCSRC ===
 ==== Bit 6 – UMSEL: USART Mode Select ====
 This bit selects between asynchronous and synchronous mode of operation.
+
 ||UMSEL|| Mode||
 ||0|| Asynchronous Operation||
 ||1|| Synchronous Operation||
+
 ==== Bit 5:4 – UPM1:0: Parity Mode ====
 These bits enable and set type of parity generation and check. If enabled, the Transmitter will automatically generate and send the parity of the transmitted data bits within each frame. The Receiver will generate a parity value for the incoming data and compare it to the UPM0 setting.
 If a mismatch is detected, the UPE Flag in UCSRA will be set.
+
 || UPM1||  UPM0||  Parity Mode|| 
 || 0||  0||  Disabled|| 
 || 0||  1||  Reserved|| 
 || 1||  0||  Enabled, Even Parity|| 
 || 1||  1||  Enabled, Odd Parity||
+
 ==== Bit 3 – USBS: Stop Bit Select ==== 
 This bit selects the number of stop bits to be inserted by the Transmitter. The Receiver ignores this setting.
+
 ||USBS|| Stop Bit(s)||
 ||0|| 1-bit||
 ||1|| 2-bit||
+
 ==== Bit 2:1 – UCSZ1:0: Character Size ====
 The UCSZ1:0 bits combined with the UCSZ2 bit in UCSRB sets the number of data bits (Character SiZe) in a frame the Receiver and Transmitter use.
+
 ||UCSZ2|| UCSZ1|| UCSZ0|| Character Size||
 ||0|| 0|| 0|| 5-bit||
 ||0|| 0|| 1|| 6-bit||
@@ -145,12 +152,21 @@ The UCSZ1:0 bits combined with the UCSZ2 bit in UCSRB sets the number of data bi
 ||1|| 0|| 1|| Reserved||
 ||1|| 1|| 0|| Reserved||
 ||1|| 1|| 1|| 9-bit||
+
 ==== Bit 0 – UCPOL: Clock Polarity ====
 This bit is used for synchronous mode only. Write this bit to zero when asynchronous mode is used. The UCPOL bit sets the relationship between data output change and data input sample, and the synchronous clock (XCK).
 
 ||UCPOL||Transmitted Data Changed (Output of TxD Pin)||Received Data Sampled (Input on RxD Pin)||
 ||0|| Rising XCK Edge ||Falling XCK Edge||
 ||1|| Falling XCK Edge ||Rising XCK Edge||
+
+=== USART Baud Rate Registers – UBRRL and UBRRH ===
+==== Bit 15:12 – Reserved Bits ====
+These bits are reserved for future use. For compatibility with future devices, these bit must be written to zero when UBRRH is written.
+==== Bit 11:0 – UBRR11:0: USART Baud Rate Register ====
+This is a 12-bit register which contains the USART baud rate. The UBRRH contains the four
+most significant bits, and the UBRRL contains the eight least significant bits of the USART baud rate. Ongoing transmissions by the Transmitter and Receiver will be corrupted if the baud rate is changed. Writing UBRRL will trigger an immediate update of the baud rate prescaler.
+
 == UBRR register - setting baud rate ==
 [http://quickanddirty.googlecode.com/files/avr-UBRR.png]
 == Init 2400 8 n 1 / F_CPU 16MHz ==
