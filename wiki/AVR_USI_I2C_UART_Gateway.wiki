@@ -42,6 +42,14 @@ Checklist
 
 = Notes for myself =
   * use external oscillator! the most vital part of the communication.. n00b.. For ATtiny2313 the related UART baud rate table is Table 57. Attach it here for future usage.
-  
+  * V-usb as UART to USB gateway, should run with ATtiny2313.
+
+== the plan ==
+*PC/MAC*  => (usb)  =>  *2313 with vusb*  => (uart) =>  *2313 with uart*
+
+or
+
+*PC/MAC*  => (usb)  =>  *ftdi U232R*  => (uart) =>  *2313 with uart*
+
 = Existing products =
 [http://code.google.com/p/the-bus-pirate/ BusPirate] is a really good product and which should be bought, but as i have several AVR 8-bit MCU's available I could make similar device using them, which would be then _free_ for me.
