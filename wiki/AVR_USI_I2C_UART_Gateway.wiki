@@ -34,8 +34,21 @@ UBRRL = BAUDMODE;
 UBRRH = (BAUDMODE >> 8);
 
 // enable tx and rx
-UCSRB =  (1<<TXEN) | (1<<RXEN);
+UCSRB = (1<<TXEN) | (1<<RXEN);
 }}}
+
+== Receive data without using an INT ==
+{{{
+while (!(UCSRA & (1<<RXC)) );
+received_data = UDR;
+}}}
+
+== Transmit data without using an INT ==
+{{{
+while (!(UCSRA & (1<<UDRE)) );
+UDR = data_to_be_sent;
+}}}
+
 
 = Details =
 
