@@ -33,6 +33,8 @@ Checklist
     * make a commandline prototype with Python to validate the hardware functionality
     * make C++/Qt interface for the gateway.
 
-
+= Notes for myself =
+  * use external oscillator! the most vital part of the communication.. n00b.. For ATtiny2313 the related UART baud rate table is Table 57. Attach it here for future usage.
+  
 = Existing products =
 [http://code.google.com/p/the-bus-pirate/ BusPirate] is a really good product and which should be bought, but as i have several AVR 8-bit MCU's available I could make similar device using them, which would be then _free_ for me.
