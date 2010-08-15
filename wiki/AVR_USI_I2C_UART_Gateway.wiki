@@ -3,8 +3,18 @@
 = Introduction =
 
 The idea is to create a i^2^c master device with ATtiny2313 which could be then commanded using hardware UART from a PC/MAC. This kind of debugging devices are already out there in the markets, but this should be relatively easy practice for everyone who are interested in the protocol itself and the 8-bit MCU's.
+
+== What is ATtiny2313? ==
+[http://upload.wikimedia.org/wikipedia/commons/thumb/8/86/ATtiny2313.png/240px-ATtiny2313.png]<br />
+ATtiny2313 is a low power 8-bit microcontroller.
+  * 2KB of In-System Self-Programmable Flash
+  * 128 Bytes In-System Programmable EEPROM
+  * 128 Bytes Internal SRAM
+  * USI-Universal Serial Interface
+  * Full Duplex UART. 
+
 == What I^2^C stands for? ==
-[http://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/I2C.svg/350px-I2C.svg.png]
+[http://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/I2C.svg/350px-I2C.svg.png]<br />
 
 I^2^C is a multi-master serial single-ended computer bus invented by Philips that is used to attach low-speed peripherals to a motherboard, embedded system, or cellphone. Since the mid 1990s several competitors (e.g. Siemens AG (later Infineon Technologies AG), NEC, Texas Instruments, STMicroelectronics (formerly SGS-Thomson), Motorola (later Freescale), Intersil, etc.) brought I²C products on the market, which are fully compatible with the NXP (formerly Philips' semiconductor division) I²C-system. As of October 1, 2006, no licensing fees are required to implement the I²C protocol. However, fees are still required to obtain I²C slave addresses allocated by NXP
   * read more @ [http://en.wikipedia.org/wiki/I%C2%B2C wikipedia].
@@ -21,4 +31,4 @@ Checklist
 
 
 = Existing products =
-BusPirate is a really good product and which should be bought, but as i have several AVR 8-bit MCU's available I could make similar device using them, which would be then _free_ for me.
+[http://code.google.com/p/the-bus-pirate/ BusPirate] is a really good product and which should be bought, but as i have several AVR 8-bit MCU's available I could make similar device using them, which would be then _free_ for me.
