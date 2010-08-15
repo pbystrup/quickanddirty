@@ -6,7 +6,7 @@ The idea is to create a i^2^c master device with ATtiny2313 which could be then 
 
 == What is ATtiny2313? ==
 [http://upload.wikimedia.org/wikipedia/commons/thumb/8/86/ATtiny2313.png/240px-ATtiny2313.png]<br />
-ATtiny2313 is a low power 8-bit microcontroller.
+[http://www.atmel.com/dyn/resources/prod_documents/doc2543.PDF ATtiny2313] is a low power 8-bit microcontroller.
   * 2KB of In-System Self-Programmable Flash
   * 128 Bytes In-System Programmable EEPROM
   * 128 Bytes Internal SRAM
@@ -22,7 +22,10 @@ I^2^C is a multi-master serial single-ended computer bus invented by Philips tha
 
 Checklist
   * Search and read Atmel Application Notes *check*
-  * Build devices in the application notes *in progress*
+    * [http://atmel.com/dyn/resources/prod_documents/doc2561.pdf AVR310]: Using the USI module as a I2C master [http://atmel.com/dyn/resources/prod_documents/AVR310.zip src]
+    * [http://atmel.com/dyn/resources/prod_documents/doc2547.pdf AVR244]: AVR UART as ANSI Terminal Interface [http://atmel.com/dyn/resources/prod_documents/AVR244.zip src]
+    * [http://atmel.com/dyn/resources/prod_documents/doc2557.pdf AVR303]: SPI-UART Gateway [http://atmel.com/dyn/resources/prod_documents/AVR303.zip]
+  * Research the devices in the application notes *in progress*
   * Combine information from the application notes into a single black box device
   * add UART to USB chip for better usability
   * make a crossplatform UI for the hardware
