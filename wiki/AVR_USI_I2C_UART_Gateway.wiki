@@ -26,14 +26,14 @@ I^2^C is a multi-master serial single-ended computer bus invented by Philips tha
 == UBRR register - setting baud rate ==
 [http://quickanddirty.googlecode.com/files/avr-UBRR.png]
 == Init 2400 8 n 1 / F_CPU 16MHz ==
-`
-#define BAUDMODE 416
+{{{
+#define BAUDMODE 416 //value from datasheet.
 UBRRL = BAUDMODE;
 UBRRH = (BAUDMODE >> 8);
 
 // enable tx and rx
 UCSRB =  (1<<TXEN) | (1<<RXEN);
-`
+}}}
 
 = Details =
 
