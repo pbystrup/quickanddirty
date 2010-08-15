@@ -236,7 +236,18 @@ int main(void) {
 }
 
 }}}
+=== Memory Usage ===
+{{{
+AVR Memory Usage
+----------------
+Device: attiny2313
 
+Program:     106 bytes (5.2% Full)
+(.text + .data + .bootloader)
+
+Data:          0 bytes (0.0% Full)
+(.data + .bss + .noinit)
+}}}
 = Details =
 
 Checklist
