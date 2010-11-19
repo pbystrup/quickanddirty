@@ -1,6 +1,15 @@
 #summary Research on Wippies HomeBox (black) / Bewan iBox
 This wiki page is meant for me (Juhapekka Piiroinen) as online notepad for the research project.
 
+= PENDING FOR PERMISSIONS from CERT-FI and Elisa =
+As there are some exploits for this device, but which are not fixed by the manufacturer. I have contacted CERT-FI and they have contacted Elisa. This process started 3/2009 and is still going on. I will release a full report of the findings on December.
+
+Stay tuned, and drop an email if you are interested. So that I will drop an email to you whenever this legal matter is solved.
+
+
+Cheers,
+Juhapekka Piiroinen
+
 = Details =
 == Hardware ==
 [http://www.arcadyan.com/english/products/product_detail.asp?PROD_L1ID=00000003&PROD_ID=00000024]
