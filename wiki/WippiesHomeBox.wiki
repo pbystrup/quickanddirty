@@ -9,6 +9,10 @@ Stay tuned, and drop an email if you are interested. So that I will drop an emai
 
 Cheers,
 Juhapekka Piiroinen
+== First email was sent 26.1.2010 ==
+Where i reported issues to CERT-FI. They reported to Elisa
+== First contact from Elisa 26.11.2010 ==
+Where it seems that they do not see any exploit here. Waiting for the last written answer.
 
 = Details =
 == Hardware ==
