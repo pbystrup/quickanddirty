@@ -9,7 +9,9 @@ Where i reported issues to CERT-FI. They reported to Elisa
 == First contact from Elisa 26.11.2010 ==
 Where it seems that they do not see any exploit here. Waiting for the last written answer.
 == Second contact from Elisa 1.12.2010 ==
-The _exploit_ has been fixed in their latest firmware (A50803-Sauna35-24524). So it should be fine to release the stuff. However they noted that some one had noticed same thing in 8/2009. However they did not reply to the question why they store the password in plaintext in the device, it would be more clever to store the password as hash.. oh well.. I will go next thru the material and release all of it. Should take few weekends..
+The _exploit_ has been fixed in their latest firmware (A50803-Sauna35-24524). So it should be fine to release the stuff. However they noted that some one had noticed same thing in 8/2009. This raised a question that why they did not fix it asap, if they knew it :D
+
+...and they did not reply to the question why they store the password in plaintext in the device, it would be more clever to store the password as hash.. oh well.. I will go next thru the material and release all of it. Should take few weekends..
 
 = Details =
 == Hardware ==
