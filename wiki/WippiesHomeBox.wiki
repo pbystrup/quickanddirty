@@ -2,17 +2,14 @@
 This wiki page is meant for me (Juhapekka Piiroinen) as online notepad for the research project.
 
 = PENDING FOR PERMISSIONS from CERT-FI and Elisa =
-As there are some exploits for this device, but which are not fixed by the manufacturer. I have contacted CERT-FI and they have contacted Elisa. This process started 3/2009 and is still going on. I will release a full report of the findings on December.
+As there are some exploits for this device, but which are not fixed by the manufacturer. I have contacted CERT-FI and they have contacted Elisa. This process started 3/2010 and is still going on. I will release a full report of the findings on December.
 
-Stay tuned, and drop an email if you are interested. So that I will drop an email to you whenever this legal matter is solved.
-
-
-Cheers,
-Juhapekka Piiroinen
 == First email was sent 26.1.2010 ==
 Where i reported issues to CERT-FI. They reported to Elisa
 == First contact from Elisa 26.11.2010 ==
 Where it seems that they do not see any exploit here. Waiting for the last written answer.
+== Second contact from Elisa 1.12.2010 ==
+The _exploit_ has been fixed in their latest firmware (A50803-Sauna35-24524). So it should be fine to release the stuff. However they noted that some one had noticed same thing in 8/2009. However they did not reply to the question why they store the password in plaintext in the device, it would be more clever to store the password as hash.. oh well.. I will go next thru the material and release all of it. Should take few weekends..
 
 = Details =
 == Hardware ==
