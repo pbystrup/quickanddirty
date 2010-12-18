@@ -13,7 +13,14 @@ The _exploit_ has been fixed in their latest firmware (A50803-Sauna35-24524). So
 
 ...and they did not reply to the question why they store the password in plaintext in the device, it would be more clever to store the password as hash.. oh well.. I will go next thru the material and release all of it. Should take few weekends..
 
+= OpenWrt runs on this device =
+See page 2+ @ https://forum.openwrt.org/viewtopic.php?id=15934
+
 = Details =
+== JTAG ==
+Propably the JTAG connector is the one under the UART on the PCB. Correct me if i am wrong.
+http://www.t-hack.com/wiki/index.php/EJTAG
+
 == Hardware ==
 [http://www.arcadyan.com/english/products/product_detail.asp?PROD_L1ID=00000003&PROD_ID=00000024]
 == Memory ==
