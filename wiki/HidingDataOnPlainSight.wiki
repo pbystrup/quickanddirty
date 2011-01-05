@@ -40,8 +40,11 @@ dd bs=1 if=$1 skip=`stat -c %s $2` of=$3
 = Alternate data streams =
 On windows you could use alternate datastreams instead of image file.
 http://en.wikipedia.org/wiki/NTFS#Alternate_data_streams_.28ADS.29
-== example ==
+== Create ==
 {{{
 cat filesystem.dta > notepad.exe:thestream
 }}}
-not sure tho if this works :p
+== Extract ==
+{{{
+cat notepad.exe:thestream > extracted-filesystem.dta
+}}}
