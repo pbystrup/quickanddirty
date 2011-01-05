@@ -7,10 +7,10 @@ The technique is obvious, but still too funny not to document :p ..the idea is t
 
 = Details =
 
-* Take a website background image which is looking great, like a full color png.
-* Then create a secured filesystem into a file using TrueCrypt (http://www.truecrypt.org/)
-* copy the truecrypt file at the end of the png file.
-* copy the png file to the website and use it as background or share it thru public www service, etc.
+ * Take a website background image which is looking great, like a full color png.
+ * Then create a secured filesystem into a file using TrueCrypt  (http://www.truecrypt.org/)
+ * copy the truecrypt file at the end of the png file.
+ * copy the png file to the website and use it as background or share it thru public www service, etc.
 
 = Benefits =
 Regular browsers does work just fine with the images when there are data appended at the end of the file. And usually the thumbnails which are pregenerated in the image file are working as well, so the basic operating system will also preview the image as well. So all in all this should be cross-platform. :-)
