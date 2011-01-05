@@ -1,4 +1,4 @@
-#summary How to share confidential data on plain sight
+#summary How to share data on plain sight
 
 = Introduction =
 
