@@ -37,3 +37,10 @@ dd bs=1 if=$1 skip=`stat -c %s $2` of=$3
 {{{
 ./script.sh bg-with-filesystem.png bg.png target-filesystem-file.dta
 }}}
+= Alternate data streams =
+On windows you could use alternate datastreams instead of image file.
+== example ==
+{{{
+cat filesystem.dta > notepad.exe:thestream
+}}}
+not sure tho if this works :p
