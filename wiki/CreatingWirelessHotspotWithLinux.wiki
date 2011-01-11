@@ -1,4 +1,6 @@
 #summary How to create a homebrew hot-spot with Linux
+= Table of Contents =
+<wiki:toc max_depth="3" />
 
 = Introduction =
 This covers Ubuntu 10.04 LTS Linux with basic configuration using dnsmasq and hostapd.
