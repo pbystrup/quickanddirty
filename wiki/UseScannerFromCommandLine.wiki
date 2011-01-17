@@ -25,6 +25,7 @@ the scanned image in ppm format.
 
 = Scan image as A4 grayscale png =
 {{{
-scanimage -l 0 -t 0 -x 215 -y 297 --resolution 150 --mode Gray | convert - /var/www/scan/`date +%s`.png
-
+scanimage -l 0 -t 0 -x 215 -y 297 --resolution 150 --mode Gray | convert - `date +%s`.png
 }}}
+== example output ==
+This will create a png file which is a grayscale scan of the image and which is named with a timestamp.
