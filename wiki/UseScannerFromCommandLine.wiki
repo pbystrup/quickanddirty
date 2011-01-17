@@ -3,7 +3,7 @@
 = Introduction =
 
 {{{
- sudo apt-get install sane
+ sudo apt-get install sane sane-utils imagemagick
 }}}
 
 
