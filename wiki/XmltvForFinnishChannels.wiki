@@ -15,5 +15,5 @@ sudo mv tv_grab_fi /usr/bin
 }}}
 == configure ==
 {{{
-xmltv --configure
+tv_grab_fi --configure
 }}}
