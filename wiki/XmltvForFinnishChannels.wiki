@@ -4,7 +4,7 @@
 
 Ubuntu 10.04 LTS
 
-= Details =
+= xmltv =
 == install ==
 {{{
 sudo apt-get install xmltv xmltv-utils
@@ -16,4 +16,10 @@ sudo mv tv_grab_fi /usr/bin
 == configure ==
 {{{
 tv_grab_fi --configure
+}}}
+
+= vdr =
+== install plugin ==
+{{{
+git clone git://projects.vdr-developer.org/vdr-plugin-xmltv2vdr.git
 }}}
