@@ -17,6 +17,10 @@ sudo mv tv_grab_fi /usr/bin
 {{{
 tv_grab_fi --configure
 }}}
+== update ==
+{{{
+tv_grab_fi > channels.xml
+}}}
 
 = vdr =
 == install plugin ==
