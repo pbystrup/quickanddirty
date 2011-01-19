@@ -27,3 +27,4 @@ tv_grab_fi > channels.xml
 {{{
 git clone git://projects.vdr-developer.org/vdr-plugin-xmltv2vdr.git
 }}}
+configure the plugin Makefile according to your VDR source location. And then compile it.
