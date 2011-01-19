@@ -1,0 +1,19 @@
+#summary The configuration for xmltv.
+
+= Introduction =
+
+Ubuntu 10.04 LTS
+
+= Details =
+== install ==
+{{{
+sudo apt-get install xmltv xmltv-utils
+}}}
+{{{
+wget http://xmltv.cvs.sourceforge.net/viewvc/xmltv/xmltv/grab/fi/tv_grab_fi
+sudo mv tv_grab_fi /usr/bin
+}}}
+== configure ==
+{{{
+xmltv --configure
+}}}
