@@ -2,16 +2,17 @@
 = Table of Contents =
 <wiki:toc max_depth="3" />
 
-= Introduction =
+= Internet Sharing with bridge =
+== Introduction ==
 This covers Ubuntu 10.04 LTS Linux with basic configuration using dnsmasq and hostapd.
 
-= Install =
+== Install ==
 {{{
  sudo apt-get install dnsmasq hostapd bridge-utils screen --force-yes --yes
 }}}
 
-= Configure =
-== interfaces ==
+== Configure ==
+=== interfaces ===
 In this case there is adsl modem with static ip at 172.16.1.2.
 
 /etc/network/interfaces
@@ -47,7 +48,7 @@ iface br0 inet manual
 
 }}}
 
-== DHCP ==
+=== DHCP ===
 In this case the localhost is named serveri.
 
 /etc/dnsmasq.conf
@@ -62,7 +63,7 @@ log-queries
 log-dhcp
 }}}
 
-== WLAN ==
+=== WLAN ===
 If you live in Finland and you have eth0 and wlan0, then only what you need to change is YOUR_WLAN_NAME and YOUR_PASSWORD.
 
 /etc/hostapd/hostapd.conf
@@ -88,8 +89,8 @@ wpa_pairwise=TKIP
 rsn_pairwise=CCMP
 }}}
 
-= Start-up Scripts =
-== /usr/local/bin/create-bridge ==
+== Start-up Scripts ==
+=== /usr/local/bin/create-bridge ===
 {{{
 #!/bin/bash
 service hostapd stop
@@ -113,8 +114,42 @@ service hostapd start
 service dnsmasq start
 }}}
 
-== /usr/local/bin/start-hotspot ==
+=== /usr/local/bin/start-hotspot ===
 Run this in screen session.
 {{{
 sudo hostapd -dd /etc/hostapd/hostapd.conf
+}}}
+
+= Alternative: Internet Sharing with iptables =
+== Introduction ==
+The easiest method is to just use iptables routing.
+
+== Installation ==
+{{{
+sudo apt-get install iptables
+}}}
+
+== Internet Sharing Script ==
+This should be called in /etc/rc.local for example.
+
+{{{
+#!/bin/bash
+sudo iptables -F
+sudo iptables -t nat -F
+sudo iptables -t mangle -F
+sudo iptables -X
+sudo iptables -t nat -X
+sudo iptables -t mangle -X
+
+sudo ifconfig eth0 172.16.1.1
+sudo ifconfig wlan0 192.168.0.1
+
+sudo route del default gw 172.16.1.2
+sudo iptables -A FORWARD -o eth0 -i wlan0 -m conntrack --ctstate NEW -j ACCEPT
+sudo iptables -A FORWARD -m conntrack --ctstate ESTABLISHED,RELATED -j ACCEPT
+sudo iptables -A POSTROUTING -t nat -j MASQUERADE
+#sudo iptables -t nat -A POSTROUTING -o eth0 -j MASQUERADE
+sudo route add default gw 172.16.1.2 eth0
+
+sudo service dnsmasq restart
 }}}
