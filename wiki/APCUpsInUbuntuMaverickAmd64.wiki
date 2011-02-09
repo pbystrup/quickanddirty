@@ -125,3 +125,8 @@ END APC  : 2011-02-09 17:15:39 +0200
 
 = Configure for real =
 Edit the configuration file and read the comments in there. Make the adjustments what you want.
+
+= screenshots from web interface =
+||http://quickanddirty.googlecode.com/files/apcupsd-multimon.png||
+||http://quickanddirty.googlecode.com/files/apcupsd-upfsstats-.png||
+||http://quickanddirty.googlecode.com/files/apcupsd-stats.png||
