@@ -148,7 +148,6 @@ sudo route del default gw 172.16.1.2
 sudo iptables -A FORWARD -o eth0 -i wlan0 -m conntrack --ctstate NEW -j ACCEPT
 sudo iptables -A FORWARD -m conntrack --ctstate ESTABLISHED,RELATED -j ACCEPT
 sudo iptables -A POSTROUTING -t nat -j MASQUERADE
-#sudo iptables -t nat -A POSTROUTING -o eth0 -j MASQUERADE
 sudo route add default gw 172.16.1.2 eth0
 
 sudo service dnsmasq restart
