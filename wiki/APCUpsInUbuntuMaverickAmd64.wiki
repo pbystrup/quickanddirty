@@ -36,11 +36,11 @@ Configuration on Wed Feb  9 17:22:10 EET 2011:
   UPSTYPE                     apcsmart
   UPSCABLE                    smart
 
-  drivers (no-* are disabled): apcsmart dumb net *linux-usb* snmp no-net-snmp pcne  t no-test
+  drivers (no-* are disabled): apcsmart dumb net linux-usb snmp no-net-snmp pcne  t no-test
 
-  enable-nis:                 *yes*
-  with-nisip:                 *0.0.0.0*
-  enable-cgi:                 *yes*
+  enable-nis:                 yes
+  with-nisip:                 0.0.0.0
+  enable-cgi:                 yes
   with-cgi-bin:               /etc/apcupsd
   with-libwrap:
   enable-pthreads:            yes
