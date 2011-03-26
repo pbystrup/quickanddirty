@@ -177,7 +177,7 @@ DISABLED_MODULES="-no-qt3support -no-accessibility"
 ENABLED_MODULES="-qt-libjpeg -qt-libmng -qt-gif -qt-webkit -qt-libpng -qt-libtiff -qt-zlib -qt-freetype"
 MISC_FLAGS="-opensource -embedded arm -xplatform qws/linux-arm-g++ -force-pkg-config"
 DEVICES="-qt-gfx-linuxfb -qt-kbd-tty -qt-mouse-tslib"
-DISABLED_PACKAGES="-nomake tests"
+DISABLED_PACKAGES="-nomake tests -nomake examples -nomake demos"
 DIRECTORIES="-L/psp/lib/ -I/psp/include/ -prefix /psp/usr/local/qt/"
 ./configure -release $DIRECTORIES $DISABLED_MODULES $ENABLED_MODULES $MISC_FLAGS $DEVICES $DISABLED_PACKAGES
 make
