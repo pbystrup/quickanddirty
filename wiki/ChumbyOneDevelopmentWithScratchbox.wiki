@@ -32,7 +32,9 @@ nano /etc/apt/sources.list.d/scratchbox.list
 {{{
 apt-get update
 apt-get install scratchbox-core scratchbox-libs
+apt-get install scratchbox-toolchain-host-gcc scratchbox-devkit-doctools scratchbox-devkit-perl scratchbox-devkit-debian scratchbox-devkit-cputransp
 }}}
+note that cputransp is not available for amd64.
 
 {{{
 chgrp -R sbox /scratchbox/compilers
