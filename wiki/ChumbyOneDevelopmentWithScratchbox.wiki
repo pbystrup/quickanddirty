@@ -36,6 +36,8 @@ on tasksel:
 }}}
 TODO: add screenshots
 
+make port forward from virtual machine to localhost port 2222
+
 = Installing ScratchBox on virtual Debian 6 32-bit =
 http://wiki.chumby.com/index.php/Scratchbox
 
