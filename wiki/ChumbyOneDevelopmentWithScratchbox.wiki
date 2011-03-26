@@ -71,8 +71,12 @@ pushd ~
 }}}
 
 {{{
-nano ~/sb-toolchain-extras/meta/alien-tc/arm-2008q3.conf
+cd ~/sb-toolchain-extras
+nano meta/alien-tc/arm-2008q3.conf
 COMPILER_PACKAGE = Chumby CodeSourcery
- BINUTILS_FULLVER = 2.18.50.20080215
+BINUTILS_FULLVER = 2.18.50.20080215
+}}}
 
+{{{
+make CONFIG=meta/alien-tc/arm-2008q3.conf -C meta/alien-tc all-sums
 }}}
