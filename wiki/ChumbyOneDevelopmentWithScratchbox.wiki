@@ -1,4 +1,4 @@
-#summary Installing ScratchBox for Chumby One Development.
+#summary Development Machine for Chumby One Development with Qt.
 
 = Introduction =
 * WORK IN PROGRESS *
