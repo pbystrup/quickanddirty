@@ -86,6 +86,14 @@ exit
 [sbox-NO-TARGET: ~] > sb-menu
 }}}
 
+{{{
+Setup a new target and call it HOST
+Select the host-gcc compiler
+Select the debian-etch, perl, and doctools devkits.
+Select no cpu transparency method.
+Select "Yes" to installing files, and check /etc and Devkits.
+Select the target by choosing Yes
+}}}
 create host target.. add screenshots here.
 
 {{{
