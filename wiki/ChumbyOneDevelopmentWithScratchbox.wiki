@@ -16,7 +16,11 @@ sudo apt-get install virtualbox-4.0
 }}}
 
 = Install Debian 6 - 32-bit to virtualbox =
-download netinst iso and install it.
+download netinst iso (45.5MB) and install it.
+{{{
+wget http://cdimage.debian.org/debian-cd/6.0.1a/i386/iso-cd/debian-6.0.1a-i386-businesscard.iso
+}}}
+TODO: add screenshots
 
 = Installing ScratchBox on virtual Debian 6 32-bit =
 http://wiki.chumby.com/index.php/Scratchbox
