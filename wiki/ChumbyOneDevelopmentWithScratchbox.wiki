@@ -52,3 +52,27 @@ Shell restarting...
 [sbox-HOST: ~] > 
 }}}
 
+{{{
+cd /scratchbox/compilers
+wget http://files.chumby.com/toolchain/arm-2008q3-72-arm-none-linux-gnueabi-i686-pc-linux-gnu.tar.bz2
+tar -xvjpf arm-2008q3-72-arm-none-linux-gnueabi-i686-pc-linux-gnu.tar.bz
+cd arm-2008q3
+ln -s arm-none-linux-gnueabi/libc/usr/include .
+ ln -s /scratchbox/compilers/arm-2008q3/arm-none-linux-gnueabi/include/c++ include/c++
+}}}
+
+{{{
+pushd ~
+ rm -rf sb-toolchain-extras
+ darcs get --set-scripts-executable http://scratchbox.org/repos/1.0/sb-toolchain-extras
+ popd
+~/sb-toolchain-extras/confhelper/create_toolchain_conf.py > \
+ ~/sb-toolchain-extras/meta/alien-tc/arm-2008q3.conf
+}}}
+
+{{{
+nano ~/sb-toolchain-extras/meta/alien-tc/arm-2008q3.conf
+COMPILER_PACKAGE = Chumby CodeSourcery
+ BINUTILS_FULLVER = 2.18.50.20080215
+
+}}}
