@@ -68,8 +68,7 @@ pushd ~
 rm -rf sb-toolchain-extras
 darcs get --set-scripts-executable http://scratchbox.org/repos/1.0/sb-toolchain-extras
 popd
-~/sb-toolchain-extras/confhelper/create_toolchain_conf.py > \
-~/sb-toolchain-extras/meta/alien-tc/arm-2008q3.conf
+~/sb-toolchain-extras/confhelper/create_toolchain_conf.py > ~/sb-toolchain-extras/meta/alien-tc/arm-2008q3.conf
 }}}
 
 {{{
