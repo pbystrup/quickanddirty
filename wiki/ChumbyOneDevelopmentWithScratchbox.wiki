@@ -1,0 +1,33 @@
+#summary Installing ScratchBox for Chumby One Development.
+
+= Introduction =
+* WORK IN PROGRESS *
+
+Add your content here.
+
+
+= Installing ScratchBox on Debian 6 =
+{{{
+su
+}}}
+
+{{{
+ nano /etc/apt/sources.list.d/scratchbox.list
+}}}
+
+{{{
+apt-get update
+apt-get install scratchbox-core scratchbox-libs
+}}}
+
+{{{
+ chgrp -R sbox /scratchbox/compilers
+ chmod -R g+w /scratchbox/compilers
+ mkdir /scratchbox/device_tools
+ chgrp -R sbox /scratchbox/device_tools
+ chmod -R g+w /scratchbox/device_tools
+}}}
+
+{{{
+ /scratchbox/sbin/sbox_adduser [user]
+}}}
