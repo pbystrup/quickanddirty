@@ -45,6 +45,7 @@ su
 
 {{{
 nano /etc/apt/sources.list.d/scratchbox.list
+deb http://scratchbox.org/debian stable main
 }}}
 
 {{{
