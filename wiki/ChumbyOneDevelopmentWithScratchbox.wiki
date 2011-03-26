@@ -4,9 +4,21 @@
 * WORK IN PROGRESS *
 
 Add your content here.
+= Installing VirtualBox on amd64 =
+{{{
+nano /etc/apt/sources.list.d/virtualbox.list
+deb http://download.virtualbox.org/virtualbox/debian squeeze contrib non-free
+}}}
+{{{
+wget -q http://download.virtualbox.org/virtualbox/debian/oracle_vbox.asc -O- | sudo apt-key add -
+sudo apt-get update
+sudo apt-get install virtualbox-4.0
+}}}
 
+= Install Debian 6 - 32-bit to virtualbox =
+download netinst iso and install it.
 
-= Installing ScratchBox on Debian 6 =
+= Installing ScratchBox on virtual Debian 6 32-bit =
 http://wiki.chumby.com/index.php/Scratchbox
 
 {{{
