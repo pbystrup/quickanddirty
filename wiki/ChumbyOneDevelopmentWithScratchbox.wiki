@@ -178,3 +178,4 @@ cd
   * http://www.jespersaur.com/drupal/node/30
   * http://www.armadeus.com/wiki/index.php?title=Qt/Embedded
   * http://thelins.se/learnqt/2009/06/an-embedded-linux-development-setup/
+  * http://files.chumby.com/source/
