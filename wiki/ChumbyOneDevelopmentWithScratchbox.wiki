@@ -127,6 +127,7 @@ COMPILER_PACKAGE = chumby
 {{{
 make CONFIG=meta/alien-tc/arm-2008q3.conf -C meta/alien-tc all-sums
 make CONFIG=meta/alien-tc/arm-2008q3.conf -C meta/alien-tc
+cd
 }}}
 
 {{{
@@ -140,6 +141,7 @@ tar -xvjpf master
 cd kergoth-tslib
 ./configure --prefix=/psp --host=arm-linux
 make && make install
+cd
 }}}
 {{{
 nano /psp/chumby.env
@@ -159,10 +161,12 @@ export QWS_KEYBOARD=USB:/dev/input/event1
 nano /psp/etc/ts.conf
 module_raw input
 }}}
-= Installing Qt 4.7.2 =
+= Installing Qt 4.7.2 for Embedded Linux =
 {{{
 wget http://get.qt.nokia.com/qt/source/qt-everywhere-opensource-src-4.7.2.tar.gz
 tar -xvzpf qt-everywhere-opensource-src-4.7.2.tar.gz
 cd qt-everywhere-opensource-src-4.7.2
 ./configure -no-qt3support -no-xmlpatterns -no-multimedia -no-audio-backend -no-fontconfig -no-glib -no-xkb -no-xinput -no-mitshm -no-xrender -no-xrandr -no-xfixes -no-xcursor -no-xinerama -no-xsync -no-xshape -no-sm -no-openvg -no-opengl -no-gtkstyle -no-separate-debug-info -no-dbus -no-pch -no-iconv -no-cups -no-nis -no-openssl -qt-libjpeg -no-libmng -qt-libpng -no-libtiff -no-gif -qt-zlib -no-scripttools -no-script -no-javascript-jit -no-webkit -no-svg -no-phonon-backend -no-phonon -no-audio-backend -no-multimedia -no-xmlpatterns -no-qt3support -no-stl -no-accessibility -no-exceptions -no-largefile -prefix /psp/usr/local/qt/ -L/psp/lib/ -I/psp/include/ -nomake examples -nomake demos -opensource -embedded arm -xplatform qws/linux-arm-g++ -nomake tests -force-pkg-config -qt-gfx-linuxfb -qt-kbd-tty -qt-mouse-tslib -qt-freetype -release
+make && make install
+cd
 }}}
