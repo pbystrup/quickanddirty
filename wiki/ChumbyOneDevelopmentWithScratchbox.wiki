@@ -80,4 +80,5 @@ BINUTILS_FULLVER = 2.18.50.20080215
 
 {{{
 make CONFIG=meta/alien-tc/arm-2008q3.conf -C meta/alien-tc all-sums
+make CONFIG=meta/alien-tc/arm-2008q3.conf -C meta/alien-tc
 }}}
