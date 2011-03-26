@@ -47,13 +47,13 @@ su
 
 {{{
 nano /etc/apt/sources.list.d/scratchbox.list
-deb http://scratchbox.org/debian stable main
+deb http://scratchbox.org/debian apophis main
 }}}
 
 {{{
 apt-get update
 apt-get install scratchbox-core scratchbox-libs
-apt-get install scratchbox-toolchain-host-gcc scratchbox-devkit-doctools scratchbox-devkit-perl scratchbox-devkit-debian scratchbox-devkit-cputransp
+apt-get install scratchbox-toolchain-host-gcc scratchbox-devkit-doctools scratchbox-devkit-perl scratchbox-devkit-debian-squeeze scratchbox-devkit-cputransp
 }}}
 note that cputransp is not available for amd64.
 
