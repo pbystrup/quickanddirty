@@ -173,7 +173,7 @@ cd
 
 {{{
 #!/bin/bash
-DISABLED_MODULES="-no-qt3support -no-accessibility"
+DISABLED_MODULES="-no-qt3support -no-accessibility -no-svg"
 ENABLED_MODULES="-qt-libjpeg -qt-libmng -qt-gif -qt-webkit -qt-libpng -qt-libtiff -qt-zlib -qt-freetype"
 MISC_FLAGS="-opensource -embedded arm -xplatform qws/linux-arm-g++ -force-pkg-config"
 DEVICES="-qt-gfx-linuxfb -qt-kbd-tty -qt-mouse-tslib"
