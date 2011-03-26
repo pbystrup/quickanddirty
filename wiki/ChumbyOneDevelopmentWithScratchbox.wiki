@@ -29,5 +29,26 @@ apt-get install scratchbox-core scratchbox-libs
 }}}
 
 {{{
+echo 4096 > /proc/sys/vm/mmap_min_addr
+}}}
+
+{{{
  /scratchbox/sbin/sbox_adduser [user]
 }}}
+
+{{{
+exit
+}}}
+
+{{{
+ /scratchbox/login
+ [sbox-NO-TARGET: ~] > sb-menu
+}}}
+
+create host target.. add screenshots here.
+
+{{{
+Shell restarting...
+[sbox-HOST: ~] > 
+}}}
+
