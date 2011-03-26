@@ -81,3 +81,8 @@ COMPILER_PACKAGE = chumby
 make CONFIG=meta/alien-tc/arm-2008q3.conf -C meta/alien-tc all-sums
 make CONFIG=meta/alien-tc/arm-2008q3.conf -C meta/alien-tc
 }}}
+
+{{{
+nano /scratchbox/compilers/arm-2008q3/target_setup.sh
+os.system('echo export SBOX_EXTRA_COMPILER_ARGS=-Wno-poison-system-directories >> ' + target + '.environment')
+}}}
