@@ -68,6 +68,10 @@ chmod -R g+w /scratchbox/device_tools
 {{{
 echo 4096 > /proc/sys/vm/mmap_min_addr
 }}}
+nano /etc/sysctl.conf
+{{{
+vm.mmap_min_addr = 4096
+}}}
 
 {{{
 /scratchbox/sbin/sbox_adduser [user]
