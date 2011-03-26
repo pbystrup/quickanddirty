@@ -16,7 +16,7 @@ sudo apt-get install virtualbox-4.0
 }}}
 
 = Install Debian 6 - 32-bit to virtualbox =
-download netinst iso (45.5MB) and install it.
+download netinst iso (45.5MB) and install it. Clean install without scratchbox will take about 2G. Give 1024MB of ram and 100G of disk for the image. Disk is dynamic allocated.
 {{{
 wget http://cdimage.debian.org/debian-cd/6.0.1a/i386/iso-cd/debian-6.0.1a-i386-businesscard.iso
 }}}
