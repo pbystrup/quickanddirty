@@ -7,6 +7,8 @@ Add your content here.
 
 
 = Installing ScratchBox on Debian 6 =
+http://wiki.chumby.com/index.php/Scratchbox
+
 {{{
 su
 }}}
