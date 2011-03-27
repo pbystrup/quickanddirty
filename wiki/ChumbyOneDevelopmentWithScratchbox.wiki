@@ -3,7 +3,8 @@
 = Introduction =
 * WORK IN PROGRESS *
 
-Add your content here.
+The need for this page is to collect all required information into one place. You will see the links at the bottom of this page for those pages, from which the information is coming from. Some minor adjustments has been done to the information as well as to the scripts included here.
+
 = Installing VirtualBox on amd64 =
 {{{
 nano /etc/apt/sources.list.d/virtualbox.list
@@ -220,6 +221,25 @@ The pinout of P100 is as follows:
 7 - TRST
 8 - CHUMBY_RESET
 }}}
+= Software =
+== Kernel ==
+=== Updating Kernel ===
+  # Build normal zImage
+  # Run it through a packer script
+  # Zip it
+  # Copy to USB stick
+  # Plug USB stick into Chumby
+  # Reboot the Chumby while pressing the screen
+  # Select software update option from the menu
+== Bootloader ==
+{{{
+The standard embedded linux development method is to use a bootloader with network support (such as uboot) to load the kernel into RAM over the network (normally using TFTP). This avoids all the disadvantages listed above.
+Unfortunately the Chumby bootloader has no network support. Switching bootloaders (eg to uboot), while theoretically possible has several disadvantages too:
+The Chumby has no ethernet interface, only USB with an internal USB/Wifi adapter or an external USB/Ethernet adapter. This means that the bootloader would require USB support as well.
+The I.MX21 SoC has a non standard USB host controller not supported in bootloaders (but now included in the kernel)
+Updating the bootloader is risky and could brick the device requiring a JTAG connection to fix...
+}}}
+
 = Links & Material =
   * http://wiki.chumby.com/index.php/Scratchbox
   * https://github.com/kergoth/tslib
