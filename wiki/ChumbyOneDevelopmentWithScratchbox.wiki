@@ -216,3 +216,6 @@ then copy the calibration data from /psp/etc/pointercal for later usage, if you 
   * http://thelins.se/learnqt/2009/06/an-embedded-linux-development-setup/
   * http://files.chumby.com/source/
   * http://wiki.chumby.com/index.php/Chumby_Software_Applications,_Scripts_and_Tools
+  * http://forum.chumby.com/viewtopic.php?id=1145
+  * http://forum.chumby.com/viewtopic.php?id=1469
+  * http://forum.chumby.com/viewtopic.php?id=1493
