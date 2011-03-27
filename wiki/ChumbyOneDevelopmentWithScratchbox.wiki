@@ -167,11 +167,9 @@ module_raw input
 wget http://get.qt.nokia.com/qt/source/qt-everywhere-opensource-src-4.7.2.tar.gz
 tar -xvzpf qt-everywhere-opensource-src-4.7.2.tar.gz
 cd qt-everywhere-opensource-src-4.7.2
-./configure -no-qt3support -no-xmlpatterns -no-multimedia -no-audio-backend -no-fontconfig -no-glib -no-xkb -no-xinput -no-mitshm -no-xrender -no-xrandr -no-xfixes -no-xcursor -no-xinerama -no-xsync -no-xshape -no-sm -no-openvg -no-opengl -no-gtkstyle -no-separate-debug-info -no-dbus -no-pch -no-iconv -no-cups -no-nis -no-openssl -qt-libjpeg -no-libmng -qt-libpng -no-libtiff -no-gif -qt-zlib -no-scripttools -no-script -no-javascript-jit -no-webkit -no-svg -no-phonon-backend -no-phonon -no-audio-backend -no-multimedia -no-xmlpatterns -no-qt3support -no-stl -no-accessibility -no-exceptions -no-largefile -prefix /psp/usr/local/qt/ -L/psp/lib/ -I/psp/include/ -nomake examples -nomake demos -opensource -embedded arm -xplatform qws/linux-arm-g++ -nomake tests -force-pkg-config -qt-gfx-linuxfb -qt-kbd-tty -qt-mouse-tslib -qt-freetype -release
-make
-cd
 }}}
 
+nano configure-qt.sh
 {{{
 #!/bin/bash
 DISABLED_MODULES="-no-qt3support -no-accessibility -no-svg"
@@ -179,10 +177,16 @@ ENABLED_MODULES="-qt-libjpeg -qt-libmng -qt-gif -qt-webkit -qt-libpng -qt-libtif
 MISC_FLAGS="-opensource -embedded arm -xplatform qws/linux-arm-g++ -force-pkg-config"
 DEVICES="-qt-gfx-linuxfb -qt-kbd-tty -qt-mouse-tslib"
 DISABLED_PACKAGES="-nomake tests -nomake examples -nomake demos -nomake docs -nomake translations"
-DIRECTORIES="-L/psp/lib/ -I/psp/include/ -prefix /psp/usr/local/qt/"
+DIRECTORIES="-L/psp/lib/ -I/psp/include/ -prefix /psp/"
 ./configure -release $DIRECTORIES $DISABLED_MODULES $ENABLED_MODULES $MISC_FLAGS $DEVICES $DISABLED_PACKAGES
-make
 }}}
+
+{{{
+./configure-qt.sh
+make
+make install
+}}}
+
 
 = Compiling a Qt application =
 Add following lines to .pro
