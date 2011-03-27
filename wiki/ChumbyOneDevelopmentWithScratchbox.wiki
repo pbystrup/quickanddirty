@@ -198,6 +198,15 @@ Inside scratchbox trigger the qmake
 {{{
 /psp/bin/qmake
 }}}
+
+= First run on Chumby =
+{{{
+cd /psp
+source chumby.env
+ts_calibrate
+}}}
+then copy the calibration data from /psp/etc/ts_pointercal for later usage, if you want to avoid calibration in future hacks.
+
 = Links & Material =
   * http://wiki.chumby.com/index.php/Scratchbox
   * https://github.com/kergoth/tslib
