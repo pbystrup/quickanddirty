@@ -147,15 +147,16 @@ cd
 nano /psp/chumby.env
 export TSLIB_TSDEVICE=/dev/input/event1
 export TSLIB_FBDEVICE=/dev/fb0
-export TSLIB_PLUGINDIR=/mnt/usb/lib/ts
+export TSLIB_PLUGINDIR=/psp/lib/ts
 export TSLIB_CONSOLEDEVICE=none
-export TSLIB_CONFFILE=/mnt/usb/etc/ts.conf
-export TSLIB_CALIBFILE=/mnt/usb/etc/pointercal
-export LD_LIBRARY_PATH=/lib:/mnt/usb/lib
-export POINTERCAL_FILE=/mnt/usb/etc/pointercal
+export TSLIB_CONFFILE=/psp/etc/ts.conf
+export TSLIB_CALIBFILE=/psp/etc/pointercal
+export LD_LIBRARY_PATH=/lib:/psp/lib
+export POINTERCAL_FILE=/psp/etc/pointercal
 export QWS_MOUSE_PROTO=Tslib:/dev/input/event1
 #export QWS_KEYBOARD=none
 export QWS_KEYBOARD=USB:/dev/input/event1
+export PATH=/psp/bin:/psp/usr/bin:/psp/usr/sbin:/psp/usr/local/bin:$PATH
 }}}
 {{{
 nano /psp/etc/ts.conf
@@ -183,6 +184,16 @@ DIRECTORIES="-L/psp/lib/ -I/psp/include/ -prefix /psp/usr/local/qt/"
 make
 }}}
 
+= Compiling a Qt application =
+Add following lines to .pro
+{{{
+LIBS += /psp/lib/libts.so
+INCLUDEPATH += /psp/include
+}}}
+Inside scratchbox trigger the qmake
+{{{
+/psp/bin/qmake
+}}}
 = Links & Material =
   * http://wiki.chumby.com/index.php/Scratchbox
   * https://github.com/kergoth/tslib
