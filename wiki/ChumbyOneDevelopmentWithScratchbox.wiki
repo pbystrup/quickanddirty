@@ -207,6 +207,19 @@ ts_calibrate
 }}}
 then copy the calibration data from /psp/etc/pointercal for later usage, if you want to avoid calibration in future hacks.
 
+= Hardware =
+== JTAG ==
+{{{
+The pinout of P100 is as follows:
+1 - 3.3V
+2 - TCK
+3 - TDI
+4 - GND
+5 - TMS
+6 - TDO
+7 - TRST
+8 - CHUMBY_RESET
+}}}
 = Links & Material =
   * http://wiki.chumby.com/index.php/Scratchbox
   * https://github.com/kergoth/tslib
@@ -219,3 +232,6 @@ then copy the calibration data from /psp/etc/pointercal for later usage, if you 
   * http://forum.chumby.com/viewtopic.php?id=1145
   * http://forum.chumby.com/viewtopic.php?id=1469
   * http://forum.chumby.com/viewtopic.php?id=1493
+  * http://wiki.chumby.com/index.php/Hacking_Linux_for_chumby
+  * http://forum.chumby.com/viewtopic.php?id=3454
+  * http://sourceforge.net/apps/mediawiki/chumby-kernel/index.php?title=Kexec_boot
