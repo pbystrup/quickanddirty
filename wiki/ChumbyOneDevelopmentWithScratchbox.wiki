@@ -255,4 +255,7 @@ Updating the bootloader is risky and could brick the device requiring a JTAG con
   * http://wiki.chumby.com/index.php/Hacking_Linux_for_chumby
   * http://forum.chumby.com/viewtopic.php?id=3454
   * http://sourceforge.net/apps/mediawiki/chumby-kernel/index.php?title=Kexec_boot
+  * http://code.google.com/p/chumbydevboot/
   * http://dangerousprototypes.com/tag/chumby/
+  * http://dangerousprototypes.com/2011/03/08/convert-the-chumby-serial-port-into-two-pwm-outputs/
+  * http://code.google.com/p/chumbycv/
