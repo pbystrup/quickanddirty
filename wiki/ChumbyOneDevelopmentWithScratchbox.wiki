@@ -205,7 +205,7 @@ cd /psp
 source chumby.env
 ts_calibrate
 }}}
-then copy the calibration data from /psp/etc/ts_pointercal for later usage, if you want to avoid calibration in future hacks.
+then copy the calibration data from /psp/etc/pointercal for later usage, if you want to avoid calibration in future hacks.
 
 = Links & Material =
   * http://wiki.chumby.com/index.php/Scratchbox
