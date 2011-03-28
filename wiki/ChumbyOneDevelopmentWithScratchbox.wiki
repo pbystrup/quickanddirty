@@ -209,6 +209,29 @@ ts_calibrate
 then copy the calibration data from /psp/etc/pointercal for later usage, if you want to avoid calibration in future hacks.
 
 = Hardware =
+== Specs ==
+{{{
+Codename: Falconwing
+454 MHz Freescale i.MX233
+Hynix 512Mbit DDR SDRAM (16-bit)
+2 Gbyte microSD card (brand/type and capacity may vary depending on market availability, as of 4Q09 a 2GB Kingston brand card can be found in the device, although Samsung OEM and Sandisk cards ranging from 1GB - 4GB have also been qualified for use; some anecdotal testing has seen 16GB cards working but there has been no rigorous testing for compatibility.)
+One external USB 2.0 High speed port
+Ralink-based RT2571 USB wifi dongle
+Nanovision 320 x 240 TFT LCD with 4-wire resistive touchscreen
+2W mono speaker
+headphone jack
+built-in microphone
+snooze crash bar switch
+rotary encoder for "soft" volume control (it can be repurposed for other functions, such as a Pong-style paddle controller, by you)
+QN8005B FM tuner
+Freescale MMA7445 accelerometer
+3.3V TTL serial port, 115200, 8N1; although, you can SSH into the device, and failing that, you can plug a USB keyboard into the USB port and it will pull up a shell console, so the serial port is mostly useful for early boot debug or controlling other devices
+Optional lithium ion battery, Fujifilm NP-120 or equivalent , 3.7V @ 1800mAh. Beware knock-offs that lack embedded battery safety circuitry or sub-par quality batteries.
+}}}
+== Schematics ==
+http://files.chumby.com/bunnie/chumbyone_hw/chumbyone_schematics.pdf
+== Gerbers ==
+http://files.chumby.com/bunnie/chumbyone_hw/chumbyone_gerbers.zip
 == JTAG ==
 {{{
 The pinout of P100 is as follows:
@@ -259,3 +282,6 @@ Updating the bootloader is risky and could brick the device requiring a JTAG con
   * http://dangerousprototypes.com/tag/chumby/
   * http://dangerousprototypes.com/2011/03/08/convert-the-chumby-serial-port-into-two-pwm-outputs/
   * http://code.google.com/p/chumbycv/
+  * http://wiki.chumby.com/index.php/Main_Page#Chumby_devices
+  * http://www.freescale.com/webapp/sps/site/prod_summary.jsp?code=i.MX233
+  * http://wiki.chumby.com/index.php/Hacking_hardware_for_chumby
