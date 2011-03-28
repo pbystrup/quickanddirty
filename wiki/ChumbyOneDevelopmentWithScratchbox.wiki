@@ -262,6 +262,8 @@ The Chumby has no ethernet interface, only USB with an internal USB/Wifi adapter
 The I.MX21 SoC has a non standard USB host controller not supported in bootloaders (but now included in the kernel)
 Updating the bootloader is risky and could brick the device requiring a JTAG connection to fix...
 }}}
+== Boot Process ==
+http://wiki.chumby.com/index.php/Falconwing_boot
 
 = Links & Material =
   * http://wiki.chumby.com/index.php/Scratchbox
