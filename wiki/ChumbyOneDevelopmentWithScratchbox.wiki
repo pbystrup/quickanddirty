@@ -313,6 +313,13 @@ copy files now there..
 I used an old 256MB Kingston DataTraveller II. Create Fat32 primary partition. Then copy the update-new.tgz as update.tgz to the root of the usb stick. Then sync and eject the stick from your computer and insert it to chumby. Then press touch screen on Chumby One and reconnect power. Keep finger on the screen until "Special Options" are loading. Then select _install updates_ and select usb.
 http://www.chumby.com/pages/latest_software#usbupdate
 
+= Internals / Misc Notes =
+== How to Clear screen ==
+ dd if=/dev/zero of=/dev/fb0 bs=640 count=240
+== How to write to the screen ==
+ echo -n "Hello World!" | fbwrite --color=255,255,255 --pos=1,3 -
+== How to adjust brightness ==
+ /sys/devices/platform/stmp3xxx-bl/backlight/stmp3xxx-bl/brightness
 
 = Links & Material =
   * http://wiki.chumby.com/index.php/Scratchbox
