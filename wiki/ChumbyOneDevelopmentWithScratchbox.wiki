@@ -517,3 +517,4 @@ qtapp -qws
   * http://www.linuxtoys.org/chumbot/chumby_robot.tgz
   * http://www.linuxtoys.org/chumbot/chumby_as_robot.pdf
   * http://www.linuxtoys.org/chumbot/hands_on_bb4.pdf
+  * http://wiki.chumby.com/index.php/Chumby_Rootdisk_-_RFS1_(analyzed)
