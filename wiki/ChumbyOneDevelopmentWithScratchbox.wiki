@@ -6,6 +6,9 @@
 * WORK IN PROGRESS *
 
 The need for this page is to collect all required information into one place. You will see the links at the bottom of this page for those pages, from which the information is coming from. Some minor adjustments has been done to the information as well as to the scripts included here.
+= Status =
+== 31.3.2011 ==
+I have Qt 4.7.2 based application running on Chumby One. The application is called bussi and it displays the bus schedule from home to city. The Qt application is started automatically on boot.
 
 = Installing VirtualBox on amd64 =
 {{{
