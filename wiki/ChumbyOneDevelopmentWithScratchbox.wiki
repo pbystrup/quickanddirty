@@ -344,22 +344,31 @@ aplay [filename]
 }}}
 
 == Do stuff at boot ==
+{{{
 /psp/rcS
+}}}
 
 == Configure network ==
+{{{
 /psp/network_config
 /psp/network_configs
+}}}
 
 == start ssh at boot ==
+{{{
 /psp/start_sshd
+}}}
 
 == disable intro ==
+{{{
 /psp/disable_intro
+}}}
 
 == execute qt app ==
+{{{
 source /psp/chumby.env
 qtapp -qws
-
+}}}
 
 
 = Links & Material =
