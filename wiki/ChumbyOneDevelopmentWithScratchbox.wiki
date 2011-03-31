@@ -519,3 +519,5 @@ qtapp -qws
   * http://www.linuxtoys.org/chumbot/hands_on_bb4.pdf
   * http://wiki.chumby.com/index.php/Chumby_Rootdisk_-_RFS1_(analyzed)
   * http://boconnor.is-a-geek.com/pmwiki/index.php?n=Geek.Chumby
+  * http://www.bunniestudios.com/blog/?p=1294
+  * http://wiki.chumby.com/index.php/Web_Browser
