@@ -315,11 +315,17 @@ http://www.chumby.com/pages/latest_software#usbupdate
 
 = Internals / Misc Notes =
 == How to Clear screen ==
- dd if=/dev/zero of=/dev/fb0 bs=640 count=240
+{{{
+dd if=/dev/zero of=/dev/fb0 bs=640 count=240
+}}}
 == How to write to the screen ==
+{{{
  echo -n "Hello World!" | fbwrite --color=255,255,255 --pos=1,3 -
+}}}
 == How to adjust brightness ==
+{{{
  /sys/devices/platform/stmp3xxx-bl/backlight/stmp3xxx-bl/brightness
+}}}
 
 = Links & Material =
   * http://wiki.chumby.com/index.php/Scratchbox
