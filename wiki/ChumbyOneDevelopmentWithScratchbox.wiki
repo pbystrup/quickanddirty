@@ -326,6 +326,22 @@ dd if=/dev/zero of=/dev/fb0 bs=640 count=240
 {{{
  /sys/devices/platform/stmp3xxx-bl/backlight/stmp3xxx-bl/brightness
 }}}
+== Dumping data from input devices ==
+{{{
+hexdump /dev/input/by­id/soc­noserial­event­joystick
+hexdump /dev/input/by­id/soc­noserial­event­kbd
+hexdump /dev/input/by­id/soc­noserial­event­ts
+hexdump /dev/input/by­id/soc­noserial­ts
+}}}
+
+== Set volume level ==
+{{{
+amixer sset DAC 255
+}}}
+== Play wav ==
+{{{
+aplay [filename]
+}}}
 
 = Links & Material =
   * http://wiki.chumby.com/index.php/Scratchbox
