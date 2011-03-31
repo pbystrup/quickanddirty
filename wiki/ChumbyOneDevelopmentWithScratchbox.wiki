@@ -365,3 +365,6 @@ aplay [filename]
   * http://wiki.chumby.com/index.php/Main_Page#Chumby_devices
   * http://www.freescale.com/webapp/sps/site/prod_summary.jsp?code=i.MX233
   * http://wiki.chumby.com/index.php/Hacking_hardware_for_chumby
+  * http://www.linuxtoys.org/chumbot/chumby_robot.tgz
+  * http://www.linuxtoys.org/chumbot/chumby_as_robot.pdf
+  * http://www.linuxtoys.org/chumbot/hands_on_bb4.pdf
