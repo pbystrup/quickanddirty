@@ -270,7 +270,7 @@ http://wiki.chumby.com/index.php/Falconwing_boot
 = Deploying Qt Framework to Chumby One =
 In order to deploy the Qt Framework you have two options. You can either create your own custom update package or you can just transfer the framework using usb stick.
 == Creating a custom update package for Chumby One ==
-  # Download an official update package from, and extract it
+  * Download an official update package from, and extract it
 {{{
  $ cd
  $ wget http://files.chumby.com/resources/chumbyone/1-0-7/update.tgz
@@ -283,7 +283,7 @@ rfs.tar.gz
 psp.tar.gz
 chumby_boot.bin
 }}}
-  # extract psp and add qt framework files there
+  * extract psp and add qt framework files there
 {{{
  $ mkdir psp
  $ cd psp
@@ -294,7 +294,7 @@ chumby_boot.bin
 copy files now there..
 }}}
 
-  # repackage everything
+  * repackage everything
 {{{
  $ cd; cd update
  $ rm psp.tar.gz
