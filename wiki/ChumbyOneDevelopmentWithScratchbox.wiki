@@ -1,5 +1,7 @@
 #summary Development Machine for Chumby One Development with Qt.
 
+<wiki:toc max_depth="3" />
+
 = Introduction =
 * WORK IN PROGRESS *
 
