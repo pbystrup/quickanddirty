@@ -265,6 +265,55 @@ Updating the bootloader is risky and could brick the device requiring a JTAG con
 == Boot Process ==
 http://wiki.chumby.com/index.php/Falconwing_boot
 
+= Deploying Qt Framework to Chumby One =
+In order to deploy the Qt Framework you have two options. You can either create your own custom update package or you can just transfer the framework using usb stick.
+== Creating a custom update package for Chumby One ==
+  # Download an official update package from, and extract it
+{{{
+ $ cd
+ $ wget http://files.chumby.com/resources/chumbyone/1-0-7/update.tgz
+ $ mkdir update
+ $ cd update
+ $ tar -xvzpf ../update.tgz
+updater.sh
+krn
+rfs.tar.gz
+psp.tar.gz
+chumby_boot.bin
+}}}
+  # extract psp and add qt framework files there
+{{{
+ $ mkdir psp
+ $ cd psp
+ $ tar -xvzpf ../psp.tar.gz
+}}}
+
+{{{
+copy files now there..
+}}}
+
+  # repackage everything
+{{{
+ $ cd; cd update
+ $ rm psp.tar.gz
+ $ cd psp
+ $ tar -czf ../psp.tar.gz *
+ $ cd
+ $ mkdir update-new
+ $ cd update-new
+ $ cp ~/update/psp.tar.gz .
+ $ cp ~/update/krn .
+ $ cp ~/update/rfs.tar.gz .
+ $ cp ~/update/chumby_boot.bin .
+ $ cp ~/update/updater.sh .
+ $ tar -czj ../update-new.tgz *
+}}}
+  
+== Deploy custom update to Chumby One ==
+I used an old 256MB Kingston DataTraveller II. Create Fat32 primary partition. Then copy the update-new.tgz as update.tgz to the root of the usb stick. Then sync and eject the stick from your computer and insert it to chumby. Then press touch screen on Chumby One and reconnect power. Keep finger on the screen until "Special Options" are loading. Then select _install updates_ and select usb.
+http://www.chumby.com/pages/latest_software#usbupdate
+
+
 = Links & Material =
   * http://wiki.chumby.com/index.php/Scratchbox
   * https://github.com/kergoth/tslib
