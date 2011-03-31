@@ -521,3 +521,7 @@ qtapp -qws
   * http://boconnor.is-a-geek.com/pmwiki/index.php?n=Geek.Chumby
   * http://www.bunniestudios.com/blog/?p=1294
   * http://wiki.chumby.com/index.php/Web_Browser
+  * http://www.bunniestudios.com/blog/?p=1140
+  * http://www.bunniestudios.com/blog/?p=792
+  * http://www.bunniestudios.com/blog/?p=262
+  
