@@ -457,6 +457,8 @@ ifconfig wlan0 | grep "inet addr" | cut -d' ' -f11-12 | fbwrite --color=255,255,
 
 ###################
 echo -n "All systems are running!" | fbwrite --color=255,255,255 --pos=1,16 -
+
+sleep 5
 source /psp/chumby.env
 bussi -qws &
 
