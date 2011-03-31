@@ -343,7 +343,7 @@ amixer sset DAC 255
 aplay [filename]
 }}}
 
-== Do stuff at boot ==
+== Prepare System and Launch Qt application at the end ==
 nano /psp/rcS
 {{{
 #!/bin/sh
