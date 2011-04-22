@@ -113,7 +113,8 @@ You need to be sure that you insert the DIP to LFSTBEB845x in right way. Note th
 {{{
  wine sensortoolbox.exe
 }}}
-Installation will go just fine. However the software is done with .NET so you will need to install it as well. Download the dotnetfx.exe from [http://www.microsoft.com/downloads/en/details.aspx?familyid=0856EACB-4362-4B0D-8EDD-AAB15C5E04F5&displaylang=en Microsoft Download Center].
+Installation will go just fine. However the software is done with .NET so you will need to install it as well. Install Mono for Windows.
+
 {{{
-wine dotnetfx.exe
+wget http://ftp.novell.com/pub/mono/archive/2.10.1/windows-installer/2/mono-2.10.1-gtksharp-2.12.10-win32-2.exe
 }}}
