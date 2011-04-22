@@ -84,3 +84,12 @@ You need to be sure that you insert the DIP to LFSTBEB845x in right way. Note th
   * I dont use Windows and the Download Software takes me to License Agreement page from which it will push SensorToolbox.exe to me..
   * I just wonder if I can find some PDF files or manuals from the website.
   * Maybe the SensorToolbox.exe will run with Wine..
+
+= Documents =
+   * [http://cache.freescale.com/files/sensors/doc/fact_sheet/SENSORTOOLBOXFS.pdf?fpsp=1 SENSORTOOLBOXFS]: Sensor Toolbox
+  * [http://cache.freescale.com/files/sensors/doc/user_guide/LFSTBUSBACCQSG.pdf?fpsp=1 LFSTBUSBACCQSG]: Sensor Toolbox LFSTBUSB Accelerometer Interface Board Quick Start Guide
+  * [http://cache.freescale.com/files/sensors/doc/fact_sheet/BRSENSORS.pdf?fpsp=1&WT_TYPE=Fact%20Sheets&WT_VENDOR=FREESCALE&WT_FILE_FORMAT=pdf&WT_ASSET=Documentation BRSENSORS]: Sensor Portfolio
+  * [http://cache.freescale.com/files/sensors/doc/fact_sheet/MMA845XQFS.pdf?fpsp=1&WT_TYPE=Fact%20Sheets&WT_VENDOR=FREESCALE&WT_FILE_FORMAT=pdf&WT_ASSET=Documentation MMA845XQFS]: MMA8450Q low-power, low noise, pin-compatible 3-axis accelerometers
+
+= Links =
+  * http://www.freescale.com/webapp/sps/site/prod_summary.jsp?code=LFSTBUSB
