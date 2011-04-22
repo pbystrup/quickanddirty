@@ -1,5 +1,7 @@
 #summary Freescale Accelerometer Kit Review for Element14.com
 
+= *WORK IN PROGRESS* =
+
 <wiki:toc max_depth="3" />
 
 = Introduction =
