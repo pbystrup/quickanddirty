@@ -80,4 +80,7 @@ You need to be sure that you insert the DIP to LFSTBEB845x in right way. Note th
   # opening the url to [http://www.freescale.com/sensortoolbox freescale.com/sensortoolbox]
   # clicking the blue _button_ which says: Download Software.
 == Comments ==
-This is totally useless for me. I dont use Windows and the Download Software takes me to License Agreement page from which it will push SensorToolbox.exe to me.. I just wonder if I can find some PDF files or manuals from the website.
+  * This is totally useless for me. 
+  * I dont use Windows and the Download Software takes me to License Agreement page from which it will push SensorToolbox.exe to me..
+  * I just wonder if I can find some PDF files or manuals from the website.
+  * Maybe the SensorToolbox.exe will run with Wine..
