@@ -123,3 +123,8 @@ I can get the SensorToolbox.exe running with following command, but the FTDI com
 cd /home/user/.wine/drive_c/Program Files/Freescale/Sensor Toolbox/SensorToolbox_MFC
 wine SensorToolbox.exe
 }}}
+
+= Comments =
+  * Why Freescale does not use Qt and libusb for doing their demo applications?
+  * Why Freescale does not publish the protocol what they are using to communicate to the LFSTBUSB?
+  * If I would get the protocol definitions for the evaluation kit I could port this one..
