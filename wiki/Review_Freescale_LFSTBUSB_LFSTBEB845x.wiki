@@ -90,7 +90,9 @@ You need to be sure that you insert the DIP to LFSTBEB845x in right way. Note th
   * [http://cache.freescale.com/files/sensors/doc/user_guide/LFSTBUSBACCQSG.pdf?fpsp=1 LFSTBUSBACCQSG]: Sensor Toolbox LFSTBUSB Accelerometer Interface Board Quick Start Guide
   * [http://cache.freescale.com/files/sensors/doc/fact_sheet/BRSENSORS.pdf?fpsp=1&WT_TYPE=Fact%20Sheets&WT_VENDOR=FREESCALE&WT_FILE_FORMAT=pdf&WT_ASSET=Documentation BRSENSORS]: Sensor Portfolio
   * [http://cache.freescale.com/files/sensors/doc/fact_sheet/MMA845XQFS.pdf?fpsp=1&WT_TYPE=Fact%20Sheets&WT_VENDOR=FREESCALE&WT_FILE_FORMAT=pdf&WT_ASSET=Documentation MMA845XQFS]: MMA8450Q low-power, low noise, pin-compatible 3-axis accelerometers
-
+  * [http://cache.freescale.com/files/sensors/doc/data_sheet/MMA8451Q.pdf?fpsp=1&WT_TYPE=Data%20Sheets&WT_VENDOR=FREESCALE&WT_FILE_FORMAT=pdf&WT_ASSET=Documentation MMA8451Q]: Datasheet
+  * [http://cache.freescale.com/files/sensors/doc/data_sheet/MMA8452Q.pdf?fpsp=1&WT_TYPE=Data%20Sheets&WT_VENDOR=FREESCALE&WT_FILE_FORMAT=pdf&WT_ASSET=Documentation MMA8452Q]: Datasheet
+  * [http://cache.freescale.com/files/sensors/doc/data_sheet/MMA8453Q.pdf?fpsp=1&WT_TYPE=Data%20Sheets&WT_VENDOR=FREESCALE&WT_FILE_FORMAT=pdf&WT_ASSET=Documentation MMA8453Q]: Datasheet
 = Links =
   * http://www.freescale.com/webapp/sps/site/prod_summary.jsp?code=LFSTBUSB
 
