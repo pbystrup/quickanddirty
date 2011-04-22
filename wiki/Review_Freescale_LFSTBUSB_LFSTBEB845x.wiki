@@ -45,6 +45,7 @@
 == Without Reading the Online Manual ==
 === Connecting to LFSTBUSB ===
 ==== Steps ====
+  # Make sure that LFSTBUSB is disconnected from laptop
   # Select accelerometer DIP (MMA8451Q,MMA8452Q or MMA8453Q)
   # Insert LFSTBEB845x to LFSTBUSB
   # Insert DIP to LFSTBEB845x
