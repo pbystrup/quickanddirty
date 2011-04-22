@@ -8,6 +8,7 @@
 
 == What is in the box ==
 === LFSTBEB845x - MMA845xQ accerometers ===
+http://cache.freescale.com/files/graphic/block_diagram/LFSTBEBMMA845x.jpg
   * 700-26678: PWA, [http://www.freescale.com/webapp/sps/site/prod_summary.jsp?code=LFSTBEB845X LFSTBEB845X]
   * 700-76784: PWA, [http://www.freescale.com/webapp/sps/site/prod_summary.jsp?code=MMA8451Q MMA8451Q] DIP (14-bit)
   * 700-76785: PWA, [http://www.freescale.com/webapp/sps/site/prod_summary.jsp?code=MMA8452Q MMA8452Q] DIP (12-bit)
