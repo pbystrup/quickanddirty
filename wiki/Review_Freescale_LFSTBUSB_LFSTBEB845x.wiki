@@ -39,7 +39,7 @@ There are no CD/DVD or USB-sticks with datasheets and no real-value information 
   # At freescale.com/sensortoolbox download the latest software version by clicking: Download Software
   # Plug in the USB and turn the board on using the power switch. Run the Sensor Toolbox link on your desktop.
 ==== Comments ====
-I would expect to see an assembly guide and usage information. And then as in more details on website. The facts are missing and seems more like a marketing flyer. Seems to rely heavily on Microsoft Windows.
+I would expect to see an assembly guide and usage information. And then as in more details on website. The facts are missing and seems more like a marketing flyer. Seems to rely heavily on Microsoft Windows. Having only a written links to a website is not a good thing, as Freescale might be upgrading their website in the near future and then all things might not be there anymore.. 
 
 === Connecting to Linux ===
 ==== Steps ====
@@ -65,7 +65,7 @@ I would expect to see an assembly guide and usage information. And then as in mo
   # At freescale.com/sensortoolbox download the latest software version by clicking: Download Software
   # Plug in the USB and turn the board on using the power switch. Run the Sensor Toolbox link on your desktop.
 ==== Comments ====
-Same flyer as in the LFSTBUSB, except picture has been changed. And same comments for this as well. Why to provide a Quick Start Guide, if you are not going to provide anything else than a website address and why to make an operating system specific presumptions.
+Same flyer as in the LFSTBUSB, except picture has been changed. And same comments for this as well. Why to provide a Quick Start Guide, if you are not going to provide anything else than a website address and why to make an operating system specific presumptions. And if the information is only available from the website, what happens in few years, is the url still valid, I doubt. As this is for prototyping and concepting we should have some kind of long-term solution for having the datasheets are related technical information in-hand. The CD/DVD or USB-stick would provide at least one way ticket for the years to come.
 
 === Connecting to LFSTBUSB ===
 ==== Steps ====
