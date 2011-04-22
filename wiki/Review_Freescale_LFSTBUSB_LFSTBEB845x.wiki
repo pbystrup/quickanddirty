@@ -2,7 +2,23 @@
 
 = Introduction =
 
-Add your content here.
+== What is in the box ==
+=== LFSTBEB845x - MMA845xQ accerometers ===
+  * 700-26678: PWA, LFSTBEB845X
+  * 700-76784: PWA, MMA8451Q DIP
+  * 700-76785: PWA, MMA8452Q DIP
+  * 700-76786: PWA, MMA8453Q DIP
+  * 920-75531: Technical Information Center Freescale Semiconductor, Inc.
+  * 920-75532: Warranty Card, Freescale
+  * 920-78478: Quick Start Guide, LFSTBEB845x
+  * 951-00409: Sensors Toolbox XTrinsic Card
+
+=== LFSTBUSB - USB Communication ===
+  * 700-26091: PWA, USB Interface Board
+  * 600-76796: Cable, USB Type A Male / Type Mini B Make 3ft
+  * 920-75531: Technical Information Center Freescale Semiconductor, Inc.
+  * 920-75532: Warranty Card, Freescale
+  * 926-76336: Quick Start Guide, LFSTBUSB
 
 
 = Details =
