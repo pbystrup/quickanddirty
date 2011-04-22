@@ -93,3 +93,6 @@ You need to be sure that you insert the DIP to LFSTBEB845x in right way. Note th
 
 = Links =
   * http://www.freescale.com/webapp/sps/site/prod_summary.jsp?code=LFSTBUSB
+
+= Videos =
+<wiki:video url="http://www.youtube.com/watch?v=nP8U6Un95-U" />
