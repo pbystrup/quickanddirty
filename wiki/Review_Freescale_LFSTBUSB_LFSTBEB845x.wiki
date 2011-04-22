@@ -128,3 +128,19 @@ wine SensorToolbox.exe
   * Why Freescale does not use Qt and libusb for doing their demo applications?
   * Why Freescale does not publish the protocol what they are using to communicate to the LFSTBUSB?
   * If I would get the protocol definitions for the evaluation kit I could port this one..
+= Analyzing content of the SensorToolbox =
+{{{
+$ ls /home/user/.wine/drive_c/Program Files/Freescale/Sensor Toolbox/MMA845xQ
+Freescale.SASD.Communication.dll  msvcp90.dll
+mesa.dll                          msvcr90.dll
+MMA845x-FW-Bootloader.s19         msvcrt.dll
+MMA845xQDL.exe                    NationalInstruments.Analysis.Standard.dll
+MMA845xQDL.exe.config             NationalInstruments.Common.dll
+MMA845xQ-DL-FW.s19                NationalInstruments.Common.Native.dll
+MMA845xQNVMDL.exe                 NationalInstruments.UI.dll
+MMA845xQNVMDL.exe.config          NationalInstruments.UI.Styles3D.dll
+MMA845xQSW.exe                    NationalInstruments.UI.WindowsForms.dll
+MMA845xQSW.exe.config             SensorToolbox_SerialProtocol2.0.DOC
+}}}
+== SensorToolbox_SerialProtocol2.0.DOC ==
+Could this file contain what is says? Lets see if it opens with LibreOffice.
