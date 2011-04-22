@@ -125,8 +125,8 @@ wine SensorToolbox.exe
 }}}
 
 = Comments =
-  * Why Freescale does not use Qt and libusb for doing their demo applications?
-  * Why Freescale does not publish the protocol what they are using to communicate to the LFSTBUSB?
+  * Why Freescale does not use Qt (or some other cross-platform free programming framework) for doing their demo applications?
+  * Why Freescale does not publish the protocol what they are using to communicate to the device?
   * If I would get the protocol definitions for the evaluation kit I could port this one..
 = Analyzing content of the SensorToolbox =
 {{{
