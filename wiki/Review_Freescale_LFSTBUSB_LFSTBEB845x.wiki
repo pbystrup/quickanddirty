@@ -75,3 +75,9 @@ Same flyer as in the LFSTBUSB, except picture has been changed. And same comment
   # Insert DIP to LFSTBEB845x
 === Comments ===
 You need to be sure that you insert the DIP to LFSTBEB845x in right way. Note that there are ID's for the sockets on the PCB. Make sure that J1 and J2 are going to matching sockets on both PCBs. The DIP has been also shaped in that way that the outer sides will match, one side of the DIP is longer and should be pointing inwards. Another thing to be noted is that LFSTBEB845x has a lot of SMD components on the backside, so that has to be inserted first to the LFSTBUSB other wise you can damage them by accident. When the LFSTBEB845x and LFSTBUSB have been connected together you can connect the DIP more safer.
+
+= Following the Quick Start Guide =
+  # opening the url to [http://www.freescale.com/sensortoolbox freescale.com/sensortoolbox]
+  # clicking the blue _button_ which says: Download Software.
+== Comments ==
+This is totally useless for me. I dont use Windows and the Download Software takes me to License Agreement page from which it will push SensorToolbox.exe to me.. I just wonder if I can find some PDF files or manuals from the website.
