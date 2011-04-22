@@ -48,3 +48,5 @@
   # Select accelerometer DIP (MMA8451Q,MMA8452Q or MMA8453Q)
   # Insert LFSTBEB845x to LFSTBUSB
   # Insert DIP to LFSTBEB845x
+=== Comments ===
+You need to be sure that you insert the DIP to LFSTBEB845x in right way. Note that there are ID's for the sockets on the PCB. Make sure that J1 and J2 are going to matching sockets on both PCBs. The DIP has been also shaped in that way that the outer sides will match, one side of the DIP is longer and should be pointing inwards. Another thing to be noted is that LFSTBEB845x has a lot of SMD components on the backside, so that has to be inserted first to the LFSTBUSB other wise you can damage them by accident. When the LFSTBEB845x and LFSTBUSB have been connected together you can connect the DIP more safer.
