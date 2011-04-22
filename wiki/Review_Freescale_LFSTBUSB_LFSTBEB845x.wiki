@@ -15,7 +15,7 @@ http://cache.freescale.com/files/graphic/block_diagram/LFSTBEBMMA845x.jpg
   * 700-76786: PWA, [http://www.freescale.com/webapp/sps/site/prod_summary.jsp?code=MMA8453Q MMA8453Q] DIP (10-bit)
   * 920-75531: Technical Information Center Freescale Semiconductor, Inc.
   * 920-75532: Warranty Card, Freescale
-  * 920-78478: Quick Start Guide, LFSTBEB845x
+  * 920-78478: [http://cache.freescale.com/files/sensors/doc/user_guide/LFSTBEBMMA845XQSG.pdf?fpsp=1 Quick Start Guide], LFSTBEB845x
   * 951-00409: Sensors Toolbox XTrinsic Card
 ==== Comments ====
 There are no CD/DVD or USB-sticks with datasheets and no real-value information inside. A CD or USB-stick with a regular HTML5+CSS3 website inside and those datasheets in PDF would be great. As well as other supporting software. Note also that no Flash or Silverlight should be used on possible CD/DVD or USB-stick.. Should work on all platforms.
