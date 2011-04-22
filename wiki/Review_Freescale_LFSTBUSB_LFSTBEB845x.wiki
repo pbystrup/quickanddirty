@@ -21,13 +21,14 @@
   * 926-76336: Quick Start Guide, LFSTBUSB
 
 
-= Details =
-== Connecting to Linux ==
-=== Steps ===
+= Using the Kit - LFSTBUSB =
+== Without Reading the Online Manual ==
+=== Connecting to Linux ===
+==== Steps ====
   # Connect usb cable between LFSTBUSB and your Linux laptop
   # Switch power on @ LFSTBUSB
 
-=== dmesg ===
+==== dmesg ====
 {{{
 [14273.976025] usb 6-1: new full speed USB device using uhci_hcd and address 4
 [14274.165110] ftdi_sio 6-1:1.0: FTDI USB Serial Device converter detected
