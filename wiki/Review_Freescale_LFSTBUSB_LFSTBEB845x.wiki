@@ -1,0 +1,29 @@
+#summary Freescale Accelerometer Kit Review for Element14.com
+
+= Introduction =
+
+Add your content here.
+
+
+= Details =
+== Connecting to Linux ==
+=== Steps ===
+  # Connect usb cable between LFSTBUSB and your Linux laptop
+  # Switch power on @ LFSTBUSB
+
+=== dmesg ===
+{{{
+[14273.976025] usb 6-1: new full speed USB device using uhci_hcd and address 4
+[14274.165110] ftdi_sio 6-1:1.0: FTDI USB Serial Device converter detected
+[14274.165154] usb 6-1: Detected FT232BM
+[14274.165156] usb 6-1: Number of endpoints 2
+[14274.165158] usb 6-1: Endpoint 1 MaxPacketSize 64
+[14274.165160] usb 6-1: Endpoint 2 MaxPacketSize 64
+[14274.165162] usb 6-1: Setting MaxPacketSize 64
+[14274.167110] usb 6-1: FTDI USB Serial Device converter now attached to ttyUSB0
+}}}
+=== ===
+Add your content here.  Format your content with:
+  * Text in *bold* or _italic_
+  * Headings, paragraphs, and lists
+  * Automatic links to other wiki pages
