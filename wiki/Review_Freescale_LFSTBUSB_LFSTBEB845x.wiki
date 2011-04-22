@@ -155,3 +155,10 @@ Could this file contain what is says? Lets see if it opens with LibreOffice. Hmm
 
 === Comments ===
   * I just wonder if it would be possible to get ProtocolBridge.c file in the ProtocolBridge.mcp?
+
+= Contacted Farnell's online chat =
+And asked a lot of questions:
+  * Is there Linux support available for the kit?
+  * Why .NET is used for SensorToolkit and not a cross-platform framework like Qt?
+
+The person who I discussed with promised to forward my questions to a 3rd person who might be able to answer to the questions. And then that person would answer me using email. Lets see how well that online support works for this kit. After all, I would not prefer to do any reverse engineering for it.
