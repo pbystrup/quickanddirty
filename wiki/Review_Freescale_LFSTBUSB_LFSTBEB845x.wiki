@@ -143,6 +143,9 @@ MMA845xQSW.exe                    NationalInstruments.UI.WindowsForms.dll
 MMA845xQSW.exe.config             SensorToolbox_SerialProtocol2.0.DOC
 }}}
 == SensorToolbox_SerialProtocol2.0.DOC ==
-Could this file contain what is says? Lets see if it opens with LibreOffice. Hmm.. The document contains following header text "Freescale Internal Use Only", but it seems to contain a lot of detailed information about the serial communication. At least this is a good start.
+Could this file contain what is says? Lets see if it opens with LibreOffice. Hmm.. The document contains following header text "Freescale Internal Use Only" is this valid? The installer and the data is from Freescale website from anonymous download, but it seems to contain a lot of detailed information about the serial communication. At least this is a good start.
+
+||115200 8 N 1 None||
+
 ||Command||Host to MCU||MCU to Host||
 ||Handshake||0x20 'h' 0x0D||0x20 'H' 0x0D||
