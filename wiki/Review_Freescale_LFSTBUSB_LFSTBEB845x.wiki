@@ -6,7 +6,7 @@
 
 = Introduction =
 
-== What is in the box ==
+== What is in the box (RDMMA845X Kit?) ==
 === LFSTBEB845x - MMA845xQ accerometers ===
 http://cache.freescale.com/files/graphic/block_diagram/LFSTBEBMMA845x.jpg
   * 700-26678: PWA, [http://www.freescale.com/webapp/sps/site/prod_summary.jsp?code=LFSTBEB845X LFSTBEB845X]
