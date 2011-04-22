@@ -118,3 +118,8 @@ Installation will go just fine. However the software is done with .NET so you wi
 {{{
 wget http://ftp.novell.com/pub/mono/archive/2.10.1/windows-installer/2/mono-2.10.1-gtksharp-2.12.10-win32-2.exe
 }}}
+I can get the SensorToolbox.exe running with following command, but the FTDI com port does not get detected. So the application stays in the first screen:
+{{{
+cd /home/user/.wine/drive_c/Program Files/Freescale/Sensor Toolbox/SensorToolbox_MFC
+wine SensorToolbox.exe
+}}}
