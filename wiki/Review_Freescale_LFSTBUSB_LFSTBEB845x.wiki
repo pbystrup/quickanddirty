@@ -26,7 +26,7 @@ http://cache.freescale.com/files/graphic/block_diagram/LFSTBUSB_HR1.jpg
   * 600-76796: Cable, USB Type A Male / Type Mini B Make 3ft
   * 920-75531: Technical Information Center Freescale Semiconductor, Inc.
   * 920-75532: Warranty Card, Freescale
-  * 926-76336: Quick Start Guide, LFSTBUSB
+  * 926-76336: [http://cache.freescale.com/files/sensors/doc/user_guide/LFSTBUSBACCQSG.pdf?fpsp=1 Quick Start Guide], LFSTBUSB
 ==== Comments ====
 There are no CD/DVD or USB-sticks with datasheets and no real-value information inside. A CD or USB-stick with a regular HTML5+CSS3 website inside and those datasheets in PDF would be great. As well as other supporting software. Note also that no Flash or Silverlight should be used on possible CD/DVD or USB-stick.. Should work on all platforms.
 
