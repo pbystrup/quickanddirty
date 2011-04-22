@@ -149,3 +149,6 @@ Could this file contain what is says? Lets see if it opens with LibreOffice. Hmm
 
 ||Command||Host to MCU||MCU to Host||
 ||Handshake||0x20 'h' 0x0D||0x20 'H' 0x0D||
+
+=== Comments ===
+  * I just wonder if it would be possible to get ProtocolBridge.c file in the ProtocolBridge.mcp?
