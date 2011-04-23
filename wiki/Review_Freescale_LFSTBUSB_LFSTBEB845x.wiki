@@ -163,3 +163,25 @@ And asked a lot of questions:
   * Can I have an access to that ProtocolBridge.c class which is mentioned in the document.
 
 The person who I discussed with promised to forward my questions to a 3rd person who might be able to answer to the questions. And then that person would answer me using email. Lets see how well that online support works for this kit. After all, I would not prefer to do any reverse engineering for it.
+== Got a first reply ==
+Got an email confirmation that they are working on to provide information about the Linux support, etc. A really positive thing that their chat support works and that they are co-operative :) ..not all the companies have this kind of superb support :p
+I also provided an email reply to support the quick online chat with more detailed questions, as for me it seems that someone have done a deal with m$ and more likely they are not going to do SensorToolbox with Qt or Python. :P ..but lets see what they have to answer to my questions.
+
+{{{
+Thank you for contact me. The biggest reason why I was contacting you was that my RoadTest review  for Element14.com (http://www.element14.com/community/roadTests/1016) seemed to be dead-ended as of lacking support for Linux. The original idea was to use the usb interface board with my Chumby (which runs Linux on Freescale i.MX233), as I thought that as the USB interface board uses FTDI chip which is recognized by the Linux as serial port and the connection works to it. That I could just use it in a prototype project. For that I would need to know the serial protocol in more detail and it seemed that the doc file contained some information.
+
+The protocol seems to work:
+[SPACE] [command+payload] [CR]
+
+I have tested that the USB Interface Board communicates with 'minicom -d /dev/ttyUSB0' on Linux:
+Host to MCU:
+[SPACE] h [CR]
+And i will receive:
+[SPACE] H [CR]
+
+So the connection seems to work on Linux. The only missing thing is that there is the sample/demo application SensorToolbox.exe which does not run on Linux. My skills would enable me to implement a cross-platform Qt (or Python) demo/library application for you for free based on the information in the SensorToolbox_SerialProtocol2.0.doc file. However as the protocol parsing and class wrapper might take some hours to write, I was thinking of if you would have had something to share. As for example if you could have had the source code for the sensortoolbox .net application I could have read how the protocol has been parsed for the accelerometers, which would have made my _job_ easier.. :) ..the reason why I am pushing this is that I know that all the Hacker Space's and Universities would be interested this kind of _plug-and-play_ hacker device which the SensorToolbox could be with cross-platform Qt or Python library for communication.
+
+But then there is also one fact, in the public SensorToolbox Windows Installer you are providing that SensorToolbox_SerialProtocol.2.0.doc file which has a header labeled "Freescale Internal Use Only". Is that document header just not up to date or have someone made a mistake by providing the file in there? I presume that as it is provided in the package I am allowed to read and use the information for producing the unofficial Linux support for the community. This way my review could contain something more than "- not recommended, does not support Linux". As I have seen the videos and read all the specs and it is obvious that your product is superb, but it is disabled by .NET application.
+
+P.S If you want to follow the work in progress memo for the review feel free to do so http://code.google.com/p/quickanddirty/wiki/Review_Freescale_LFSTBUSB_LFSTBEB845x
+}}}
