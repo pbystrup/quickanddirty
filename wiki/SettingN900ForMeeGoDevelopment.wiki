@@ -8,7 +8,7 @@ Setting up a N900 for MeeGo 1.2 development.
 == Enable DualBoot ==
 Boot to Maemo5.
   * Enable [http://wiki.maemo.org/Extras-devel devel-extras]
-  * Install System > uboot-13
+  * Install System > uboot-pr13
   * Disable devel-extras
 More [http://wiki.meego.com/ARM/N900/Install/Dual_Boot Information].
   
