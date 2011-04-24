@@ -46,3 +46,5 @@ sudo flasher-3.5 -l -k mg-handset-armv7nhl-n900-de-acceptance-1.1.99.2.20110412.
 {{{
 Suitable USB device not found, waiting.
 }}}
+= Now you have a DualBoot system for Maemo5 and MeeGo 1.2 =
+The system will boot to MeeGo 1.2 DE automatically and you can change things by pressing a key in uboot and typing 'run noloboot'
