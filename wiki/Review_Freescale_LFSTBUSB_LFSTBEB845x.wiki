@@ -186,6 +186,7 @@ But then there is also one fact, in the public SensorToolbox Windows Installer y
 P.S If you want to follow the work in progress memo for the review feel free to do so http://code.google.com/p/quickanddirty/wiki/Review_Freescale_LFSTBUSB_LFSTBEB845x
 ----
 EDIT: 9.5.2011: Added comments to the RoadTest page.
+{{{
 Juhapekka Piiroinen May 9, 2011 5:55 PM
 
 When do I receive the part for review?
@@ -198,5 +199,6 @@ EDIT 9.5.2011: Unable to submit review with Ubuntu 11.04 + Chromium 11. The revi
 The end result with the Sensor Kit is that "it is a nice idea, but poor desktop software implementation is blocking the real usage". I would have wanted to use this in my robotics project with that usb-serial connectivity board. But for that I would have to implement my own 3rd party library, and as Freescale has not released any official documentation about the protocol and as they do not answer to the technical tickets in 48h as promised on their website, now it has been over three weeks..
 
 http://www.element14.com/community/roadTests/1016#comment-5636
+}}}
 ----
 The full chat discussion with Freescale is available @ http://pastebin.com/N0P5iCKD
