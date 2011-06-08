@@ -217,6 +217,7 @@ Related to that I also published the "public information" email related to the d
 
 So now there is yet another ticket raised by them, now it is with subject "RE: SR# 1-758008381 : Question about Freescale MMA845XQ Evaluation board"
 
+----
 My answer to his comment was:
 "Juhapekka Piiroinen Jun 8, 2011 8:35 PM (in response to toniz)
 
