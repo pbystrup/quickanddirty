@@ -216,4 +216,14 @@ Toni"
 Related to that I also published the "public information" email related to the discussions and support tickets: http://pastebin.com/3zkD48UF
 
 So now there is yet another ticket raised by them, now it is with subject "RE: SR# 1-758008381 : Question about Freescale MMA845XQ Evaluation board"
+
+My answer to his comment was:
+"Juhapekka Piiroinen Jun 8, 2011 8:35 PM (in response to toniz)
+
+I am still interested about your products. But you must know that I received following email with status "public information":  http://pastebin.com/3zkD48UF
+ 
+And I got contacted by B16998 on 23.4.2011. But the email was with status "[x] Freescale Semiconductor Confidential Proprietary". So I will forward you the email asap. I also replied to that one, but there was no reply anymore.. The content of the email was that you do not support Linux at the moment and a promise to contact me further.. Thats why I was stating in my post "missing support for Linux".
+ 
+But anyway, thanks for hearing me.  ..and I would be able to write my own library for the kit with Qt/C++ for you, if you will give the technical support and provide officially the technical protocol documentation of the communication over the serial bridge for the community as public information. As I have also noted in my wiki page, that there is actually one protocol file included in the .NET application installation package SensorToolbox_SerialProtocol.2.0.doc, but it is labeled "Freescale Internal Use Only"."
+So I forwarded the email discussion what I had with another freescale person.
 -----
