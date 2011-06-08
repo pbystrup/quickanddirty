@@ -202,7 +202,7 @@ http://www.element14.com/community/roadTests/1016#comment-5636
 }}}
 ----
 The full chat discussion with Freescale is available @ http://pastebin.com/N0P5iCKD.
----
+----
 8.6.2011 - got contacted by Freescale, they commented to element14.com.
 
 "toniz Jun 8, 2011 7:19 PM (in response to Juhapekka Piiroinen)
@@ -214,3 +214,6 @@ Cheers,
 Toni"
 
 Related to that I also published the "public information" email related to the discussions and support tickets: http://pastebin.com/3zkD48UF
+
+So now there is yet another ticket raised by them, now it is with subject "RE: SR# 1-758008381 : Question about Freescale MMA845XQ Evaluation board"
+-----
