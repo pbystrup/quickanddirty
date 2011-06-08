@@ -201,4 +201,16 @@ The end result with the Sensor Kit is that "it is a nice idea, but poor desktop 
 http://www.element14.com/community/roadTests/1016#comment-5636
 }}}
 ----
-The full chat discussion with Freescale is available @ http://pastebin.com/N0P5iCKD
+The full chat discussion with Freescale is available @ http://pastebin.com/N0P5iCKD.
+---
+8.6.2011 - got contacted by Freescale, they commented to element14.com.
+
+"toniz Jun 8, 2011 7:19 PM (in response to Juhapekka Piiroinen)
+
+Hello Juhapekka,
+I am from Freescale, I can´t comment on the technical review, not my specialty area. But I did a check on the open tickets and sorry to say, but you did _not_ submit one to us. You misinterpreted the automatic logging of your online chatting with us as an open ticket. Sorry for that misunderstanding but the ticket was created by the system and instantly closed again with your submitted chat survey result to timestamp the interaction. We do strive for 48hrs and honestly can often but not always meet them, but we don´t let our customers knowingly wait for weeks, sorry for the misunderstanding.
+I will create an empty ticket and write to you to let you reply back with your actual questions. Thanks for your interest in Freescale anyway. The rule says: complaining customers still have an interest, the silent ones are the ones that are lost. Hope we did not lose you ...
+Cheers,
+Toni"
+
+Related to that I also published the "public information" email related to the discussions and support tickets: http://pastebin.com/3zkD48UF
