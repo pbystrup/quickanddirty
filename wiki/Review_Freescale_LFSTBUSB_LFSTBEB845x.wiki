@@ -228,3 +228,54 @@ And I got contacted by B16998 on 23.4.2011. But the email was with status "[x] F
 But anyway, thanks for hearing me.  ..and I would be able to write my own library for the kit with Qt/C++ for you, if you will give the technical support and provide officially the technical protocol documentation of the communication over the serial bridge for the community as public information. As I have also noted in my wiki page, that there is actually one protocol file included in the .NET application installation package SensorToolbox_SerialProtocol.2.0.doc, but it is labeled "Freescale Internal Use Only"."
 So I forwarded the email discussion what I had with another freescale person.
 -----
+2.8.2011 It seems that they have closed the element14 thread and freescale send an email that they are closing the ticket..
+
+This is for you freescale:
+*I will not recommend your products anymore to anyone, and this concerns all the future work related projects as well. If you do not have any motivation to support little men, why would you do any better job with corporate customers.*
+
+------
+Here is the thread from element14.com for future reference:
+{{{
+Juhapekka Piiroinen May 9, 2011 5:55 PM
+
+When do I receive the part for review?
+ 
+EDIT 6.4.2011: got it this monday, review to be done next weekend.
+EDIT 18.4.2011: the review got postponed as i was participating a 24h coding competition. this is next on my TODO list.
+EDIT 9.5.2011: the review is blocked due to missing support for Linux. The development kit supports only Microsoft Windows, althought there are no operating system requirements anywhere. And freescale does not reply to the support ticket SR 1-742776043, which was raised 22.4.2011. The current review can be seen  http://code.google.com/p/quickanddirty/wiki/Review_Freescale_LFSTBUSB_LFSTBEB845x, But all in all the sensorkit is a good idea, but it has been implemented poorly with .NET. I just can not understand why they have not used any crossplatform framework like Qt. As the device itself is detected as serial port and can be used on other operating systems than Windows.
+EDIT 9.5.2011: Unable to submit review with Ubuntu 11.04 + Chromium 11. The review post will get a result of "An unexpected error has occurred"
+ 
+The end result with the Sensor Kit is that "it is a nice idea, but poor desktop software implementation is blocking the real usage". I would have wanted to use this in my robotics project with that usb-serial connectivity board. But for that I would have to implement my own 3rd party library, and as Freescale has not released any official documentation about the protocol and as they do not answer to the technical tickets in 48h as promised on their website, now it has been over three weeks..
+Like (0) Edit Reply
+ 
+toniz Jun 8, 2011 7:19 PM (in response to Juhapekka Piiroinen)
+
+Hello Juhapekka,
+I am from Freescale, I can´t comment on the technical review, not my specialty area. But I did a check on the open tickets and sorry to say, but you did _not_ submit one to us. You misinterpreted the automatic logging of your online chatting with us as an open ticket. Sorry for that misunderstanding but the ticket was created by the system and instantly closed again with your submitted chat survey result to timestamp the interaction. We do strive for 48hrs and honestly can often but not always meet them, but we don´t let our customers knowingly wait for weeks, sorry for the misunderstanding.
+I will create an empty ticket and write to you to let you reply back with your actual questions. Thanks for your interest in Freescale anyway. The rule says: complaining customers still have an interest, the silent ones are the ones that are lost. Hope we did not lose you ...
+Cheers,
+Toni
+Like (0) Report Abuse Reply
+ 
+Juhapekka Piiroinen Jun 8, 2011 8:35 PM (in response to toniz)
+
+I am still interested about your products. But you must know that I received following email with status "public information":  http://pastebin.com/3zkD48UF
+ 
+And I got contacted by B16998 on 23.4.2011. But the email was with status "[x] Freescale Semiconductor Confidential Proprietary". So I will forward you the email asap. I also replied to that one, but there was no reply anymore.. The content of the email was that you do not support Linux at the moment and a promise to contact me further.. Thats why I was stating in my post "missing support for Linux".
+ 
+But anyway, thanks for hearing me.  ..and I would be able to write my own library for the kit with Qt/C++ for you, if you will give the technical support and provide officially the technical protocol documentation of the communication over the serial bridge for the community as public information. As I have also noted in my wiki page, that there is actually one protocol file included in the .NET application installation package SensorToolbox_SerialProtocol.2.0.doc, but it is labeled "Freescale Internal Use Only".
+Like (0) Edit Reply
+ 
+Juhapekka Piiroinen Jun 8, 2011 8:52 PM (in response to toniz)
+
+To also answer to your sentence: "Sorry for that misunderstanding but the ticket was created by the system and instantly closed again with your submitted chat survey result to timestamp the interaction".
+ 
+That seems to be a bug in your side that you are sending those ticket id's to the customers and then you are not sending any status updates on them. It would make sense to send status updates as "opened, closed" at least.. And as you can read from the pastebin which contains that message that there is nothing mentioning (or at least not clearly) that it is a "temporary measure" for yourself to track things up.. It would however make sense that you system would send the chatlog with that ticket to the customer and then state that "if you have anything to add etc" please reply to this email.. And I truly did understand that is a Service Request and when your colleague contacted me and promised to provide more information, what else could i expect? 
+Like (0) Edit Reply
+ 
+Juhapekka Piiroinen Jun 8, 2011 8:54 PM (in response to toniz)
+
+> complaining customers still have an interest,
+That is true and thats why I am also keen to help you to provide better experience for the Linux geeks as well. As majority of the homebrew robotics projects are running some sort of 32-bit processor with Embedded Linux on it.
+
+}}}
